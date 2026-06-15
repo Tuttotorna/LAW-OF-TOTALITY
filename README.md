@@ -73,3 +73,11 @@ LAW-OF-TOTALITY -> OMNIA -> Omniabase / OMNIA-MINIMAL / operational applications
 The total comes first.
 
 The fragment comes after.
+
+---
+
+## Advanced theoretical layer
+
+For readers who want to enter the deeper non-fragmenting layer behind the public method:
+
+[Infinity-First Totality](docs/advanced/INFINITY-FIRST-TOTALITY.md)
