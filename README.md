@@ -81,3 +81,11 @@ The fragment comes after.
 For readers who want to enter the deeper non-fragmenting layer behind the public method:
 
 [Infinity-First Totality](docs/advanced/INFINITY-FIRST-TOTALITY.md)
+
+---
+
+## Applied cases
+
+Concrete demonstrations of the Law of Totality:
+
+- [Applied Case #001 — Monty Hall](docs/applied-cases/001-monty-hall.md)
