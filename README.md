@@ -1,5 +1,7 @@
 # LAW-OF-TOTALITY
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20700914.svg)](https://doi.org/10.5281/zenodo.20700914)
+
 ## The Law of Totality
 
 No fragment is independent from the totality.
