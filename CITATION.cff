@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+title: "LAW-OF-TOTALITY: The Law of Totality"
+authors:
+  - family-names: "Brighindi"
+    given-names: "Massimiliano"
+abstract: "A universal structural law describing error as the distance between a local fragment and the total structural field from which that fragment depends."
+version: "0.1.0"
+date-released: "2026-06-15"
+license: "CC-BY-4.0"
+repository-code: "https://github.com/Tuttotorna/LAW-OF-TOTALITY"
+keywords:
+  - totality
+  - structural error
+  - structural stability
+  - OMNIA
+  - artificial intelligence
+  - hallucination
+  - ethics
+  - economics
+  - systems

@@ -1,0 +1,40 @@
+{
+  "title": "LAW-OF-TOTALITY: The Law of Totality",
+  "description": "A universal structural law describing error as the distance between a local fragment and the total structural field from which that fragment depends.",
+  "creators": [
+    {
+      "name": "Brighindi, Massimiliano",
+      "affiliation": "Independent Researcher"
+    }
+  ],
+  "license": "cc-by-4.0",
+  "upload_type": "software",
+  "keywords": [
+    "totality",
+    "structural error",
+    "structural stability",
+    "OMNIA",
+    "artificial intelligence",
+    "hallucination",
+    "ethics",
+    "economics",
+    "systems"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/Tuttotorna/OMNIA",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/Tuttotorna/OMNIA-MINIMAL",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://github.com/Tuttotorna/OMNIABASE-MATHEMATICS",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    }
+  ]
+}
