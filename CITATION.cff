@@ -1,26 +1,18 @@
 cff-version: 1.2.0
 message: "If you use this work, please cite it as below."
-title: "LAW-OF-TOTALITY: The Law of Totality and Ω-Validity Calculus"
+title: "Law of Totality: The Law of Absolute Non-Closure"
 authors:
   - family-names: "Brighindi"
     given-names: "Massimiliano"
-abstract: "An omnia-disciplinary formal framework defining structural error as local closure used beyond valid scope while excluding a critical dependency, and defining Ω-Validity Calculus as a preventive calculus for structural validity."
 version: "0.5.0"
-date-released: "2026-06-16"
-license: "CC-BY-4.0"
+date-released: "2026-06-17"
 repository-code: "https://github.com/Tuttotorna/LAW-OF-TOTALITY"
+abstract: "A meta-structural framework for diagnosing structural error as local closure used beyond valid scope while excluding dependencies critical to the concrete use."
 keywords:
-  - totality
   - structural error
-  - structural validity
-  - false closure
-  - determinability
-  - critical dependency
-  - valid scope
+  - framework sufficiency
+  - model risk
+  - AI governance
   - non-closure
-  - omnia-disciplinary
-  - artificial intelligence
-  - hallucination prevention
-  - formal systems
-  - epistemology
-  - systems theory
+  - validity
+license: "MIT"

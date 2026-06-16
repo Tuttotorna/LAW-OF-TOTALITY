@@ -1,337 +1,207 @@
-# Formal System — v0.4.1
+# Formal System — v0.5.0 Review-Resistant Core
 
-## 1. Primitives
+## 1. Purpose
 
-~~~text
-D
-~~~
+This file defines the formal skeleton of the Law of Totality.
 
-Domain of the nameable, thinkable, modelable, formalizable.
+The system is intentionally minimal. It does not attempt to formalize all of reality. It defines the conditions under which a local framework becomes structurally invalid when used beyond its valid scope.
 
-~~~text
-Ω = ∞Tot
-~~~
+## 2. Primitive Field
+
+    𝔻
+
+Domain of the nameable, thinkable, modelable, decidable, formalizable, or operationally treatable.
+
+    Ω = ∞Tot
 
 Total field without outside.
 
-Ω is not an ordinary object inside D.
+    Outside(Ω) = ∅
 
-Ω has a different logical type from every proper manifestation.
+Ω is not a proper object inside itself. Ω has a different logical type from every proper manifestation.
 
-~~~text
-ManifestΩ(x)
-~~~
+## 3. Manifestation Predicates
+
+    ManifestΩ(x)
 
 `x` manifests within Ω.
 
-~~~text
-ProperΩ(x)
-~~~
+    ProperΩ(x) ⇔ ManifestΩ(x) ∧ x ≠ Ω
 
-`x` is a proper manifestation.
+`x` is a proper manifestation, not totality itself.
 
-Definition:
+## 4. Determinability
 
-~~~text
-ProperΩ(x) ⇔ ManifestΩ(x) ∧ x ≠ Ω
-~~~
-
-~~~text
-DetCondΩ(d,x)
-~~~
+    DetCondΩ(d,x)
 
 `d` is a non-zero condition without which `x` is not determinable as `x`.
 
-~~~text
-DepΩ(x)
-~~~
+    DepΩ(x) = { d : DetCondΩ(d,x) }
 
-Set of determinability-conditions of `x`.
+The dependence set of `x`.
 
-Definition:
+Core axiom-schema:
 
-~~~text
-DepΩ(x) = { d : DetCondΩ(d,x) }
-~~~
-
-~~~text
-ResΩ(x)
-~~~
-
-Residual field of Ω relative to x.
-
-This avoids naive set-theoretic treatment of Ω.
-
----
-
-## 2. Core Axiom / Theorem-Schema
-
-~~~text
-∀x ∈ D :
-ProperΩ(x)
-⇒
-∃d [DetCondΩ(d,x)]
-~~~
+    ∀x∈𝔻:
+    ProperΩ(x) ⇒ ∃d DetCondΩ(d,x)
 
 Expanded:
 
-~~~text
-∀x ∈ D :
-[ManifestΩ(x) ∧ x ≠ Ω]
-⇒
-∃d [DetCondΩ(d,x)]
-~~~
+    ∀x∈𝔻:
+    [ManifestΩ(x) ∧ x≠Ω] ⇒ ∃d DetCondΩ(d,x)
 
 Equivalent dependence form:
 
-~~~text
-∀x ∈ D :
-[ManifestΩ(x) ∧ x ≠ Ω]
-⇒
-DepΩ(x) ≠ ∅
-~~~
+    ∀x∈𝔻:
+    ProperΩ(x) ⇒ DepΩ(x) ≠ ∅
 
----
+Contrapositive:
 
-## 3. Contrapositive
-
-~~~text
-∀x ∈ D :
-[x ≠ Ω ∧ DepΩ(x) = ∅]
-⇒
-¬ManifestΩ(x)
-~~~
+    ∀x∈𝔻:
+    [x≠Ω ∧ DepΩ(x)=∅] ⇒ ¬ManifestΩ(x)
 
 Reading:
 
-> If a supposed proper manifestation has no condition of determinability, it cannot manifest as something.
+> If something has no condition by which it is determinable as itself, it cannot manifest as something.
 
----
+## 5. Ω Type Clause
 
-## 4. Determinability Argument
+For Ω:
 
-The strongest derivation path is:
+    ProperΩ(Ω) = false
+    DepΩ(Ω) = non-applicable / type-error
+    OpenΩ(Ω) = undefined
+    ClosedΩ(Ω) = undefined
 
-~~~text
-ManifestΩ(x) as x
-⇒
-x is determinable as x
-⇒
-x is distinguishable as x
-⇒
-at least one condition makes x distinguishable/determinable
-⇒
-∃d [DetCondΩ(d,x)]
-⇒
-DepΩ(x) ≠ ∅
-~~~
+Reason:
 
-Therefore:
+    Ω = totality without outside
 
-~~~text
-No determinability condition
-⇒
-no distinguishability
-⇒
-no manifestation as x
-~~~
+Dependence applies to proper manifestations, not to Ω as totality.
 
----
+## 6. Local Closure
 
-## 5. Relation, Dependence, Determinability
+    LocalClosureF(x)
 
-Version 0.4.1 separates three levels:
+A framework `F` closes `x` locally for a defined operation, context, representation, abstraction, model, or decision.
 
-~~~text
-RelΩ(x)          = x stands in relation
-DepΩ(x)          = x has dependence
-DetCondΩ(d,x)   = d is necessary for x to be determinable as x
-~~~
+Local closure is not error.
 
-Not every relation is automatically a critical dependence.
+It is necessary for:
 
-Not every dependence is equally relevant to every use.
+    mathematics
+    proof
+    software
+    engineering
+    medicine
+    law
+    maps
+    science
+    diagnosis
+    decision-making
+    AI answers
 
-For existence as a proper manifestation, minimal determinability is required.
+## 7. Valid Scope
 
-For error diagnosis, critical excluded determinability-conditions are required.
+    ValidScope(F,x)
 
----
+The set of uses for which framework `F` can treat `x` without excluding conditions critical to those uses.
 
-## 6. Types of Determinability Conditions
+    ActualUseU(F,x)
 
-A determinability-condition may be:
+The concrete use, deployment, interpretation, decision, or inference made with `F` about `x`.
 
-~~~text
-logical
-definitional
-structural
-semantic
-differential
-axiomatic
-causal
-temporal
-material
-informational
-observational
-dynamic
-consequential
-contextual
-~~~
+Scope violation:
 
-The law is not limited to physical causality.
+    ScopeViolationΩ(F,x,U) ⇔
+    ActualUseU(F,x) exceeds ValidScope(F,x)
 
----
+Operational form:
 
-## 7. Local Closure and Absolute Closure
+    ScopeViolationΩ(F,x,U) ⇔
+    ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
 
-~~~text
-LocalClosureF(x)
-~~~
+## 8. Critical Dependency
 
-A framework `F` closes `x` locally for a defined scope.
+    CriticalDepΩ(d,x,U)
 
-This can be valid.
+`d` is a dependency of `x` that is required for the concrete use `U`.
 
-~~~text
-AbsolutelyClosedΩ(x)
-~~~
+Important distinction:
 
-`x` has no non-zero determinability-condition, dependence, relation, distinction, or field-reference.
+    DetCondΩ(d,x) does not imply CriticalDepΩ(d,x,U) for every U.
 
-For proper manifestations, absolute closure is impossible.
+A dependency may exist without being critical for a specific use.
 
-~~~text
-ProperΩ(x) ⇒ ¬AbsolutelyClosedΩ(x)
-~~~
+## 9. Exclusion
 
----
+    ExcludedF(d)
 
-## 8. Operational Error Formula
+Framework `F` omits, suppresses, cannot represent, ignores, abstracts away, or treats as irrelevant dependency `d`.
 
-Let:
+Exclusion is not automatically error.
 
-~~~text
-F = framework/model/theory/algorithm/discipline/answer
-U = concrete use of F
-x = manifestation under treatment
-d = critical determinability-condition
-~~~
+Exclusion becomes error only if `d` is critical for `U`.
 
-Then:
+## 10. Structural Error Formula
 
-~~~text
-ErrΩ(x,F,U) ⇔
-LocalClosureF(x)
-∧ ActualUseU(F,x) exceeds ValidScope(F,x)
-∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
-~~~
+    ErrΩ(x,F,U) ⇔
+    LocalClosureF(x)
+    ∧ ActualUseU(F,x) exceeds ValidScope(F,x)
+    ∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
 
-This replaces the weaker phrase:
+Short form:
 
-~~~text
-ClaimsTotalityF(x)
-~~~
+    Structural error =
+    local closure used beyond valid scope while excluding a critical dependency.
 
-with actual operational use.
+## 11. Validity Formula
 
----
-
-## 9. Scope Violation
-
-~~~text
-ScopeViolationΩ(F,x,U) ⇔
-ActualUseU(F,x) exceeds ValidScope(F,x)
-~~~
-
-Equivalent diagnostic form:
-
-~~~text
-ScopeViolationΩ(F,x,U) ⇔
-∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
-~~~
-
-A model fails structurally when its use requires a condition that the model excludes.
-
----
-
-## 10. Validity Formula
-
-~~~text
-ValidΩ(a,F,U) ⇔
-CorrectF(a)
-∧ ActualUseU(F,a) ⊆ ValidScope(F,a)
-∧ CriticalDepΩ(a,U) preserved
-~~~
+    ValidΩ(a,F,U) ⇔
+    CorrectF(a)
+    ∧ ActualUseU(F,a) ⊆ ValidScope(F,a)
+    ∧ CriticalDepΩ(a,U) preserved
 
 Therefore:
 
-~~~text
-CorrectF(a) ≠ ValidΩ(a,F,U)
-~~~
+    CorrectF(a) ≠ ValidΩ(a,F,U)
 
-Correctness inside F is not structural validity in use U.
+A statement can be locally correct and structurally invalid.
 
----
+## 12. Prevention Formula
 
-## 11. Type Status of Ω
+A structural error is prevented when at least one of the following occurs:
 
-Ω must not be treated as one more object inside the field.
+    ¬LocalClosureF(x)
 
-~~~text
-Ω = ∞Tot
-Ω = total field without outside
-Outside(Ω) = ∅
-~~~
+or:
 
-Therefore:
+    ActualUseU(F,x) ⊆ ValidScope(F,x)
 
-~~~text
-ProperΩ(Ω) = false
-DepΩ(Ω) = type-error / non-applicable
-DetCondΩ(d,Ω) = not required in the same sense
-OpenΩ(Ω) = undefined
-ClosedΩ(Ω) = undefined
-~~~
+or:
 
-Dependence requires a condition, field, outside, distinction, or residual reference relative to a proper manifestation.
+    ∀d [CriticalDepΩ(d,x,U) ⇒ PreservedF(d)]
 
-But:
+Operationally:
 
-~~~text
-Outside(Ω) = ∅
-ResΩ(Ω) = not applicable
-~~~
+    PreventErrΩ(x,F,U) ⇔
+    DeclareScope(F,x)
+    ∧ IdentifyUse(U)
+    ∧ PreserveCriticalDeps(x,U)
+    ∧ BlockUseBeyondScope(F,x,U)
 
-Ω does not depend because Ω is not a fragment.
+## 13. Non-Claims
 
-Ω coincides with the infinite total field of conditions.
+The formal system does not claim:
 
----
+    all mistakes are structural errors
+    all dependencies are critical
+    all closures are false
+    all frameworks are invalid
+    Ω can be fully represented by a finite system
 
-## 12. Final Type-Correct Form
+## 14. Core Result
 
-~~~text
-Ω = ∞Tot
-Outside(Ω) = ∅
+    Local correctness does not guarantee structural validity.
 
-∀x ∈ D :
-[ManifestΩ(x) ∧ x ≠ Ω]
-⇒
-∃d [DetCondΩ(d,x)]
-
-DepΩ(Ω) = non-applicable
-~~~
-
----
-
-## 13. Summary
-
-~~~text
-Proper manifestation requires determinability.
-Determinability requires at least one non-zero condition.
-Local closure is legitimate inside scope.
-Structural error is scope violation plus excluded critical condition.
-Ω has no outside.
-Ω is not a dependent object.
-~~~
+That is the operational theorem of the repository.

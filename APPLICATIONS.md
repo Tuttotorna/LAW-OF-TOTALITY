@@ -1,129 +1,161 @@
-# Applications — v0.3.0
+# Applications — v0.5.0
 
-## Universal Template
+## 1. AI Answers
 
-~~~text
-ErrΩ(x,F,U) ⇔
-LocalClosureF(x)
-∧ ActualUseU(F,x) exceeds ValidScope(F,x)
-∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
-~~~
+Problem:
 
----
+    An AI answer may be correct inside its available context but invalid for the user's intended use.
 
-## Mathematics
+Audit:
 
-A proof can be locally closed inside a formal system.
+    x = user's question
+    F = model context / retrieved sources / reasoning frame
+    U = user's intended action
+    d = missing source, date, jurisdiction, domain constraint, measurement, safety factor
 
-~~~text
-ProofF(x) ⇒ LocalClosureF(x)
-~~~
+Correction:
 
-But:
+    answer with scope
+    retrieve missing dependency
+    block high-stakes closure
 
-~~~text
-ProofF(x) ≠ AbsolutelyClosedΩ(x)
-~~~
+## 2. Model Risk
 
-Mathematical validity requires declared axioms, definitions, scope, and formal field.
+Problem:
 
----
+    A model trained and validated under one distribution is used under another.
 
-## Relativity
+Audit:
 
-Relativity is a physical case of the law.
+    x = modeled phenomenon
+    F = model
+    U = deployment environment
+    d = distribution shift, data drift, population change, feedback loop
 
-A measurement is not absolute in isolation.
+Correction:
 
-~~~text
-MeasureF(e) ≠ MeasureΩ(e)
-~~~
+    monitor drift
+    restrict deployment
+    revalidate
+    add fallback controls
 
-A measurement is valid when its reference frame and scope are preserved.
+## 3. Medicine
 
-~~~text
-ValidΩ(m,F,U) ⇔
-CorrectF(m)
-∧ reference frame declared
-∧ actual use preserves frame-dependence
-~~~
+Problem:
 
-Relativity does not mean arbitrariness.
+    A test result is treated as a complete diagnosis.
 
-It means value depends on field/reference conditions.
+Audit:
 
----
+    x = patient
+    F = single test
+    U = treatment decision
+    d = symptoms, history, contraindications, differential diagnosis, comorbidities
 
-## Engineering
+Correction:
 
-~~~text
-CorrectF(component) ≠ StableΩ(system,U)
-~~~
+    restore clinical context
+    require physician review
+    avoid single-indicator closure
 
-A component can be correct in design but invalid in deployment if critical field conditions are excluded.
+## 4. Law
 
----
+Problem:
 
-## Medicine
+    A generic legal explanation is used as binding legal advice.
 
-~~~text
-DiagnosisF(symptom) ≠ FieldΩ(patient,U)
-~~~
+Audit:
 
-A diagnosis is structurally fragile when actual use requires excluded conditions such as history, medication, context, time, risk, or comorbidity.
+    x = legal situation
+    F = generic legal information
+    U = procedural/legal action
+    d = jurisdiction, documents, dates, exceptions, licensed interpretation
 
----
+Correction:
 
-## Algorithms
+    reduce answer to general information
+    require jurisdiction-specific review
 
-~~~text
-CorrectSpec(A) ≠ ValidDeploymentΩ(A,U)
-~~~
+## 5. Engineering
 
-An algorithm is structurally valid only when deployment preserves the critical conditions assumed by specification.
+Problem:
 
----
+    A simplified calculation is used for real deployment outside assumptions.
 
-## Artificial Intelligence
+Audit:
 
-~~~text
-AnswerF(a) ≠ ValidΩ(a,F,U)
-~~~
+    x = physical system
+    F = simplified model
+    U = deployment
+    d = tolerances, fatigue, temperature, loads, material defects, edge cases
 
-A correct-looking answer may fail if the user's use requires conditions the answer excludes.
+Correction:
 
----
+    validate assumptions
+    run stress tests
+    add safety factors
 
-## Religion and Philosophy
+## 6. Business
 
-A doctrine or philosophy may orient locally.
+Problem:
 
-It becomes structurally false when it totalizes its local closure.
+    A metric becomes the decision.
 
-~~~text
-LocalDoctrineF(x) ∧ UsedAsTotality(F,x) ⇒ ErrΩ(x,F,U)
-~~~
+Audit:
 
----
+    x = business system
+    F = KPI
+    U = strategic decision
+    d = customer trust, long-term risk, incentives, hidden costs, regulatory exposure
 
-## Sense of Life
+Correction:
 
-The sense of life is not a closed sentence.
+    restore multi-metric review
+    include consequence analysis
 
-Hardened distinction:
+## 7. Personal Decisions
 
-~~~text
-StructuralSenseΩ(x) ⇔ DetCondΩ(d,x) intelligible
-~~~
+Problem:
 
-Human meaning requires further layers: memory, value, relation, action, responsibility, mortality, future, and orientation.
+    A person decides from one emotional, financial, or social fragment.
 
----
+Audit:
 
-## Core Sentence
+    x = life situation
+    F = narrow perspective
+    U = irreversible decision
+    d = time, consequences, health, relationships, resources, future constraints
 
-~~~text
-Every application must identify x, F, U, scope, critical condition, and excluded dependency.
-Without this, the law remains metaphysical.
-With this, it becomes operational.
-~~~
+Correction:
+
+    delay irreversible action
+    expand dependency map
+    ask domain-specific support
+
+## 8. Mathematics
+
+Problem:
+
+    A representation is treated as the object itself.
+
+Audit:
+
+    x = mathematical object
+    F = representation / base / notation / transformation
+    U = claim about the object as such
+    d = invariance, representation-dependence, hidden assumptions
+
+Correction:
+
+    compare across representations
+    declare representational scope
+    avoid projecting local artifacts onto the object
+
+## 9. Universal Application Pattern
+
+    Find the local closure.
+    Find the actual use.
+    Find the valid scope.
+    Find the excluded critical dependency.
+
+If all four are present, the structural error is present.

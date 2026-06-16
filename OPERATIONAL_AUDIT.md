@@ -1,160 +1,206 @@
-# Operational Audit Protocol
+# Operational Audit Protocol — v0.5.0
 
-## Purpose
+## 1. Goal
 
-This file turns the Law of Absolute Non-Closure into an operational audit.
+This protocol converts the Law of Totality into a practical audit.
 
-The law is not only:
+It answers one question:
 
-~~~text
-Everything depends.
-~~~
+    Is this framework being used as sufficient for a use that requires something the framework excludes?
 
-The operational form is:
+## 2. Required Inputs
 
-~~~text
-A model fails structurally when it is used beyond its valid scope while excluding a critical determinability-condition.
-~~~
+Every audit must identify:
 
----
+    x = object / manifestation / case under treatment
+    F = framework / model / answer / procedure / theory / map
+    U = intended concrete use
+    A = answer / output / decision produced through F
 
-## Audit Formula
+If any of these is missing, the audit is incomplete.
 
-~~~text
-ErrΩ(x,F,U) ⇔
-LocalClosureF(x)
-∧ ActualUseU(F,x) exceeds ValidScope(F,x)
-∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
-~~~
+## 3. Audit Sequence
 
----
+### Step 1 — Identify x
 
-## Required Inputs
+    What is being treated?
 
-For each audit, identify:
+Examples:
 
-~~~text
-x = manifestation, object, event, answer, decision, system
-F = framework, model, theory, algorithm, discipline, answer
-U = actual use or deployment
-LC = local closure made by F
-VS = valid scope of F
-AU = actual use of F
-D = candidate determinability-conditions
-CD = critical determinability-conditions for U
-EX = conditions excluded by F
-FR = observed or expected fragility
-CORR = corrected scope or corrected model
-~~~
+    a patient
+    a legal case
+    an AI answer
+    a business decision
+    a mathematical object
+    a system failure
+    a navigation route
+    a model output
 
----
+### Step 2 — Identify F
 
-## Audit Steps
+    What framework is being used to treat x?
 
-## Step 1 — Identify x
+Examples:
 
-~~~text
-What is being treated?
-What is the manifestation under analysis?
-Is x a thing, event, state, process, answer, model, decision, or system?
-~~~
+    statistical model
+    legal category
+    medical test
+    financial model
+    engineering simplification
+    LLM response
+    map
+    metric
+    policy
+    algorithm
 
-## Step 2 — Identify F
+### Step 3 — Identify U
 
-~~~text
-What framework is being used?
-What model, theory, algorithm, answer, discipline, or representation closes x locally?
-~~~
+    What is the actual use?
 
-## Step 3 — Identify Local Closure
+The use must be concrete.
 
-~~~text
-What does F treat as settled, complete, sufficient, calculable, classified, decided, or closed?
-~~~
+Weak:
 
-## Step 4 — Identify Valid Scope
+    to understand the situation
 
-~~~text
-Inside which conditions is F valid?
-What assumptions does F require?
-What scale, context, data, axioms, environment, or use-case does F presuppose?
-~~~
+Strong:
 
-## Step 5 — Identify Actual Use
+    to decide whether to approve the loan
+    to choose medical treatment
+    to deploy the model in production
+    to navigate a mountain route in winter
+    to classify a person as safe or unsafe
 
-~~~text
-How is F actually being used?
-Is F being used beyond its declared or valid scope?
-Is it being used as if it were sufficient for the real field?
-~~~
+### Step 4 — Declare Valid Scope
 
-## Step 6 — Identify Critical Conditions
+    For which uses is F valid?
 
-~~~text
-Which determinability-conditions are necessary for x in use U?
-Which dependencies matter for this decision, failure, diagnosis, prediction, proof, or deployment?
-~~~
+Output:
 
-## Step 7 — Check Exclusion
+    ValidScope(F,x) = { declared valid uses }
 
-~~~text
-Does F exclude any critical condition?
-Does F suppress, ignore, abstract away, or hide a dependency required by U?
-~~~
+If the valid scope is unknown, the framework cannot be treated as sufficient.
 
-## Step 8 — Detect Structural Error
+### Step 5 — Detect Local Closure
 
-If all three hold:
+    Does F close x locally?
 
-~~~text
-LocalClosureF(x)
-ActualUseU(F,x) exceeds ValidScope(F,x)
-ExcludedCriticalDepΩ(x,F,U) ≠ ∅
-~~~
+Examples:
 
-then:
+    reduces x to a score
+    reduces x to a legal category
+    reduces x to a diagnosis
+    reduces x to a map route
+    reduces x to a probability
+    reduces x to a short answer
 
-~~~text
-ErrΩ(x,F,U)
-~~~
+If there is no local closure, this specific structural-error formula may not apply.
 
-## Step 9 — Correct
+### Step 6 — List Critical Dependencies
 
-Correction may require:
+    What must be preserved for U to be valid?
 
-~~~text
-declaring scope
-restricting use
-adding excluded dependencies
-changing model
-changing decision
-changing data
-changing representation
-opening the field
-~~~
+Examples:
 
----
+    time
+    context
+    causality
+    jurisdiction
+    measurement uncertainty
+    physical constraints
+    social consequences
+    distribution shift
+    human override
+    data provenance
+    missing variables
+    edge cases
 
-## Minimal Audit Table
+Output:
 
-| Field | Fill |
-|---|---|
-| x | manifestation under analysis |
-| F | model/framework used |
-| U | actual use |
-| LocalClosureF(x) | what F closes |
-| ValidScope(F,x) | where F is valid |
-| ActualUseU(F,x) | how F is used |
-| CriticalDepΩ(d,x,U) | dependency required by use |
-| ExcludedF(d) | dependency excluded by F |
-| Error? | yes/no |
-| Correction | scope, dependency, or model correction |
+    CriticalDepΩ(d,x,U)
 
----
+### Step 7 — List Exclusions
 
-## Core Sentence
+    Which critical dependencies are excluded by F?
 
-~~~text
-A model is not wrong because it closes locally.
-A model becomes structurally wrong when it is used beyond the scope where its closure remains valid.
-~~~
+Output:
+
+    ExcludedF(d)
+
+### Step 8 — Apply Formula
+
+Structural error exists if:
+
+    LocalClosureF(x) = true
+    ActualUseU(F,x) exceeds ValidScope(F,x) = true
+    ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)] = true
+
+Then:
+
+    ErrΩ(x,F,U) = true
+
+## 4. Severity
+
+Severity increases with:
+
+    1. irreversibility of U
+    2. number of excluded critical dependencies
+    3. consequence magnitude
+    4. uncertainty level
+    5. lack of human review
+    6. inability to recover after deployment
+    7. affected population size
+
+Severity levels:
+
+    LOW      = reversible, low consequence
+    MEDIUM   = limited consequence, recoverable
+    HIGH     = major consequence, hard to reverse
+    CRITICAL = irreversible or systemic consequence
+
+## 5. Correction
+
+A correction must do at least one of these:
+
+    1. reduce U until it fits ValidScope(F,x)
+    2. expand F to preserve the missing dependency
+    3. add another framework F2 that covers the excluded dependency
+    4. block the decision
+    5. mark the answer as insufficient
+    6. require domain expert review
+
+## 6. Audit Template
+
+    Object x:
+    Framework F:
+    Actual use U:
+    Output A:
+
+    Local closure:
+    Valid scope:
+    Actual use within scope? yes/no
+
+    Critical dependencies required by U:
+    - d1
+    - d2
+    - d3
+
+    Excluded by F:
+    - d?
+
+    Formula result:
+    ErrΩ(x,F,U) = true/false
+
+    Severity:
+    Correction:
+    Residual uncertainty:
+
+## 7. Minimal Audit
+
+If time is limited, use this compressed form:
+
+    What is the use?
+    What is the valid scope?
+    What critical dependency required by the use is excluded?
+
+If the third answer is non-empty and the use exceeds scope, the framework is structurally invalid for that use.

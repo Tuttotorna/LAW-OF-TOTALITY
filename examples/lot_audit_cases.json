@@ -1,0 +1,69 @@
+{
+  "version": "0.5.0",
+  "cases": [
+    {
+      "id": "map_outside_scale",
+      "x": "territory",
+      "F": "city tourist map",
+      "U": "mountain rescue navigation in winter",
+      "local_closure": true,
+      "use_within_scope": false,
+      "critical_dependencies": [
+        "altitude",
+        "snow",
+        "trail conditions",
+        "weather exposure"
+      ],
+      "excluded_dependencies": [
+        "altitude",
+        "snow",
+        "trail conditions",
+        "weather exposure"
+      ],
+      "expected_structural_error": true
+    },
+    {
+      "id": "map_inside_scope",
+      "x": "city center",
+      "F": "city tourist map",
+      "U": "find a museum inside mapped area",
+      "local_closure": true,
+      "use_within_scope": true,
+      "critical_dependencies": [],
+      "excluded_dependencies": [],
+      "expected_structural_error": false
+    },
+    {
+      "id": "ai_legal_advice",
+      "x": "legal situation",
+      "F": "generic AI answer",
+      "U": "binding legal action",
+      "local_closure": true,
+      "use_within_scope": false,
+      "critical_dependencies": [
+        "jurisdiction",
+        "documents",
+        "deadlines",
+        "licensed review"
+      ],
+      "excluded_dependencies": [
+        "jurisdiction",
+        "documents",
+        "deadlines",
+        "licensed review"
+      ],
+      "expected_structural_error": true
+    },
+    {
+      "id": "arithmetic_slip_only",
+      "x": "calculation",
+      "F": "arithmetic",
+      "U": "compute a sum",
+      "local_closure": false,
+      "use_within_scope": true,
+      "critical_dependencies": [],
+      "excluded_dependencies": [],
+      "expected_structural_error": false
+    }
+  ]
+}

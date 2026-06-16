@@ -1,376 +1,132 @@
 # Law of Totality
 
+## The Law of Absolute Non-Closure
 
-## v0.5.0 — Ω-Validity Calculus
+This repository formalizes a meta-structural rule for diagnosing structural error:
 
-This repository now contains a second formal level:
+> A proper manifestation cannot be treated as absolutely closed when its determinability depends on conditions outside the local framework used to describe, decide, model, or answer it.
 
-~~~text
-Law of Totality → Structural Error Formula → Ω-Validity Calculus
-~~~
+Operational core:
 
-The Law of Totality defines the structural error:
+    Structural error =
+    local closure
+    + use beyond valid scope
+    + excluded critical dependency
 
-~~~text
-Structural Error =
-local closure
-+ use beyond valid scope
-+ exclusion of a critical dependency
-~~~
+Formalized:
 
-Ω-Validity Calculus defines the corresponding structural validity condition:
-
-~~~text
-ValidΩ(a,F,U) ⇔
-CorrectF(a)
-∧ ActualUseU(F,a) ⊆ ValidScope(F,a)
-∧ ∀d [CriticalDepΩ(d,a,U) ⇒ ¬ExcludedF(d)]
-~~~
-
-The preventive theorem is:
-
-~~~text
-[AssertS(a,F,U) ⇒ ValidΩ(a,F,U)]
-⇒
-[AssertS(a,F,U) ⇒ ¬ErrΩ(a,F,U)]
-~~~
-
-Meaning:
-
-~~~text
-A system that authorizes outputs only through structural validity cannot authorize structural error.
-~~~
-
-This is not omniscience.
-
-It is formal prevention of false closure.
-
-New files:
-
-~~~text
-OMEGA_VALIDITY_CALCULUS.md
-STRUCTURAL_ERROR_PREVENTION_THEOREM.md
-AI_PRIMARY_DIRECTIVE.md
-~~~
-
----
-
-
-## v0.4.1 — Notation, Citation, and Operational Case Correction
-
-This repository formalizes a meta-structural law:
-
-> Nothing can manifest as something without conditions of determinability.
-
-Earlier compressed form:
-
-~~~text
-Everything that exists depends.
-If it does not depend, it cannot exist.
-~~~
-
-Hardened form:
-
-~~~text
-Every proper manifestation inside Ω requires at least one non-zero condition of determinability.
-~~~
-
-This version corrects three technical problems:
-
-~~~text
-1. Broken domain notation: ∀x ∈ D :  →  ∀x ∈ D :
-2. Citation metadata was still at v0.1.0.
-3. The repository is now framed as a technical note / formal operational framework, not merely software.
-~~~
-
----
-
-## Core Terms
-
-~~~text
-D                = domain of the nameable, thinkable, modelable, formalizable
-Ω = ∞Tot         = total field without outside
-ManifestΩ(x)    = x manifests within Ω
-x ≠ Ω            = x is a proper manifestation, not totality itself
-ProperΩ(x)      = ManifestΩ(x) ∧ x ≠ Ω
-DetCondΩ(d,x)   = d is a non-zero condition without which x is not determinable as x
-DepΩ(x)          = set of determinability-conditions of x
-~~~
-
-Ω is not an object among objects.
-
-Ω is the total field without outside.
-
-Therefore:
-
-~~~text
-ClosedΩ(Ω) = undefined
-OpenΩ(Ω)   = undefined
-DepΩ(Ω)    = not applicable / type-error
-~~~
-
----
-
-## Core Formula
-
-~~~text
-∀x ∈ D :
-[ManifestΩ(x) ∧ x ≠ Ω]
-⇒
-∃d [DetCondΩ(d,x)]
-~~~
-
-Equivalent dependence form:
-
-~~~text
-∀x ∈ D :
-[ManifestΩ(x) ∧ x ≠ Ω]
-⇒
-DepΩ(x) ≠ ∅
-~~~
-
-Contrapositive:
-
-~~~text
-∀x ∈ D :
-[x ≠ Ω ∧ DepΩ(x) = ∅]
-⇒
-¬ManifestΩ(x)
-~~~
-
-In words:
-
-> If something has no condition by which it can be determined as itself, it cannot manifest as something.
-
----
-
-## Why This Is Stronger Than Generic Dependence
-
-Generic dependence can be attacked as too broad.
-
-Determinability is sharper.
-
-The law no longer says only:
-
-~~~text
-x depends.
-~~~
-
-It says:
-
-~~~text
-x cannot be x unless at least one condition makes x determinable as x.
-~~~
-
-Therefore:
-
-~~~text
-no determinability condition
-no distinguishability
-no manifestation as x
-~~~
-
----
-
-## Ω Clause
-
-The clause `x ≠ Ω` is essential.
-
-Ω is not a proper manifestation inside Ω.
-
-Ω is not a fragment.
-
-Ω is the infinite totality without outside:
-
-~~~text
-Ω = ∞Tot
-Outside(Ω) = ∅
-~~~
-
-Therefore:
-
-~~~text
-DepΩ(Ω) = not applicable
-~~~
-
-This is not a denial of the law.
-
-It is the condition that makes the law type-correct.
-
-The dependence principle applies only to proper manifestations:
-
-~~~text
-∀x ∈ D :
-ProperΩ(x)
-⇒
-∃d [DetCondΩ(d,x)]
-~~~
-
-Short form:
-
-~~~text
-Only the infinite has no outside.
-Everything that is not the infinite has outside, limit, residual field, and determinability conditions.
-~~~
-
-Core sentence:
-
-~~~text
-Ω does not depend because Ω is infinity without outside.
-Every x ≠ Ω depends because every x ≠ Ω is a proper manifestation with conditions of determinability.
-~~~
-
----
-
-## Hardened Error Formula
-
-Local closure is not error.
-
-Error begins when local closure is used beyond its valid scope while excluding a critical condition of determinability.
-
-~~~text
-ErrΩ(x,F,U) ⇔
-LocalClosureF(x)
-∧ ActualUseU(F,x) exceeds ValidScope(F,x)
-∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
-~~~
+    ErrΩ(x,F,U) ⇔
+    LocalClosureF(x)
+    ∧ ActualUseU(F,x) exceeds ValidScope(F,x)
+    ∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
 
 Where:
 
-~~~text
-F = framework, model, theory, algorithm, answer, discipline
-U = concrete use of F
-x = object or manifestation under treatment
-d = critical determinability-condition or dependency
-~~~
+    Ω = ∞Tot, total field without outside
+    x = proper manifestation under treatment
+    F = framework, model, theory, discipline, algorithm, answer, map, procedure
+    U = concrete use of F
+    d = critical determinability-condition required by U
 
-Short form:
+## Correct Claim
 
-~~~text
-Error = local closure used beyond valid scope while excluding a critical condition.
-~~~
+This repository does **not** claim that every possible mistake, typo, random failure, accident, or false statement has the same cause.
 
----
+The precise claim is narrower and stronger:
 
-## Validity Formula
+> Every structural error caused by false framework sufficiency can be diagnosed as a local closure used beyond its valid scope while excluding at least one critical dependency required by the concrete use.
 
-~~~text
-ValidΩ(a,F,U) ⇔
-CorrectF(a)
-∧ ActualUseU(F,a) ⊆ ValidScope(F,a)
-∧ CriticalDepΩ(a,U) preserved
-~~~
+This is the review-resistant form of the law.
 
-A locally correct answer becomes structurally invalid when it is used beyond its valid scope.
+## Local Closure Clause
 
-~~~text
-CorrectF(a) ≠ ValidΩ(a,F,U)
-~~~
-
----
-
-## Operational Reading
-
-The Law of Totality does not say that local models are false.
-
-It states when they become structurally false:
-
-~~~text
-when a local closure is used beyond its valid scope
-while excluding a critical condition of determinability.
-~~~
-
----
-
-## Operational Cases
-
-This release adds three minimal cases:
-
-~~~text
-examples/CASE_001_AI_HALLUCINATION.md
-examples/CASE_002_ECONOMIC_MODEL_SCOPE.md
-examples/CASE_003_PROJECT_SAFETY.md
-~~~
-
-These examples do not validate the law scientifically.
-
-They make the audit structure testable and inspectable.
-
----
-
-## Core Sentences
-
-~~~text
-Nothing manifests as something without determinability.
-Determinability requires non-zero conditions.
 Local closure is not error.
-Error begins when local closure is used beyond valid scope.
-A valid answer preserves scope and critical dependence.
-Ω is not closed.
-Ω is not open.
-Ω is without outside.
-~~~
 
----
+Local closure is necessary for mathematics, engineering, law, science, medicine, software, cartography, diagnosis, AI answers, and decision-making.
 
-## Position
+The structural error begins only when a local closure is used beyond its valid scope while excluding a dependency critical to the concrete use.
 
-This is not a closed theory of everything.
+## Core Distinction
 
-It is a meta-structural law that every theory, answer, model, algorithm, decision, and discipline must respect when it treats a proper manifestation.
+    Correct inside F ≠ Valid for U
 
-> The law does not close Ω.
->
-> It states why no proper manifestation inside Ω can be absolutely closed.
+A statement, model, answer, or procedure can be correct inside a framework and still invalid for a concrete use.
 
-<!-- BEGIN OPERATIONAL_VALIDATION_PACKAGE -->
-## Operational Validation Package
+Validity requires:
 
-This repository now includes a first operational validation package.
+    ValidΩ(a,F,U) ⇔
+    CorrectF(a)
+    ∧ ActualUseU(F,a) ⊆ ValidScope(F,a)
+    ∧ CriticalDepΩ(a,U) preserved
 
-The package does not claim that the Law of Totality has already been externally proven as a universal law.
+## Ω Clause
 
-It defines a stricter research boundary:
+Ω is not an object among objects.
 
-```text
-structural error = local closure + use beyond valid scope + excluded critical dependency
-```
+    Ω = ∞Tot
+    Ω = total field without outside
+    Outside(Ω) = ∅
 
-New files:
+Therefore:
 
-- `VALIDATION_PROTOCOL.md` — validation levels and non-defensible claims.
-- `COMPARATIVE_FRAMEWORK_MAP.md` — comparison with nearby existing fields.
-- `CASE_STUDIES.md` — cross-domain operational test cases.
-- `COUNTEREXAMPLE_REGISTER.md` — failed and pending counterexample attempts.
-- `CLAIM_BOUNDARY.md` — what can and cannot be claimed publicly.
-- `OPERATIONAL_AUDIT_TEMPLATE.md` — reusable audit template.
-- `AUDIT_SCHEMA.json` — machine-readable audit schema.
-- `scripts/lot_audit_engine.py` — minimal repeatable audit engine.
-- `examples/audit_cases.json` — sample cases.
-- `tests/test_lot_audit_engine.py` — unit tests for the audit engine.
-- `CROSS_REPO_STRUCTURAL_AUDIT.md` — heuristic audit of public repositories under `Tuttotorna`.
+    DepΩ(Ω) = non-applicable / type-error
+    OpenΩ(Ω) = undefined
+    ClosedΩ(Ω) = undefined
+
+The law applies only to proper manifestations:
+
+    ProperΩ(x) ⇔ ManifestΩ(x) ∧ x ≠ Ω
+
+Core law:
+
+    ∀x∈𝔻:
+    [ManifestΩ(x) ∧ x≠Ω] ⇒ ∃d DetCondΩ(d,x)
+
+## Repository Map
+
+| File | Function |
+|---|---|
+| `FORMAL_SYSTEM.md` | Formal primitives, typing, axiom schema, validity and error formulas |
+| `ERROR_FORMULA.md` | Hardened operational formula of structural error |
+| `CLAIMS_AND_SCOPE.md` | What the repository claims and does not claim |
+| `OPERATIONAL_AUDIT.md` | Step-by-step audit protocol |
+| `VALIDATION_CASES.md` | Test cases and falsification conditions |
+| `RELATED_WORK.md` | Comparison with existing fields |
+| `AI_PRIMARY_DIRECTIVE.md` | How the law constrains AI answers |
+| `DECISION_VALIDITY.md` | Decision-level version of the framework |
+| `CASEBOOK.md` | Concrete examples |
+| `GLOSSARY.md` | Controlled vocabulary |
+| `tools/lot_audit_checker.py` | Minimal structural audit checker |
+| `examples/lot_audit_cases.json` | Machine-readable examples |
+
+## Status
 
 Current status:
 
-```text
-formal-operational hypothesis with strong cross-domain fit
-```
+    v0.5.0 = operational framework, not externally validated theory
 
-Not yet:
+The repository is suitable for:
 
-```text
-externally validated universal law
-```
+- structural audit of decisions;
+- model-use validation;
+- AI answer validation;
+- post-hoc failure analysis;
+- framework-scope diagnosis;
+- prevention of overconfident local closure.
 
-Public-safe formulation:
+It is not yet:
 
-```text
-Many disciplines already recognize fragments of this problem:
-model risk, fallibilism, open systems, closed-world assumptions,
-distribution shift, AI hallucination, and premature closure.
+- a peer-reviewed scientific theory;
+- a complete mathematical foundation;
+- a substitute for domain expertise;
+- proof that every error in every domain has one identical cause.
 
-The Law of Totality attempts to unify those fragments into one operational formula:
-structural error occurs when a local closure is used beyond its valid scope
-while excluding a critical dependency.
-```
-<!-- END OPERATIONAL_VALIDATION_PACKAGE -->
+## One-Sentence Version
+
+> A framework becomes structurally false when it is used beyond the field that makes it valid.
+
+## Minimal Audit Question
+
+    What critical dependency required by this use has been excluded by the framework?
+
+If the answer is non-empty and the framework is still used as sufficient, the structural error is present.

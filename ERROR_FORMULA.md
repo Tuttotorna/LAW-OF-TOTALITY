@@ -1,191 +1,149 @@
-# Formula of Error — v0.3.0 Operational Version
+# Formula of Structural Error — v0.5.0
 
-## 1. Previous Hardened Formula
+## 1. Problem
 
-Version 0.2.0:
+Many failures do not happen because a framework is internally wrong.
 
-~~~text
-ErrΩ(x,F) =
-LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
-~~~
+They happen because a framework is used outside the conditions under which it is valid.
 
-This was stronger than the original formula because it protected legitimate local closure.
+This repository calls that failure:
 
----
+    structural error
 
-## 2. Remaining Weakness
+## 2. Hardened Formula
 
-The term:
-
-~~~text
-ScopeViolationΩ(F,x)
-~~~
-
-was still too abstract.
-
-The term:
-
-~~~text
-ClaimsTotalityF(x)
-~~~
-
-could sound psychological or explicit.
-
-But many errors are not explicit claims.
-
-They happen in actual use.
-
-A model may not say "I am total", yet it may be used as if it were sufficient.
-
----
-
-## 3. v0.3.0 Operational Error Formula
-
-~~~text
-ErrΩ(x,F,U) ⇔
-LocalClosureF(x)
-∧ ActualUseU(F,x) exceeds ValidScope(F,x)
-∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
-~~~
+    ErrΩ(x,F,U) ⇔
+    LocalClosureF(x)
+    ∧ ActualUseU(F,x) exceeds ValidScope(F,x)
+    ∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
 
 Where:
 
-~~~text
-x = manifestation under treatment
-F = framework, model, theory, discipline, answer, algorithm
-U = concrete use or deployment of F
-d = critical determinability-condition or dependency
-~~~
+    x = object / manifestation under treatment
+    F = framework / model / theory / discipline / algorithm / answer / map / procedure
+    U = concrete use or deployment of F
+    d = critical determinability-condition required by U
 
----
+## 3. Short Form
 
-## 4. Short Form
+    Error = local closure used beyond valid scope while excluding a critical condition.
 
-~~~text
-Error = local closure used beyond valid scope while excluding a critical condition.
-~~~
+## 4. Why This Is Stronger Than “Everything Depends”
 
----
+The sentence “everything depends” is too broad.
 
-## 5. Why Local Closure Is Not Error
+The operational formula is sharper:
 
-Local closure is necessary for:
+    not every dependency matters for every use
+    not every closure is false
+    not every framework error is structural
+    not every local abstraction is dangerous
 
-~~~text
-mathematical proof
-engineering calculation
-medical diagnosis
-maps
-software
-law
-science
-decision-making
-ordinary answers
-~~~
+A structural error exists only when three conditions are jointly present:
 
-The problem is not closure inside a declared field.
+    1. F closes x locally.
+    2. F is used beyond the scope that makes this closure valid.
+    3. At least one dependency required by that use is excluded.
 
-The problem is closure used beyond the field that makes it valid.
+## 5. Local Closure Is Necessary
 
----
+Local closure is legitimate when its use remains inside scope.
+
+Examples:
+
+    a map is valid for navigation at its intended scale
+    a mathematical model is valid under declared assumptions
+    a medical test is valid for a specific diagnostic purpose
+    a legal definition is valid inside a jurisdiction
+    a software abstraction is valid under specified input conditions
+
+The error begins only when the closure is used as sufficient beyond those conditions.
 
 ## 6. Scope Violation
 
-~~~text
-ScopeViolationΩ(F,x,U) ⇔
-ActualUseU(F,x) exceeds ValidScope(F,x)
-~~~
+    ScopeViolationΩ(F,x,U) ⇔
+    ActualUseU(F,x) exceeds ValidScope(F,x)
 
-Operational test:
+Diagnostic equivalent:
 
-~~~text
-ScopeViolationΩ(F,x,U) ⇔
-∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
-~~~
+    ScopeViolationΩ(F,x,U) ⇔
+    ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
 
-Meaning:
+## 7. Structural Error Is Not Mere Falsity
 
-> The use U requires a critical condition d, but F excludes d.
+A statement can be false without being a structural error in this sense.
 
----
+Examples:
 
-## 7. Correctness Versus Validity
+    arithmetic slip
+    typo
+    misread number
+    random hardware fault
+    intentional lie
+    noise event
 
-~~~text
-CorrectF(a) ≠ ValidΩ(a,F,U)
-~~~
+These may become structural errors only if a framework then treats the faulty output as sufficient for a use requiring excluded dependencies.
 
-Correctness inside a framework does not imply validity in a concrete use.
+## 8. Structural Error Is Misuse of Sufficiency
 
-Hardened validity:
+The central object is not truth in isolation.
 
-~~~text
-ValidΩ(a,F,U) ⇔
-CorrectF(a)
-∧ ActualUseU(F,a) ⊆ ValidScope(F,a)
-∧ CriticalDepΩ(a,U) preserved
-~~~
+The central object is sufficiency-for-use.
 
----
+    SufficientF(x,U)
 
-## 8. Example: Arithmetic
+A framework is sufficient for a use only if the use does not require excluded critical dependencies.
 
-~~~text
-2 + 2 = 4
-~~~
+    SufficientF(x,U) ⇔
+    ActualUseU(F,x) ⊆ ValidScope(F,x)
+    ∧ ∀d [CriticalDepΩ(d,x,U) ⇒ PreservedF(d)]
 
-This is locally correct in ordinary arithmetic.
+Then:
 
-It is not false because it is locally closed.
+    ErrΩ(x,F,U) ⇔
+    LocalClosureF(x) ∧ ¬SufficientF(x,U)
 
-It would become structurally false only if used as a total description of Ω or beyond its valid field.
+with explicit dependency condition:
 
----
+    ¬SufficientF(x,U) ⇔
+    ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
 
-## 9. Example: Algorithm
+## 9. Validity
 
-An algorithm can be correct in specification.
+    ValidΩ(a,F,U) ⇔
+    CorrectF(a)
+    ∧ SufficientF(a,U)
 
-~~~text
-CorrectSpec(A)
-~~~
+Expanded:
 
-But deployment can fail.
+    ValidΩ(a,F,U) ⇔
+    CorrectF(a)
+    ∧ ActualUseU(F,a) ⊆ ValidScope(F,a)
+    ∧ ∀d [CriticalDepΩ(d,a,U) ⇒ PreservedF(d)]
 
-~~~text
-CorrectSpec(A) ≠ ValidDeploymentΩ(A,U)
-~~~
+## 10. Main Operational Theorem
 
-Error:
+    CorrectF(a) does not imply ValidΩ(a,F,U).
 
-~~~text
-ErrΩ(A,F,U) ⇔
-LocalClosureF(A)
-∧ ActualUseU(F,A) exceeds ValidScope(F,A)
-∧ ∃d [CriticalDepΩ(d,A,U) ∧ ExcludedF(d)]
-~~~
+Proof sketch:
 
----
+    CorrectF(a) only states correctness inside F.
+    ValidΩ(a,F,U) additionally requires use-within-scope and preservation of critical dependencies.
+    Therefore local correctness is insufficient for structural validity.
 
-## 10. Diagnostic Questions
+## 11. Prevention
 
-For any `F`, `x`, and `U`, ask:
+The preventive version is:
 
-~~~text
-What does F close locally?
-What is the valid scope of F?
-How is F actually used?
-Does actual use exceed valid scope?
-Which determinability-conditions are critical for U?
-Which of them are excluded by F?
-What failure or fragility follows from the exclusion?
-~~~
+    Before using F for U, identify:
+    x, F, U, ValidScope(F,x), CriticalDepΩ(d,x,U), ExcludedF(d)
 
----
+Then block the use if:
 
-## 11. Core Sentence
+    ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
 
-~~~text
-Do not ask only whether a model is correct.
-Ask whether its use preserves the conditions that make the object determinable in that use.
-~~~
+## 12. Minimal Human Question
+
+    What does this answer/model/decision require that its framework does not contain?
+
+If the missing item is critical for the intended use, the structural error is present.
