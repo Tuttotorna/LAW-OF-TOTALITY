@@ -1,5 +1,63 @@
 # Changelog
 
+
+## v0.5.0 — Ω-Validity Calculus
+
+This release adds the second formal level of the Law of Totality.
+
+### Added
+
+~~~text
+OMEGA_VALIDITY_CALCULUS.md
+STRUCTURAL_ERROR_PREVENTION_THEOREM.md
+AI_PRIMARY_DIRECTIVE.md
+docs/RELEASE_v0.5.0.md
+~~~
+
+### Core transition
+
+~~~text
+from structural error
+to structural validity
+from diagnosis
+to prevention
+~~~
+
+### Structural Error Formula
+
+~~~text
+ErrΩ(a,F,U) ⇔
+LocalClosureF(a)
+∧ ActualUseU(F,a) exceeds ValidScope(F,a)
+∧ ∃d [CriticalDepΩ(d,a,U) ∧ ExcludedF(d)]
+~~~
+
+### Structural Validity Formula
+
+~~~text
+ValidΩ(a,F,U) ⇔
+CorrectF(a)
+∧ ActualUseU(F,a) ⊆ ValidScope(F,a)
+∧ ∀d [CriticalDepΩ(d,a,U) ⇒ ¬ExcludedF(d)]
+~~~
+
+### Theorem
+
+~~~text
+[AssertS(a,F,U) ⇒ ValidΩ(a,F,U)]
+⇒
+[AssertS(a,F,U) ⇒ ¬ErrΩ(a,F,U)]
+~~~
+
+### Meaning
+
+A theory of structural error permits a theory of structural validity.
+
+A theory of structural validity permits prevention of that class of error.
+
+---
+
+
 ## v0.4.1 — Notation, Citation, and Operational Case Correction
 
 This release corrects repository-level formal consistency.

@@ -1,5 +1,61 @@
 # Law of Totality
 
+
+## v0.5.0 — Ω-Validity Calculus
+
+This repository now contains a second formal level:
+
+~~~text
+Law of Totality → Structural Error Formula → Ω-Validity Calculus
+~~~
+
+The Law of Totality defines the structural error:
+
+~~~text
+Structural Error =
+local closure
++ use beyond valid scope
++ exclusion of a critical dependency
+~~~
+
+Ω-Validity Calculus defines the corresponding structural validity condition:
+
+~~~text
+ValidΩ(a,F,U) ⇔
+CorrectF(a)
+∧ ActualUseU(F,a) ⊆ ValidScope(F,a)
+∧ ∀d [CriticalDepΩ(d,a,U) ⇒ ¬ExcludedF(d)]
+~~~
+
+The preventive theorem is:
+
+~~~text
+[AssertS(a,F,U) ⇒ ValidΩ(a,F,U)]
+⇒
+[AssertS(a,F,U) ⇒ ¬ErrΩ(a,F,U)]
+~~~
+
+Meaning:
+
+~~~text
+A system that authorizes outputs only through structural validity cannot authorize structural error.
+~~~
+
+This is not omniscience.
+
+It is formal prevention of false closure.
+
+New files:
+
+~~~text
+OMEGA_VALIDITY_CALCULUS.md
+STRUCTURAL_ERROR_PREVENTION_THEOREM.md
+AI_PRIMARY_DIRECTIVE.md
+~~~
+
+---
+
+
 ## v0.4.1 — Notation, Citation, and Operational Case Correction
 
 This repository formalizes a meta-structural law:

@@ -1,7 +1,7 @@
 {
-  "title": "LAW-OF-TOTALITY: The Law of Totality",
-  "version": "0.4.1",
-  "description": "A meta-structural law formalizing structural error as local closure used beyond its valid scope while excluding a critical condition of determinability.",
+  "title": "LAW-OF-TOTALITY: The Law of Totality and Ω-Validity Calculus",
+  "version": "0.5.0",
+  "description": "An omnia-disciplinary formal framework defining structural error as local closure used beyond valid scope while excluding a critical dependency, and defining Ω-Validity Calculus as a preventive calculus for structural validity.",
   "creators": [
     {
       "name": "Brighindi, Massimiliano",
@@ -14,15 +14,18 @@
   "keywords": [
     "totality",
     "structural error",
-    "structural stability",
+    "structural validity",
+    "false closure",
     "determinability",
+    "critical dependency",
+    "valid scope",
     "non-closure",
-    "OMNIA",
+    "omnia-disciplinary",
     "artificial intelligence",
-    "hallucination",
-    "ethics",
-    "economics",
-    "systems"
+    "hallucination prevention",
+    "formal systems",
+    "epistemology",
+    "systems theory"
   ],
   "related_identifiers": [
     {
