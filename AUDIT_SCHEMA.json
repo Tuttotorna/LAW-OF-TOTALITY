@@ -1,0 +1,30 @@
+{
+  "schema_name": "Law of Totality Structural Error Audit",
+  "version": "0.1.0",
+  "required_fields": [
+    "object_x",
+    "framework_F",
+    "actual_use_U",
+    "local_closure",
+    "valid_scope",
+    "scope_overrun",
+    "critical_dependencies",
+    "excluded_dependencies",
+    "structural_error_verdict",
+    "correction"
+  ],
+  "formula": "ErrΩ(x,F,U) ⇔ LocalClosureF(x) ∧ ActualUseU(F,x) exceeds ValidScope(F,x) ∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]",
+  "valid_verdicts": [
+    "structural_error",
+    "legitimate_local_closure",
+    "insufficient_information",
+    "type_boundary",
+    "no_error_detected"
+  ],
+  "notes": [
+    "Local closure alone is not error.",
+    "The error appears when local closure is exported beyond valid scope.",
+    "A missing dependency matters only when critical for the actual use.",
+    "The audit is prevention-oriented, not merely explanatory."
+  ]
+}

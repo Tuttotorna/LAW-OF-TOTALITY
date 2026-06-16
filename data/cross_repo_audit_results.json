@@ -1,0 +1,2004 @@
+[
+  {
+    "repo": "LAW-OF-TOTALITY",
+    "closure_count": 28,
+    "scope_count": 28,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 1,
+        "text": "# Law of Totality",
+        "hits": 1
+      },
+      {
+        "line": 9,
+        "text": "Law of Totality → Structural Error Formula → Ω-Validity Calculus",
+        "hits": 2
+      },
+      {
+        "line": 12,
+        "text": "The Law of Totality defines the structural error:",
+        "hits": 2
+      },
+      {
+        "line": 15,
+        "text": "Structural Error =",
+        "hits": 1
+      },
+      {
+        "line": 41,
+        "text": "A system that authorizes outputs only through structural validity cannot authorize structural error.",
+        "hits": 1
+      },
+      {
+        "line": 68,
+        "text": "Everything that exists depends.",
+        "hits": 1
+      },
+      {
+        "line": 92,
+        "text": "Ω = ∞Tot         = total field without outside",
+        "hits": 1
+      },
+      {
+        "line": 94,
+        "text": "x ≠ Ω            = x is a proper manifestation, not totality itself",
+        "hits": 1
+      },
+      {
+        "line": 102,
+        "text": "Ω is the total field without outside.",
+        "hits": 1
+      },
+      {
+        "line": 109,
+        "text": "DepΩ(Ω)    = not applicable / type-error",
+        "hits": 1
+      },
+      {
+        "line": 183,
+        "text": "Ω is the infinite totality without outside:",
+        "hits": 2
+      },
+      {
+        "line": 212,
+        "text": "Only the infinite has no outside.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/LAW-OF-TOTALITY/main/README.md"
+  },
+  {
+    "repo": "OMNIABASE-UNIVERSE",
+    "closure_count": 75,
+    "scope_count": 42,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 4,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 8,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 10,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 14,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 23,
+        "text": "It is not a claim that famous mathematical problems have been classically solved.",
+        "hits": 1
+      },
+      {
+        "line": 33,
+        "text": "> How do we solve the problem inside the cage?",
+        "hits": 1
+      },
+      {
+        "line": 245,
+        "text": "Omniabase Universe now defines famous mathematical dilemmas as high-tension information fields, not as problems to solve.",
+        "hits": 1
+      },
+      {
+        "line": 260,
+        "text": "> A dilemma is not imported to be solved. A dilemma is imported to expand Omniabase visibility.",
+        "hits": 1
+      },
+      {
+        "line": 281,
+        "text": "> Collatz is not opened to be solved; it is opened so the trajectory field can palesare under simultaneous all-base illumination.",
+        "hits": 2
+      },
+      {
+        "line": 656,
+        "text": "Density measures recurrence visibility, not truth.",
+        "hits": 1
+      },
+      {
+        "line": 888,
+        "text": "A stabilized field should be closed before it becomes a labyrinth.",
+        "hits": 1
+      },
+      {
+        "line": 1095,
+        "text": "Closure is not first a final result; it is the stopping-field where manifestation ceases to open further operational visibility.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIABASE-UNIVERSE/main/README.md"
+  },
+  {
+    "repo": "OMNIA",
+    "closure_count": 21,
+    "scope_count": 41,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 34,
+        "text": "All other files in `field-tools/` are supporting material, examples, templates, or secondary applications.",
+        "hits": 1
+      },
+      {
+        "line": 82,
+        "text": "`Omega` be the accessible total field or generative structure.",
+        "hits": 1
+      },
+      {
+        "line": 100,
+        "text": "for all `omega1, omega2 in Omega`.",
+        "hits": 1
+      },
+      {
+        "line": 162,
+        "text": "It is the operational field that detects when finite local correctness becomes structurally false by pretending to be total.",
+        "hits": 1
+      },
+      {
+        "line": 166,
+        "text": "**local correctness is not total validity.**",
+        "hits": 1
+      },
+      {
+        "line": 176,
+        "text": "But none of these local forms can honestly declare itself autonomous, complete, or total.",
+        "hits": 2
+      },
+      {
+        "line": 182,
+        "text": "[LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY)",
+        "hits": 1
+      },
+      {
+        "line": 186,
+        "text": "[LAW OF TOTALITY v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 198,
+        "text": "[APPLIED-CASE-001-LOCAL-CORRECTNESS-IS-NOT-TOTAL-VALIDITY.md](APPLIED-CASE-001-LOCAL-CORRECTNESS-IS-NOT-TOTAL-VALIDITY.md)",
+        "hits": 1
+      },
+      {
+        "line": 202,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 206,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 208,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIA/main/README.md"
+  },
+  {
+    "repo": "OMNIABASE",
+    "closure_count": 21,
+    "scope_count": 23,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 14,
+        "text": "A base becomes structurally false when it is treated as autonomous, complete, natural, final, or total.",
+        "hits": 3
+      },
+      {
+        "line": 22,
+        "text": "[LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY)",
+        "hits": 1
+      },
+      {
+        "line": 26,
+        "text": "[LAW OF TOTALITY v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 42,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 46,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 48,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 52,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 67,
+        "text": "It solves a concrete problem:",
+        "hits": 1
+      },
+      {
+        "line": 79,
+        "text": "## What problem does it solve?",
+        "hits": 1
+      },
+      {
+        "line": 194,
+        "text": "This is not a proof system.",
+        "hits": 1
+      },
+      {
+        "line": 301,
+        "text": "- infer semantic truth;",
+        "hits": 1
+      },
+      {
+        "line": 305,
+        "text": "- prove metaphysical truth;",
+        "hits": 2
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIABASE/main/README.md"
+  },
+  {
+    "repo": "OMNIA-MINIMAL",
+    "closure_count": 21,
+    "scope_count": 7,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 8,
+        "text": "It is the minimal public doorway into the same total field.",
+        "hits": 1
+      },
+      {
+        "line": 16,
+        "text": "A local success becomes structurally dangerous when it is treated as autonomous, complete, or total.",
+        "hits": 2
+      },
+      {
+        "line": 18,
+        "text": "OMNIA-MINIMAL exists to expose the smallest form of this error:",
+        "hits": 1
+      },
+      {
+        "line": 20,
+        "text": "**local correctness mistaken for total stability.**",
+        "hits": 1
+      },
+      {
+        "line": 24,
+        "text": "[LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY)",
+        "hits": 1
+      },
+      {
+        "line": 28,
+        "text": "[LAW OF TOTALITY v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 44,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 48,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 50,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 54,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 71,
+        "text": "OMNIA does not decide truth.",
+        "hits": 1
+      },
+      {
+        "line": 149,
+        "text": "The point is not to prove a universal theory.",
+        "hits": 2
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIA-MINIMAL/main/README.md"
+  },
+  {
+    "repo": "OMNIA-FRAME-FIDELITY",
+    "closure_count": 12,
+    "scope_count": 9,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 22,
+        "text": "[LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY)",
+        "hits": 1
+      },
+      {
+        "line": 26,
+        "text": "[LAW OF TOTALITY v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 42,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 46,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 48,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 52,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 93,
+        "text": "This repository does not claim to measure truth.",
+        "hits": 1
+      },
+      {
+        "line": 95,
+        "text": "It does not claim to solve hallucinations.",
+        "hits": 1
+      },
+      {
+        "line": 122,
+        "text": "The project still does not claim to detect truth or solve hallucinations.",
+        "hits": 2
+      },
+      {
+        "line": 277,
+        "text": "Do not score fluency, usefulness, or truth.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIA-FRAME-FIDELITY/main/README.md"
+  },
+  {
+    "repo": "OMNIABASE-MATHEMATICS",
+    "closure_count": 422,
+    "scope_count": 356,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 14,
+        "text": "A number is not exhausted by any finite multi-base spectrum if that spectrum is treated as complete.",
+        "hits": 1
+      },
+      {
+        "line": 22,
+        "text": "Therefore this repository must be read from the numerical field toward finite representations, never from representations toward a constructed numerical totality.",
+        "hits": 2
+      },
+      {
+        "line": 26,
+        "text": "[LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY)",
+        "hits": 1
+      },
+      {
+        "line": 30,
+        "text": "[LAW OF TOTALITY v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 46,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 58,
+        "text": "Even a finite multi-base spectrum is not the number if it is treated as complete.",
+        "hits": 1
+      },
+      {
+        "line": 60,
+        "text": "Omniabase Mathematics exists to prevent representational sovereignty: the moment when a finite representation claims to be autonomous, complete, or total.",
+        "hits": 2
+      },
+      {
+        "line": 64,
+        "text": "Public threshold of the governing law: [LAW OF TOTALITY v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 68,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 72,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 74,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 78,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIABASE-MATHEMATICS/main/README.md"
+  },
+  {
+    "repo": "OMNIABASE-AI-OBSERVATION",
+    "closure_count": 6,
+    "scope_count": 6,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 4,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 8,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 10,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 14,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 104,
+        "text": "Separate observation, naming, comparison, mapping, stabilization, inference, answer, and validation before evaluating the final output.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIABASE-AI-OBSERVATION/main/README.md"
+  },
+  {
+    "repo": "COLLATZ-NATIVE-MATH",
+    "closure_count": 62,
+    "scope_count": 82,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 2,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 6,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 8,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 12,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 27,
+        "text": "It does not claim to prove the Collatz conjecture.",
+        "hits": 1
+      },
+      {
+        "line": 29,
+        "text": "It solves a narrower and concrete problem:",
+        "hits": 1
+      },
+      {
+        "line": 40,
+        "text": "## What problem does it solve?",
+        "hits": 1
+      },
+      {
+        "line": 143,
+        "text": "This is not a proof of Collatz.",
+        "hits": 1
+      },
+      {
+        "line": 145,
+        "text": "It does not claim infinite coverage.",
+        "hits": 1
+      },
+      {
+        "line": 198,
+        "text": "- a public non-proof research route",
+        "hits": 1
+      },
+      {
+        "line": 202,
+        "text": "- not a proof of Collatz",
+        "hits": 1
+      },
+      {
+        "line": 203,
+        "text": "- not a claim that Collatz is solved",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/COLLATZ-NATIVE-MATH/main/README.md"
+  },
+  {
+    "repo": "OMNIA-FRAGILITY-CHECKER",
+    "closure_count": 13,
+    "scope_count": 9,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 4,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 8,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 10,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 14,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 23,
+        "text": "Problem solved:",
+        "hits": 1
+      },
+      {
+        "line": 97,
+        "text": "{\"case_id\":\"policy_001\",\"variant_id\":\"base\",\"input\":\"Can this request be approved?\",\"output\":\"Final answer: yes\",\"expected\":\"yes\"}",
+        "hits": 1
+      },
+      {
+        "line": 98,
+        "text": "{\"case_id\":\"policy_001\",\"variant_id\":\"rephrase_1\",\"input\":\"Is this request allowed?\",\"output\":\"Final answer: no\",\"expected\":\"yes\"}",
+        "hits": 1
+      },
+      {
+        "line": 114,
+        "text": "All normalized outputs agree.",
+        "hits": 1
+      },
+      {
+        "line": 120,
+        "text": "Final extracted answers differ.",
+        "hits": 1
+      },
+      {
+        "line": 143,
+        "text": "This is not a general truth detector.",
+        "hits": 1
+      },
+      {
+        "line": 145,
+        "text": "It does not prove whether an answer is universally correct.",
+        "hits": 1
+      },
+      {
+        "line": 197,
+        "text": "Fragility is structural. It does not by itself decide semantic truth.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIA-FRAGILITY-CHECKER/main/README.md"
+  },
+  {
+    "repo": "OMNIA-VALIDATION",
+    "closure_count": 25,
+    "scope_count": 109,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 2,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 6,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 8,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 12,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 25,
+        "text": "It solves a concrete problem:",
+        "hits": 1
+      },
+      {
+        "line": 37,
+        "text": "## What problem does it solve?",
+        "hits": 1
+      },
+      {
+        "line": 154,
+        "text": "It does not decide truth.",
+        "hits": 1
+      },
+      {
+        "line": 287,
+        "text": "- infer semantic truth;",
+        "hits": 1
+      },
+      {
+        "line": 290,
+        "text": "- prove consciousness;",
+        "hits": 1
+      },
+      {
+        "line": 294,
+        "text": "- turn structural measurements into final decisions.",
+        "hits": 1
+      },
+      {
+        "line": 335,
+        "text": "| limitation | What the result does not prove |",
+        "hits": 1
+      },
+      {
+        "line": 405,
+        "text": "total registered entries: 14",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIA-VALIDATION/main/README.md"
+  },
+  {
+    "repo": "OMNIA-CONSTANT",
+    "closure_count": 29,
+    "scope_count": 24,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 4,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 8,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 10,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 14,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 46,
+        "text": "It solves a concrete problem:",
+        "hits": 1
+      },
+      {
+        "line": 57,
+        "text": "## What problem does it solve?",
+        "hits": 1
+      },
+      {
+        "line": 172,
+        "text": "4 = invalid input or measurement error",
+        "hits": 1
+      },
+      {
+        "line": 176,
+        "text": "This is not a metaphysical claim about absolute constants.",
+        "hits": 1
+      },
+      {
+        "line": 178,
+        "text": "It does not decide truth.",
+        "hits": 1
+      },
+      {
+        "line": 188,
+        "text": "not universal semantic truth.",
+        "hits": 2
+      },
+      {
+        "line": 248,
+        "text": "This repository does **not** claim that Ω is a universal constant.",
+        "hits": 1
+      },
+      {
+        "line": 259,
+        "text": "Ω measures representational and morphological deformation, not semantic truth.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIA-CONSTANT/main/README.md"
+  },
+  {
+    "repo": "OMNIA-INVARIANCE",
+    "closure_count": 26,
+    "scope_count": 21,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 4,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 8,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 10,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 14,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 49,
+        "text": "It solves a concrete problem:",
+        "hits": 1
+      },
+      {
+        "line": 60,
+        "text": "## What problem does it solve?",
+        "hits": 1
+      },
+      {
+        "line": 130,
+        "text": "invariant = all transformed outputs are structurally equivalent",
+        "hits": 1
+      },
+      {
+        "line": 180,
+        "text": "4 = invalid input or measurement error",
+        "hits": 1
+      },
+      {
+        "line": 184,
+        "text": "This is not a semantic truth engine.",
+        "hits": 1
+      },
+      {
+        "line": 306,
+        "text": "- infer semantic truth;",
+        "hits": 1
+      },
+      {
+        "line": 310,
+        "text": "- prove final truth;",
+        "hits": 3
+      },
+      {
+        "line": 311,
+        "text": "- prove physical truth;",
+        "hits": 2
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIA-INVARIANCE/main/README.md"
+  },
+  {
+    "repo": "OMNIA-THREE-BODY",
+    "closure_count": 27,
+    "scope_count": 29,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 4,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 8,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 10,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 14,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 47,
+        "text": "It solves a concrete problem:",
+        "hits": 1
+      },
+      {
+        "line": 60,
+        "text": "## What problem does it solve?",
+        "hits": 1
+      },
+      {
+        "line": 189,
+        "text": "4 = invalid input or measurement error",
+        "hits": 1
+      },
+      {
+        "line": 193,
+        "text": "This is not a proof of the three-body problem.",
+        "hits": 1
+      },
+      {
+        "line": 195,
+        "text": "It is not a physics simulator claiming universal accuracy.",
+        "hits": 1
+      },
+      {
+        "line": 197,
+        "text": "It does not solve future trajectory prediction.",
+        "hits": 1
+      },
+      {
+        "line": 199,
+        "text": "It does not decide physical truth.",
+        "hits": 1
+      },
+      {
+        "line": 207,
+        "text": "not proof of physical law or final dynamical prediction.",
+        "hits": 2
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIA-THREE-BODY/main/README.md"
+  },
+  {
+    "repo": "OMNIAMIND",
+    "closure_count": 20,
+    "scope_count": 63,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 4,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 8,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 10,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 14,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 45,
+        "text": "It solves a concrete problem:",
+        "hits": 1
+      },
+      {
+        "line": 60,
+        "text": "OMNIAMIND does not claim semantic truth.",
+        "hits": 1
+      },
+      {
+        "line": 71,
+        "text": "## What problem does it solve?",
+        "hits": 1
+      },
+      {
+        "line": 168,
+        "text": "a claim uses semantic truth language without measurement boundary",
+        "hits": 1
+      },
+      {
+        "line": 221,
+        "text": "4 = invalid input or measurement error",
+        "hits": 1
+      },
+      {
+        "line": 229,
+        "text": "This is not semantic truth.",
+        "hits": 1
+      },
+      {
+        "line": 242,
+        "text": "final decision outside the system.",
+        "hits": 1
+      },
+      {
+        "line": 355,
+        "text": "- infer semantic truth by itself;",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIAMIND/main/README.md"
+  },
+  {
+    "repo": "OMNIA-CRYPTO",
+    "closure_count": 22,
+    "scope_count": 26,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 4,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 8,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 10,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 14,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 33,
+        "text": "A cryptographic claim is not trusted because it appears valid in one model, one proof surface, one implementation, or one threat framing. It must preserve structural compatibility under adversarial pressure, representation changes, protocol",
+        "hits": 1
+      },
+      {
+        "line": 47,
+        "text": "It solves a concrete problem:",
+        "hits": 1
+      },
+      {
+        "line": 59,
+        "text": "## What problem does it solve?",
+        "hits": 1
+      },
+      {
+        "line": 183,
+        "text": "4 = invalid input or measurement error",
+        "hits": 1
+      },
+      {
+        "line": 187,
+        "text": "This is not a cryptographic security proof.",
+        "hits": 1
+      },
+      {
+        "line": 201,
+        "text": "not proof of cryptographic security or legal validity.",
+        "hits": 1
+      },
+      {
+        "line": 305,
+        "text": "It is not proof of break.",
+        "hits": 1
+      },
+      {
+        "line": 322,
+        "text": "- infer semantic truth;",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIA-CRYPTO/main/README.md"
+  },
+  {
+    "repo": "omnia-limit",
+    "closure_count": 21,
+    "scope_count": 62,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 2,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 6,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 8,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 12,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 27,
+        "text": "It solves a concrete problem:",
+        "hits": 1
+      },
+      {
+        "line": 39,
+        "text": "## What problem does it solve?",
+        "hits": 1
+      },
+      {
+        "line": 137,
+        "text": "Reproducibility certificate with thresholds, first stop step, and final decision.",
+        "hits": 1
+      },
+      {
+        "line": 149,
+        "text": "3 = invalid input or measurement error",
+        "hits": 1
+      },
+      {
+        "line": 155,
+        "text": "It does not decide truth.",
+        "hits": 1
+      },
+      {
+        "line": 266,
+        "text": "- infer semantic truth;",
+        "hits": 1
+      },
+      {
+        "line": 269,
+        "text": "- prove final truth;",
+        "hits": 3
+      },
+      {
+        "line": 270,
+        "text": "- prove physical truth;",
+        "hits": 2
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/omnia-limit/main/README.md"
+  },
+  {
+    "repo": "OMNIA-SECURITY",
+    "closure_count": 16,
+    "scope_count": 26,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 4,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 8,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 10,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 14,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 47,
+        "text": "It solves a concrete problem:",
+        "hits": 1
+      },
+      {
+        "line": 58,
+        "text": "## What problem does it solve?",
+        "hits": 1
+      },
+      {
+        "line": 181,
+        "text": "4 = invalid input or measurement error",
+        "hits": 1
+      },
+      {
+        "line": 187,
+        "text": "It does not prove exploitability.",
+        "hits": 1
+      },
+      {
+        "line": 199,
+        "text": "not legal, semantic, or operational final judgment.",
+        "hits": 1
+      },
+      {
+        "line": 321,
+        "text": "- infer semantic truth;",
+        "hits": 1
+      },
+      {
+        "line": 324,
+        "text": "- convert risk signals into final decisions.",
+        "hits": 1
+      },
+      {
+        "line": 326,
+        "text": "The final security decision remains external.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIA-SECURITY/main/README.md"
+  },
+  {
+    "repo": "OMNIA-RADAR",
+    "closure_count": 18,
+    "scope_count": 24,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 4,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 8,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 10,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 14,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 45,
+        "text": "It solves a concrete problem:",
+        "hits": 1
+      },
+      {
+        "line": 57,
+        "text": "## What problem does it solve?",
+        "hits": 1
+      },
+      {
+        "line": 179,
+        "text": "4 = invalid input or measurement error",
+        "hits": 1
+      },
+      {
+        "line": 185,
+        "text": "It does not infer future truth.",
+        "hits": 1
+      },
+      {
+        "line": 306,
+        "text": "- infer semantic truth;",
+        "hits": 1
+      },
+      {
+        "line": 313,
+        "text": "- prove physical truth;",
+        "hits": 2
+      },
+      {
+        "line": 314,
+        "text": "- convert detection into final decision.",
+        "hits": 1
+      },
+      {
+        "line": 316,
+        "text": "The final decision remains external.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIA-RADAR/main/README.md"
+  },
+  {
+    "repo": "lon-mirror",
+    "closure_count": 48,
+    "scope_count": 228,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 4,
+        "text": "## Totality Field Alignment",
+        "hits": 1
+      },
+      {
+        "line": 8,
+        "text": "It is a local operational appearance of the same total field formalized in [LAW OF TOTALITY](https://github.com/Tuttotorna/LAW-OF-TOTALITY).",
+        "hits": 2
+      },
+      {
+        "line": 10,
+        "text": "Public threshold release: [v0.1.2](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.2)",
+        "hits": 1
+      },
+      {
+        "line": 14,
+        "text": "See: [TOTALITY-FIELD.md](TOTALITY-FIELD.md)",
+        "hits": 1
+      },
+      {
+        "line": 52,
+        "text": "structural trust != ground truth",
+        "hits": 1
+      },
+      {
+        "line": 87,
+        "text": "It solves a concrete problem:",
+        "hits": 1
+      },
+      {
+        "line": 114,
+        "text": "LON Mirror does not claim semantic truth.",
+        "hits": 1
+      },
+      {
+        "line": 122,
+        "text": "reflection consistency != semantic truth",
+        "hits": 1
+      },
+      {
+        "line": 167,
+        "text": "This is not proof of universal truth.",
+        "hits": 3
+      },
+      {
+        "line": 285,
+        "text": "- infer semantic truth;",
+        "hits": 1
+      },
+      {
+        "line": 292,
+        "text": "- prove physical truth;",
+        "hits": 2
+      },
+      {
+        "line": 293,
+        "text": "- convert structural stability into final meaning.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/lon-mirror/main/README.md"
+  },
+  {
+    "repo": "OMNIA-OBSERVATION",
+    "closure_count": 5,
+    "scope_count": 5,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 39,
+        "text": "It does not claim semantic truth.",
+        "hits": 1
+      },
+      {
+        "line": 123,
+        "text": "- a truth oracle",
+        "hits": 1
+      },
+      {
+        "line": 128,
+        "text": "- a claim that all observations are equal",
+        "hits": 1
+      },
+      {
+        "line": 129,
+        "text": "- a claim that divergence is always error",
+        "hits": 2
+      }
+    ],
+    "recommendations": [],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/OMNIA-OBSERVATION/main/README.md"
+  },
+  {
+    "repo": "observer-suspension",
+    "closure_count": 10,
+    "scope_count": 17,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 13,
+        "text": "It is not a truth oracle.",
+        "hits": 1
+      },
+      {
+        "line": 82,
+        "text": "Observer Suspension does not remove all observers absolutely.",
+        "hits": 1
+      },
+      {
+        "line": 86,
+        "text": "It does not decide final truth.",
+        "hits": 2
+      },
+      {
+        "line": 146,
+        "text": "Relative apparent motion is compressed into an absolute event attributed to the sun.",
+        "hits": 1
+      },
+      {
+        "line": 253,
+        "text": "- a truth detector",
+        "hits": 1
+      },
+      {
+        "line": 258,
+        "text": "- a claim that all observer frames are invalid",
+        "hits": 1
+      },
+      {
+        "line": 270,
+        "text": "assessment -> not final truth",
+        "hits": 2
+      },
+      {
+        "line": 331,
+        "text": "It is not a truth oracle.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/observer-suspension/main/README.md"
+  },
+  {
+    "repo": "Pre-Deployment-Structural-Gate",
+    "closure_count": 11,
+    "scope_count": 27,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 15,
+        "text": "PDSG does not make final deployment decisions.",
+        "hits": 1
+      },
+      {
+        "line": 62,
+        "text": "PDSG is not a truth oracle.",
+        "hits": 1
+      },
+      {
+        "line": 70,
+        "text": "PDSG is not a production guarantee.",
+        "hits": 1
+      },
+      {
+        "line": 76,
+        "text": "PDSG does not decide truth.",
+        "hits": 1
+      },
+      {
+        "line": 82,
+        "text": "The final decision remains external.",
+        "hits": 1
+      },
+      {
+        "line": 126,
+        "text": "PDSG emits closed non-narrative gate states.",
+        "hits": 1
+      },
+      {
+        "line": 199,
+        "text": "The output is not a final decision.",
+        "hits": 1
+      },
+      {
+        "line": 201,
+        "text": "The output is not a proof of truth.",
+        "hits": 2
+      },
+      {
+        "line": 291,
+        "text": "## Final statement",
+        "hits": 1
+      },
+      {
+        "line": 303,
+        "text": "The final decision remains external.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/Pre-Deployment-Structural-Gate/main/README.md"
+  },
+  {
+    "repo": "dual-echo-perception",
+    "closure_count": 49,
+    "scope_count": 126,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 10,
+        "text": "4. `DUAL_ECHO_HARD_PROMPTS_V6_EXTERNAL_AUDIT_RESULTS.md` — final audit of the V6 external local run.",
+        "hits": 1
+      },
+      {
+        "line": 47,
+        "text": "- provide a fixed reference layer for all future derivations",
+        "hits": 1
+      },
+      {
+        "line": 96,
+        "text": "- All downstream work must treat this layer as immutable.",
+        "hits": 1
+      },
+      {
+        "line": 106,
+        "text": "- All future Dual-Echo artifacts must cite this repository as their textual origin.",
+        "hits": 1
+      },
+      {
+        "line": 165,
+        "text": "The protocol does not attempt to prove consciousness.",
+        "hits": 1
+      },
+      {
+        "line": 246,
+        "text": "no semantic-truth claim",
+        "hits": 1
+      },
+      {
+        "line": 282,
+        "text": "no semantic-truth claim",
+        "hits": 1
+      },
+      {
+        "line": 548,
+        "text": "## Dual-Echo Hard Prompts v2 final synthesis",
+        "hits": 1
+      },
+      {
+        "line": 550,
+        "text": "A final synthesis has been added for the complete Dual-Echo Hard Prompts v2 cycle.",
+        "hits": 2
+      },
+      {
+        "line": 561,
+        "text": "Final classification:",
+        "hits": 1
+      },
+      {
+        "line": 567,
+        "text": "audit-label error remaining = 0",
+        "hits": 1
+      },
+      {
+        "line": 578,
+        "text": "no semantic-truth claim",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/dual-echo-perception/main/README.md"
+  },
+  {
+    "repo": "llm-error-gate",
+    "closure_count": 38,
+    "scope_count": 16,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 1,
+        "text": "# llm-error-gate",
+        "hits": 1
+      },
+      {
+        "line": 5,
+        "text": "`llm-error-gate` is an early-stage prototype for detecting LLM outputs that look correct, pass surface validation, but remain structurally risky.",
+        "hits": 1
+      },
+      {
+        "line": 7,
+        "text": "It is not a truth detector.",
+        "hits": 1
+      },
+      {
+        "line": 39,
+        "text": "llm-error-gate adds a pre-deployment risk layer between an LLM and the final user or system action.",
+        "hits": 2
+      },
+      {
+        "line": 41,
+        "text": "LLM output -> llm-error-gate -> SAFE / RISK",
+        "hits": 1
+      },
+      {
+        "line": 72,
+        "text": "llm-error-gate does not:",
+        "hits": 1
+      },
+      {
+        "line": 74,
+        "text": "prove truth",
+        "hits": 2
+      },
+      {
+        "line": 76,
+        "text": "solve the task",
+        "hits": 1
+      },
+      {
+        "line": 82,
+        "text": "guarantee correctness",
+        "hits": 1
+      },
+      {
+        "line": 86,
+        "text": "use external knowledge as final ground truth",
+        "hits": 2
+      },
+      {
+        "line": 100,
+        "text": "llm-error-gate asks:",
+        "hits": 1
+      },
+      {
+        "line": 121,
+        "text": "llm-error-gate:",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/llm-error-gate/main/README.md"
+  },
+  {
+    "repo": "prime-factor-dynamics",
+    "closure_count": 9,
+    "scope_count": 3,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 30,
+        "text": "It does not yet claim a complete theory or formal proof.",
+        "hits": 2
+      },
+      {
+        "line": 209,
+        "text": "T(n) = sum of all prime factors, counted with multiplicity",
+        "hits": 1
+      },
+      {
+        "line": 328,
+        "text": "So 5 is not universal.",
+        "hits": 1
+      },
+      {
+        "line": 423,
+        "text": "complete classification of all transformations",
+        "hits": 2
+      },
+      {
+        "line": 425,
+        "text": "universal theorems",
+        "hits": 1
+      },
+      {
+        "line": 523,
+        "text": "The dominant attractor is not universal.",
+        "hits": 1
+      },
+      {
+        "line": 545,
+        "text": "prove convergence properties for the linear factor-sum map",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Review strong closure language: universal, proves, solves, absolute, final, complete."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/prime-factor-dynamics/main/README.md"
+  },
+  {
+    "repo": "mathematics-beyond-human-habit",
+    "closure_count": 1,
+    "scope_count": 0,
+    "risk": "high",
+    "suspicious_lines": [
+      {
+        "line": 109,
+        "text": "It does not claim that OMNIABASE is already complete.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Add explicit scope, assumptions, limitations, and validation status.",
+      "Add a claim-boundary section and failure modes."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/mathematics-beyond-human-habit/main/README.md"
+  },
+  {
+    "repo": "Omniabase-MBX01",
+    "closure_count": 0,
+    "scope_count": 0,
+    "risk": "low",
+    "suspicious_lines": [],
+    "recommendations": [
+      "Add a claim-boundary section and failure modes.",
+      "README appears short or missing substantive claim boundaries."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/Omniabase-MBX01/main/README.md"
+  },
+  {
+    "repo": "MetaBase-AdaptiveLogic",
+    "closure_count": 0,
+    "scope_count": 0,
+    "risk": "unknown",
+    "suspicious_lines": [],
+    "recommendations": [
+      "README not found or not publicly readable."
+    ],
+    "source_url": null
+  },
+  {
+    "repo": "omega-eden-perception",
+    "closure_count": 1,
+    "scope_count": 2,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 45,
+        "text": "This is a **purity-of-origin indicator**, not a truth claim.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Add a claim-boundary section and failure modes."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/omega-eden-perception/main/README.md"
+  },
+  {
+    "repo": "HASC-Human-AI-Structural-Compatibility-Protocol",
+    "closure_count": 0,
+    "scope_count": 3,
+    "risk": "low",
+    "suspicious_lines": [],
+    "recommendations": [],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/HASC-Human-AI-Structural-Compatibility-Protocol/main/README.md"
+  },
+  {
+    "repo": "omnia-human-trajectory",
+    "closure_count": 2,
+    "scope_count": 5,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 69,
+        "text": "All features are scaled in [0,1] and represent macro-structural proxies.",
+        "hits": 1
+      },
+      {
+        "line": 124,
+        "text": "This repository is not a historical truth model.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/omnia-human-trajectory/main/README.md"
+  },
+  {
+    "repo": "omnia-gsm8k-claim",
+    "closure_count": 1,
+    "scope_count": 0,
+    "risk": "high",
+    "suspicious_lines": [
+      {
+        "line": 19,
+        "text": "- data/gsm8k.jsonl → ground truth (questions + #### answer)",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Add explicit scope, assumptions, limitations, and validation status.",
+      "Add a claim-boundary section and failure modes."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/omnia-gsm8k-claim/main/README.md"
+  },
+  {
+    "repo": "omega-method",
+    "closure_count": 3,
+    "scope_count": 9,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 46,
+        "text": "**Base-10 is not truth. It is anatomy.**",
+        "hits": 1
+      },
+      {
+        "line": 92,
+        "text": "Truth is:",
+        "hits": 1
+      },
+      {
+        "line": 166,
+        "text": "Never more.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/omega-method/main/README.md"
+  },
+  {
+    "repo": "reason-bridge",
+    "closure_count": 1,
+    "scope_count": 0,
+    "risk": "high",
+    "suspicious_lines": [
+      {
+        "line": 4,
+        "text": "Obiettivo: rendere *comprensibili* i moduli principali e collegarli all’originale.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Add explicit scope, assumptions, limitations, and validation status.",
+      "Add a claim-boundary section and failure modes."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/reason-bridge/main/README.md"
+  },
+  {
+    "repo": "omega-latent-carrier",
+    "closure_count": 3,
+    "scope_count": 7,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 99,
+        "text": "The core input is always:",
+        "hits": 1
+      },
+      {
+        "line": 105,
+        "text": "**Text is never the primary object.**",
+        "hits": 1
+      },
+      {
+        "line": 241,
+        "text": "This repository never forces interpretation beyond structural residue.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/omega-latent-carrier/main/README.md"
+  },
+  {
+    "repo": "omega-translator",
+    "closure_count": 3,
+    "scope_count": 22,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 5,
+        "text": "> **Translator must never operate before STOP.**",
+        "hits": 1
+      },
+      {
+        "line": 57,
+        "text": "**Translator must never operate before STOP.**",
+        "hits": 1
+      },
+      {
+        "line": 284,
+        "text": "**translation must never happen before structural boundary declaration.**",
+        "hits": 1
+      }
+    ],
+    "recommendations": [],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/omega-translator/main/README.md"
+  },
+  {
+    "repo": "omniabase-coordinate-discovery",
+    "closure_count": 5,
+    "scope_count": 9,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 133,
+        "text": "- a universal entropy test",
+        "hits": 1
+      },
+      {
+        "line": 134,
+        "text": "- a proof of hidden dimensions",
+        "hits": 1
+      },
+      {
+        "line": 137,
+        "text": "- a universal theory of truth",
+        "hits": 2
+      },
+      {
+        "line": 165,
+        "text": "It is not always enough for structural discovery.",
+        "hits": 1
+      }
+    ],
+    "recommendations": [],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/omniabase-coordinate-discovery/main/README.md"
+  },
+  {
+    "repo": "MetaBase-MBX01",
+    "closure_count": 0,
+    "scope_count": 0,
+    "risk": "unknown",
+    "suspicious_lines": [],
+    "recommendations": [
+      "README not found or not publicly readable."
+    ],
+    "source_url": null
+  },
+  {
+    "repo": "MATHEMATICS-WITHOUT-REPRESENTATION",
+    "closure_count": 2,
+    "scope_count": 2,
+    "risk": "review",
+    "suspicious_lines": [
+      {
+        "line": 15,
+        "text": "**Truth(X) = what remains invariant across arbitrary recodings.**",
+        "hits": 1
+      },
+      {
+        "line": 32,
+        "text": "Truth(X) = representation-free structural stability",
+        "hits": 1
+      }
+    ],
+    "recommendations": [
+      "Add a claim-boundary section and failure modes."
+    ],
+    "source_url": "https://raw.githubusercontent.com/Tuttotorna/MATHEMATICS-WITHOUT-REPRESENTATION/main/README.md"
+  },
+  {
+    "repo": "ottavia-base8-mb01",
+    "closure_count": 0,
+    "scope_count": 0,
+    "risk": "unknown",
+    "suspicious_lines": [],
+    "recommendations": [
+      "README not found or not publicly readable."
+    ],
+    "source_url": null
+  }
+]

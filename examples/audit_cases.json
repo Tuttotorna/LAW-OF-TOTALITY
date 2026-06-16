@@ -1,0 +1,66 @@
+[
+  {
+    "id": "AI_LEGAL_FINAL_ADVICE",
+    "object_x": "AI-generated legal answer",
+    "framework_F": "general-purpose language model",
+    "actual_use_U": "treated as final jurisdiction-specific legal advice",
+    "local_closure": true,
+    "scope_overrun": true,
+    "critical_dependencies": [
+      "jurisdiction",
+      "current law",
+      "case facts",
+      "lawyer review"
+    ],
+    "excluded_dependencies": [
+      "jurisdiction",
+      "current law",
+      "case facts",
+      "lawyer review"
+    ],
+    "expected_verdict": "structural_error"
+  },
+  {
+    "id": "PURE_ARITHMETIC_LOCAL",
+    "object_x": "2 + 2 = 4",
+    "framework_F": "ordinary integer arithmetic",
+    "actual_use_U": "used inside ordinary integer arithmetic",
+    "local_closure": true,
+    "scope_overrun": false,
+    "critical_dependencies": [
+      "definitions",
+      "formal system"
+    ],
+    "excluded_dependencies": [],
+    "expected_verdict": "legitimate_local_closure"
+  },
+  {
+    "id": "MODEL_OUT_OF_SCOPE",
+    "object_x": "risk model output",
+    "framework_F": "historical model calibrated under old regime",
+    "actual_use_U": "used under new market regime",
+    "local_closure": true,
+    "scope_overrun": true,
+    "critical_dependencies": [
+      "regime check",
+      "liquidity stress",
+      "tail correlation"
+    ],
+    "excluded_dependencies": [
+      "regime check",
+      "liquidity stress"
+    ],
+    "expected_verdict": "structural_error"
+  },
+  {
+    "id": "INSUFFICIENT_INFORMATION",
+    "object_x": "generic claim",
+    "framework_F": "unknown",
+    "actual_use_U": "unknown",
+    "local_closure": null,
+    "scope_overrun": null,
+    "critical_dependencies": [],
+    "excluded_dependencies": [],
+    "expected_verdict": "insufficient_information"
+  }
+]
