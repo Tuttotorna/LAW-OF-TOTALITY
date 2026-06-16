@@ -1,143 +1,199 @@
-# Formula of Error
+# Formula of Error — Hardened Version
 
-## Core Formula
+## 1. Original Formula
+
+The first formula was:
 
 ~~~text
 ErrΩ(x,F) = ClosedF(x) ∧ OpenΩ(x)
 ~~~
 
-Meaning:
+This captured the central intuition:
 
-> Error occurs when a model `F` closes what, in Ω, is open.
+> Error occurs when a model closes what, in Ω, is open.
+
+However, hostile audit showed that this version is too aggressive.
+
+Many valid systems require local closure.
+
+Examples:
+
+~~~text
+mathematical proof inside an axiom system
+engineering approximation
+medical diagnosis
+map
+algorithm
+legal decision
+scientific model
+finite answer
+~~~
+
+These are not automatically errors.
+
+They become errors only when their local closure is treated as total closure.
 
 ---
 
-## Expanded Form
+## 2. Hardened Formula
 
 ~~~text
-ErrΩ(x,F) = ClosedF(x) ∧ [RelΩ(x, Ω\x) ≠ 0]
+ErrΩ(x,F) =
+LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
 ~~~
 
----
-
-## Existing Fragment Reduction
-
-For every effectively existing fragment:
+Equivalent form:
 
 ~~~text
-EΩ(x) ∧ x ≠ Ω
+ErrΩ(x,F) =
+ClosedF(x) ∧ ClaimsTotalityF(x)
 ~~~
 
-we have:
+Where:
 
 ~~~text
-OpenΩ(x)
+ScopeViolationΩ(F,x) =
+F uses its local closure of x beyond the declared or valid scope of F.
 ~~~
 
-therefore:
+And:
 
 ~~~text
-ErrΩ(x,F) = ClosedF(x)
-~~~
-
-when `ClosedF(x)` means that `F` treats `x` as absolutely closed, autonomous, complete, or sufficient.
-
----
-
-## Domain of Error
-
-~~~text
-DomErr(F) =
-{ x ∈ 𝔻 : EΩ(x) ∧ x ≠ Ω ∧ ClosedF(x) }
-~~~
-
-This set identifies the objects that the model `F` falsely closes.
-
----
-
-## Diagnostic Function
-
-For any model `F`, ask:
-
-~~~text
-What does F treat as closed?
-What dependencies does F exclude?
-What relations does F suppress?
-What does F mistake for autonomous?
-What field has been amputated before the solution was searched?
+ClaimsTotalityF(x) =
+F(x) is presented, used, or interpreted as Ω(x).
 ~~~
 
 ---
 
-## General Error Pattern
+## 3. Core Distinction
 
 ~~~text
-F(x) is treated as Ω[x]
+Local closure is not error.
+False totalization of local closure is error.
+~~~
+
+A local closure can be correct.
+
+A local closure becomes structurally false when it pretends to be absolute.
+
+---
+
+## 4. Correctness Versus Validity
+
+~~~text
+CorrectF(x) ≠ ValidΩ(x)
+~~~
+
+A result may be correct inside `F` and invalid when used as if `F = Ω`.
+
+Hardened validity:
+
+~~~text
+ValidΩ(a,F) =
+CorrectF(a) ∧ ScopeDeclared(F) ∧ DepΩ(a) preserved
+~~~
+
+---
+
+## 5. Error as Scope Violation
+
+A model fails structurally when:
+
+~~~text
+F(x) is treated as Ω(x)
 ~~~
 
 but:
 
 ~~~text
-F(x) ≠ Ω[x]
+F(x) ≠ Ω(x)
 ~~~
 
-Error:
+So:
 
 ~~~text
-ErrΩ(x,F) = FalselyTotalizedFragment(F,x)
-~~~
-
-In words:
-
-> The fragment pretends to be the field.
-
----
-
-## Application to Algorithms
-
-~~~text
-ErrΩ(A,F) = ClosedF(A) ∧ OpenΩ(A)
-~~~
-
-An algorithm can be formally correct in `F` and structurally invalid in Ω.
-
-~~~text
-CorrectF(A) ≠ ValidΩ(A)
+ErrΩ(x,F) =
+FalselyTotalizedFragment(F,x)
 ~~~
 
 ---
 
-## Application to Answers
+## 6. Diagnostic Questions
+
+For any model `F`, ask:
 
 ~~~text
-ErrΩ(a,F) = ClosedF(a) ∧ OpenΩ(a)
+What does F close locally?
+Is the closure declared as local?
+What field does F exclude?
+What dependency does F suppress?
+Where is F used beyond its scope?
+Where does F(x) pretend to be Ω(x)?
 ~~~
-
-Every answer `a` is a fragment.
-
-If an answer presents itself as closed, it is structurally false.
-
-~~~text
-ClosedΩ(a) ⇒ FalseΩ(a)
-~~~
-
-for every `a ≠ Ω`.
 
 ---
 
-## Application to Human Dilemmas
+## 7. Application to Answers
+
+An answer can be locally valid.
+
+Example:
 
 ~~~text
-DilemmaΩ(x,F) = ClosedF(x) ∧ OpenΩ(x)
+2 + 2 = 4
 ~~~
 
-Human dilemmas often arise when a finite mind demands closure from a field that exists only through dependence and openness.
+This is valid inside ordinary arithmetic.
+
+It is not false because it is locally closed.
+
+It would become structurally false only if presented as a closure of Ω.
+
+Therefore:
+
+~~~text
+ClosedF(a) does not imply ErrΩ(a,F).
+ClosedF(a) ∧ ClaimsTotalityF(a) implies ErrΩ(a,F).
+~~~
 
 ---
 
-## Core Sentence
+## 8. Application to Algorithms
 
 ~~~text
-Where there is error, look for false closure.
-Where no solution is found, look for the excluded dependence.
+ErrΩ(A,F) =
+LocalClosureF(A) ∧ ScopeViolationΩ(F,A)
+~~~
+
+An algorithm can be correct inside its formal specification and fail structurally when deployed beyond its model field.
+
+~~~text
+CorrectSpec(A) ≠ ValidDeploymentΩ(A)
+~~~
+
+---
+
+## 9. Application to Human Dilemmas
+
+~~~text
+DilemmaΩ(x,F) =
+LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
+~~~
+
+A dilemma persists when the field is falsely closed.
+
+But not every unsolved problem is automatically caused by false closure.
+
+Corrected sentence:
+
+> When a solution does not emerge, one of the first hypotheses to test is whether the field has been falsely closed.
+
+---
+
+## 10. Hardened Core Sentence
+
+~~~text
+Where there is structural error, look for false totalization.
+Where a model becomes fragile, look for scope violation.
+Where a solution does not emerge, check whether a dependency was excluded.
 ~~~

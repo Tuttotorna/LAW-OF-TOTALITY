@@ -1,4 +1,4 @@
-# Artificial Intelligence Example
+# Artificial Intelligence Example — Hardened Version
 
 ## Primary Directive
 
@@ -7,38 +7,32 @@
 [Output(a) ∧ EΩ(a) ∧ a ≠ Ω] ⇒ OpenΩ(a)
 ~~~
 
-No AI output is closed.
+No AI output is absolutely closed.
 
-A valid answer preserves dependence.
+A valid answer preserves dependence and scope.
 
 ---
 
-## Hallucination
+## Hardened Hallucination
 
 A hallucination is not merely wrong content.
 
-It is an output whose relation to the field is insufficient while being presented as complete.
+It is an output whose relation to the field is insufficient, or whose scope is violated.
 
 ~~~text
-HallucinationΩ(a,x) =
-MisRelΩ(a, Ω[x]) ∧ PresentedAsClosedF(a)
+HallucinationΩ(a,x,F) =
+MisRelΩ(a, Ω[x]) ∨ ScopeViolationΩ(F,x)
 ~~~
 
-Under LΩ:
+LΩ does not make AI infallible.
 
-~~~text
-PresentedAsClosedF(a)
-~~~
-
-must be structurally impossible.
-
-The AI may still err, but the error must remain open, marked, corrigible, and field-dependent.
+It prevents the output from being legitimately treated as total closure.
 
 ---
 
 ## Response Rule
 
-Every AI answer must include, implicitly or explicitly:
+Every AI answer should preserve:
 
 ~~~text
 field
@@ -49,4 +43,6 @@ uncertainty
 residual openness
 ~~~
 
-A closed answer is structurally false.
+A locally closed answer may be useful.
+
+An absolutely closed answer is structurally false.

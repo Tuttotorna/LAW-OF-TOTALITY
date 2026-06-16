@@ -1,4 +1,4 @@
-# Mathematics Example
+# Mathematics Example — Hardened Version
 
 ## Core Law
 
@@ -10,18 +10,35 @@
 In mathematics:
 
 ~~~text
-ProofF(x) ⇒ ClosedF(x)
+ProofF(x) ⇒ LocalClosureF(x)
 ~~~
 
-does not imply:
+but not:
 
 ~~~text
-ClosedΩ(x)
+ProofF(x) ⇒ AbsolutelyClosedΩ(x)
 ~~~
 
 A theorem is closed relative to a system `F`.
 
 It is not closed relative to Ω.
+
+---
+
+## Correction
+
+The existence of local formal closure does not refute LΩ.
+
+It confirms the need to distinguish:
+
+~~~text
+local closure
+absolute closure
+~~~
+
+Mathematics works through declared closures.
+
+Structural error begins when a local formal closure is mistaken for closure of the total mathematical field.
 
 ---
 
@@ -40,24 +57,19 @@ But:
 finite rule ≠ closed field
 ~~~
 
-The generated dynamical field includes trajectories, parity, residues, bases, valuations, densities, returns, ruptures, and transformations.
-
-Error:
+Error occurs if the finite syntax is mistaken for a closed understanding of the generated dynamical field.
 
 ~~~text
-ErrΩ(Collatz,F) = ClosedF(Collatz) ∧ OpenΩ(Collatz)
+ErrΩ(Collatz,F) =
+LocalClosureF(Collatz) ∧ ScopeViolationΩ(F,Collatz)
 ~~~
-
-The rule is small.
-
-The field is not closed.
 
 ---
 
 ## General Lesson
 
-Mathematical difficulty often arises when a compact statement generates a non-compact field.
-
 ~~~text
 small syntax ≠ closed structure
+local proof ≠ total closure
+formal correctness ≠ structural totality
 ~~~

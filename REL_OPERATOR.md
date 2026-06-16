@@ -1,39 +1,59 @@
-# The RelΩ Operator
+# The RelΩ Operator — Hardened Version
 
-## Current Status
+## 1. Current Status
 
-`RelΩ(x,S)` is a primitive.
+`RelΩ` remains a primitive.
 
 ~~~text
-RelΩ(x,S) = relation of x with a set S inside Ω
+RelΩ(x, ResΩ(x)) = relation of x with the residual field of Ω relative to x
 ~~~
 
-The system works formally without fully decomposing `RelΩ`.
+This version avoids treating Ω as an ordinary set.
 
-However, operational use requires specifying what counts as relation.
+Instead of writing:
+
+~~~text
+Ω minus x
+~~~
+
+we write:
+
+~~~text
+ResΩ(x)
+~~~
+
+where `ResΩ(x)` means the residual field relative to x.
 
 ---
 
-## Basic Use
+## 2. Basic Use
 
 For any `x ≠ Ω`:
 
 ~~~text
-OpenΩ(x) ⇔ RelΩ(x, Ω\x) ≠ 0
+OpenΩ(x) ⇔ RelΩ(x, ResΩ(x)) ≠ 0
 ~~~
 
+Absolute closure:
+
 ~~~text
-ClosedΩ(x) ⇔ RelΩ(x, Ω\x) = 0
+AbsolutelyClosedΩ(x) ⇔ RelΩ(x, ResΩ(x)) = 0
+~~~
+
+The law states that no proper manifestation is absolutely closed.
+
+~~~text
+EΩ(x) ∧ x ≠ Ω ⇒ RelΩ(x, ResΩ(x)) ≠ 0
 ~~~
 
 ---
 
-## Possible Decomposition
+## 3. Possible Decomposition
 
 A preliminary decomposition:
 
 ~~~text
-RelΩ(x, Ω\x) =
+RelΩ(x, ResΩ(x)) =
 CausΩ(x)
 ∨ InfoΩ(x)
 ∨ StructΩ(x)
@@ -42,6 +62,7 @@ CausΩ(x)
 ∨ TempΩ(x)
 ∨ ObsΩ(x)
 ∨ ConseqΩ(x)
+∨ DiffΩ(x)
 ~~~
 
 Where:
@@ -55,13 +76,14 @@ DynΩ(x)     dynamic or transformative interaction
 TempΩ(x)    temporal dependence
 ObsΩ(x)     observational / measurement dependence
 ConseqΩ(x)  consequential dependence
+DiffΩ(x)    differential/distinction dependence
 ~~~
 
 ---
 
-## Minimal Operational Rule
+## 4. Minimal Operational Rule
 
-To show that `x` is not closed, it is enough to identify one non-zero relation:
+To show that `x` is not absolutely closed, it is enough to identify one non-zero relation type.
 
 ~~~text
 ∃r ∈ RelTypes :
@@ -76,13 +98,14 @@ OpenΩ(x)
 
 ---
 
-## Practical Diagnostic
+## 5. Practical Diagnostic
 
 For any object `x`, ask:
 
 ~~~text
 What causes x?
 What defines x?
+What distinguishes x?
 What conditions x?
 What changes x?
 What observes x?
@@ -90,18 +113,18 @@ What does x affect?
 What does x require?
 What does x exclude?
 What does x imply?
-What does x become connected to when applied?
+What field makes x determinable as x?
 ~~~
 
 If any answer is non-empty, then:
 
 ~~~text
-ClosedΩ(x) = false
+AbsolutelyClosedΩ(x) = false
 ~~~
 
 ---
 
-## Warning
+## 6. Warning
 
 `RelΩ` must not be reduced prematurely to a single relation type.
 
@@ -110,5 +133,5 @@ If `RelΩ` is reduced only to causality, then logical, informational, structural
 The operator must remain broad enough to preserve the law:
 
 ~~~text
-Everything that exists depends.
+Every proper manifestation depends.
 ~~~

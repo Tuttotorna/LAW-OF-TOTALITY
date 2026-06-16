@@ -1,4 +1,4 @@
-# Philosophy and Religion Example
+# Philosophy and Religion Example — Hardened Version
 
 ## Religion
 
@@ -16,7 +16,7 @@ OpenΩ(R)
 
 No religion can close Ω.
 
-A religion is structurally valid as opening, symbol, orientation, practice, or relation.
+A religion may be valid as opening, symbol, orientation, practice, or relation.
 
 It becomes structurally false when it presents its finite form as closure of the infinite.
 
@@ -39,3 +39,12 @@ P cannot close Ω
 A philosophy is useful when it opens and clarifies dependence.
 
 It fails when it totalizes a fragment.
+
+---
+
+## Hardened Rule
+
+~~~text
+Local doctrine may orient.
+Absolute doctrine falsely totalizes.
+~~~

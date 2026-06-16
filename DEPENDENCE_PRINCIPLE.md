@@ -1,17 +1,28 @@
-# Dependence Principle
+# Dependence Principle — Hardened Version
 
-## Core Sentence
+## 1. Core Sentence
+
+Compressed form:
 
 ~~~text
 Everything that exists depends.
 If it does not depend, it cannot exist.
 ~~~
 
-This is the compressed expression of the Law of Absolute Non-Closure.
+Hardened form:
+
+~~~text
+Every proper manifestation inside Ω depends.
+If a proper manifestation has no dependence, it cannot manifest as something inside Ω.
+~~~
+
+The difference is essential.
+
+The hardened version excludes Ω itself.
 
 ---
 
-## Formal Expression
+## 2. Formal Expression
 
 ~~~text
 ∀x ∈ 𝔻 :
@@ -27,73 +38,156 @@ Contrapositive:
 
 ---
 
-## Interpretation
+## 3. Dependence Is Not Only Causality
 
-Dependence is not an added property of existence.
+`DepΩ(x)` must not be reduced to physical causality.
 
-Dependence is the condition of existence.
+For abstract, mathematical, symbolic, logical, or formal objects, dependence may be:
 
-A fragment does not first exist and then enter relations.
+~~~text
+definitional
+logical
+structural
+semantic
+axiomatic
+positional
+differential
+relational
+representational
+~~~
 
-A fragment exists because it is determined, exposed, conditioned, positioned, affected, and made manifest through relations.
+For physical objects, dependence may also be:
+
+~~~text
+causal
+energetic
+temporal
+material
+environmental
+dynamic
+informational
+consequential
+~~~
 
 ---
 
-## Consequence
+## 4. Minimal Meaning of Dependence
 
-Absolute independence is not strength.
-
-Absolute independence is non-existence as a fragment.
+A proper manifestation depends if it requires at least one non-zero condition of determinability.
 
 ~~~text
-Absolute independence = no relation
-No relation = no determination
-No determination = no effective manifestation
+DepΩ(x) ≠ 0
+⇔
+x requires at least one relation, distinction, condition, structure, or field-reference to manifest as x
+~~~
+
+---
+
+## 5. Determinability Argument
+
+A thing cannot manifest as `x` unless it is determinable as `x`.
+
+~~~text
+ManifestΩ(x)
+⇒ DeterminableΩ(x)
+~~~
+
+To be determinable, `x` must be distinguishable.
+
+~~~text
+DetermininableΩ(x)
+⇒ DistinguishableΩ(x)
+~~~
+
+To be distinguishable, `x` must stand in at least one relation, difference, condition, or boundary relative to what is not `x`.
+
+~~~text
+DistinguishableΩ(x)
+⇒ DepΩ(x) ≠ 0
 ~~~
 
 Therefore:
 
 ~~~text
-IndependenceΩ(x) = 1 ⇒ ¬EΩ(x)
+ManifestΩ(x) ∧ x ≠ Ω
+⇒ DepΩ(x) ≠ 0
 ~~~
-
-for every `x ≠ Ω`.
 
 ---
 
-## Meaning
+## 6. Independence
 
-The meaning of a thing is its understood dependence.
+Absolute independence is not strength.
+
+Absolute independence is non-manifestation as a proper fragment.
+
+~~~text
+Absolute independence = no relation
+No relation = no distinction
+No distinction = no determinability
+No determinability = no manifestation as x
+~~~
+
+Therefore:
+
+~~~text
+x ≠ Ω ∧ DepΩ(x) = 0 ⇒ ¬EΩ(x)
+~~~
+
+---
+
+## 7. Meaning
+
+The previous sentence:
 
 ~~~text
 SenseΩ(x) ⇔ DepΩ(x) understood
 ~~~
 
-The sense of life is not a closed sentence.
+must be qualified.
 
-The sense of life is the comprehension and orientation of life as dependent openness inside Ω.
+Hardened distinction:
+
+~~~text
+StructuralSenseΩ(x) ⇔ DepΩ(x) intelligible
+~~~
+
+This does not automatically imply:
+
+~~~text
+HumanMeaningΩ(x)
+MoralMeaningΩ(x)
+NarrativeMeaningΩ(x)
+ExistentialMeaningΩ(x)
+~~~
+
+The sense of life is therefore not a closed sentence.
+
+It is the human comprehension and orientation of life as dependent openness inside Ω.
 
 ---
 
-## Answer Validity
+## 8. Answer Validity
 
-A valid answer does not close the field.
+A valid answer does not pretend to close Ω.
 
-A valid answer preserves dependence.
+A valid answer preserves dependence and scope.
 
 ~~~text
-ValidΩ(a) ⇒ DepΩ(a) preserved
+ValidΩ(a,F) =
+CorrectF(a) ∧ ScopeDeclared(F) ∧ DepΩ(a) preserved
 ~~~
 
-A false answer cancels dependence and presents itself as autonomous.
+A false answer cancels dependence or violates scope.
 
 ~~~text
-FalseΩ(a) ⇔ ClosedF(a) ∧ OpenΩ(a)
+FalseΩ(a,F) ⇔ ClosedF(a) ∧ ClaimsTotalityF(a)
 ~~~
 
 Core operational rule:
 
 ~~~text
-Every closed answer is structurally false.
-Every valid answer is situated.
+A locally closed answer may be correct.
+An absolutely closed answer is structurally false.
+A locally closed answer becomes false when it pretends to be total.
 ~~~

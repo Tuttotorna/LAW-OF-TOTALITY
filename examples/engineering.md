@@ -1,4 +1,4 @@
-# Engineering Example
+# Engineering Example — Hardened Version
 
 ## Formula
 
@@ -10,13 +10,16 @@ A design can be correct in the model and unstable in reality.
 
 ---
 
-## Error
+## Hardened Error
 
 ~~~text
-ErrΩ(x,F) = ClosedF(x) ∧ OpenΩ(x)
+ErrΩ(x,F) =
+LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
 ~~~
 
-Engineering failure often occurs when the design field excludes:
+Engineering failure often occurs when a design model is used beyond its real scope.
+
+Excluded field elements may include:
 
 ~~~text
 real use
@@ -35,6 +38,6 @@ edge cases
 
 ## Core Sentence
 
-A system is not safe because every component is correct.
+A system is not safe because every component is locally correct.
 
-A system is safe only when its dependencies remain structurally accounted for.
+A system is safer when its dependencies and scope limits remain structurally accounted for.

@@ -4,8 +4,8 @@
 
 This repository formalizes a meta-structural law:
 
-> Everything that exists depends.  
-> If it does not depend, it cannot exist.
+> Every proper manifestation within totality depends.  
+> If it has no dependence, relation, condition, distinction, or determinability, it cannot manifest as something.
 
 The claim is not a sectorial theory of physics, mathematics, philosophy, artificial intelligence, engineering, religion, or biology.
 
@@ -15,15 +15,40 @@ No finite fragment can be absolutely closed.
 
 ---
 
+## Core Correction After Hostile Audit
+
+The original compressed sentence was:
+
+~~~text
+Everything that exists depends.
+If it does not depend, it cannot exist.
+~~~
+
+The hostile audit showed that this sentence is too naked unless it excludes Ω itself.
+
+The hardened form is:
+
+~~~text
+Every proper manifestation inside Ω depends.
+If a proper manifestation has no dependence, it cannot manifest as something inside Ω.
+~~~
+
+The clause `x ≠ Ω` is not optional.
+
+It is structurally necessary.
+
+---
+
 ## Core Formula
 
 Let:
 
 ~~~text
-𝔻        = domain of the nameable, thinkable, formalizable
-Ω = ∞Tot = totality without outside
-EΩ(x)    = x effectively manifests in Ω
-DepΩ(x)  = dependence of x within Ω
+𝔻          = domain of the nameable, thinkable, formalizable
+Ω = ∞Tot   = total field without outside
+EΩ(x)      = x effectively manifests in Ω
+ResΩ(x)    = residual field of Ω relative to x
+DepΩ(x)    = dependence of x within Ω
 ~~~
 
 Then:
@@ -42,20 +67,23 @@ Contrapositive:
 
 In words:
 
-> Every existing fragment depends.  
-> A non-dependent fragment cannot exist.
+> Every existing proper fragment depends.  
+> A non-dependent proper fragment cannot exist as a manifestation.
 
 ---
 
-## Non-Closure Form
+## Hardened Non-Closure Form
 
 Let:
 
 ~~~text
-RelΩ(x,S) = relation of x with a set S inside Ω
+RelΩ(x, ResΩ(x)) = relation of x with the residual field of Ω relative to x
+~~~
 
-OpenΩ(x)   ⇔ RelΩ(x, Ω\x) ≠ 0
-ClosedΩ(x) ⇔ RelΩ(x, Ω\x) = 0
+Then:
+
+~~~text
+OpenΩ(x) ⇔ RelΩ(x, ResΩ(x)) ≠ 0
 ~~~
 
 For every `x ≠ Ω`:
@@ -69,7 +97,7 @@ Therefore:
 
 ~~~text
 ∀x ∈ 𝔻 :
-[EΩ(x) ∧ x ≠ Ω] ⇒ ¬ClosedΩ(x)
+[EΩ(x) ∧ x ≠ Ω] ⇒ ¬AbsolutelyClosedΩ(x)
 ~~~
 
 Ω itself is not closed and not open.
@@ -79,47 +107,89 @@ ClosedΩ(Ω) = undefined
 OpenΩ(Ω)   = undefined
 ~~~
 
-Ω is totality without outside.
+Ω is totality without outside.  
+The predicate of closure toward an outside does not apply to Ω.
 
 ---
 
-## Formula of Error
+## Hardened Formula of Error
 
-For a model, theory, discipline, algorithm, answer, or framework `F`:
+The first version was:
 
 ~~~text
 ErrΩ(x,F) = ClosedF(x) ∧ OpenΩ(x)
 ~~~
 
-Meaning:
+The hostile audit showed that this is too aggressive.
 
-> Error occurs when a model closes what, in Ω, is necessarily open.
+Local closure is often legitimate.
 
-For every effectively existing fragment:
+A map, theorem, algorithm, diagnosis, model, or engineering approximation can close locally without being false.
+
+The error is not local closure.
+
+The error is local closure presented as total closure.
+
+Therefore the hardened formula is:
 
 ~~~text
-EΩ(x) ∧ x ≠ Ω
+ErrΩ(x,F) =
+LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
 ~~~
 
-the formula reduces operationally to:
+Equivalent form:
 
 ~~~text
-ErrΩ(x,F) = ClosedF(x)
+ErrΩ(x,F) =
+ClosedF(x) ∧ ClaimsTotalityF(x)
 ~~~
 
-whenever `F` pretends absolute closure.
+Where:
+
+~~~text
+ScopeViolationΩ(F,x) =
+F treats its local closure of x as if it were closure of x in Ω.
+~~~
+
+Or:
+
+~~~text
+ClaimsTotalityF(x) =
+F(x) is presented or used as Ω(x).
+~~~
 
 ---
 
-## Core Sentence
+## Validity Formula
+
+A response, theory, model, or decision can be locally valid.
+
+But it is valid only if its field of validity is preserved.
 
 ~~~text
-Everything depends.
+ValidΩ(a,F) =
+CorrectF(a) ∧ ScopeDeclared(F) ∧ DepΩ(a) preserved
 ~~~
 
-A valid answer preserves dependence.
+Therefore:
 
-A structurally false answer cancels dependence and presents itself as closed.
+~~~text
+CorrectF(a) ≠ ValidΩ(a)
+~~~
+
+A locally correct answer becomes structurally false when it pretends to be total.
+
+---
+
+## Core Sentences
+
+~~~text
+Every proper manifestation depends.
+No proper fragment is absolutely independent.
+Local closure is not error.
+False totalization of local closure is error.
+A valid answer preserves its dependence and scope.
+~~~
 
 ---
 
