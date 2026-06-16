@@ -4,15 +4,17 @@ title: "LAW-OF-TOTALITY: The Law of Totality"
 authors:
   - family-names: "Brighindi"
     given-names: "Massimiliano"
-abstract: "A universal structural law describing error as the distance between a local fragment and the total structural field from which that fragment depends."
-version: "0.1.0"
-date-released: "2026-06-15"
+abstract: "A meta-structural law formalizing structural error as local closure used beyond its valid scope while excluding a critical condition of determinability."
+version: "0.4.1"
+date-released: "2026-06-16"
 license: "CC-BY-4.0"
 repository-code: "https://github.com/Tuttotorna/LAW-OF-TOTALITY"
 keywords:
   - totality
   - structural error
   - structural stability
+  - determinability
+  - non-closure
   - OMNIA
   - artificial intelligence
   - hallucination

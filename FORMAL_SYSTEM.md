@@ -1,9 +1,9 @@
-# Formal System — v0.3.0 Determinability Core
+# Formal System — v0.4.1
 
 ## 1. Primitives
 
 ~~~text
-𝔻
+D
 ~~~
 
 Domain of the nameable, thinkable, modelable, formalizable.
@@ -14,7 +14,7 @@ Domain of the nameable, thinkable, modelable, formalizable.
 
 Total field without outside.
 
-Ω is not an ordinary object inside 𝔻.
+Ω is not an ordinary object inside D.
 
 Ω has a different logical type from every proper manifestation.
 
@@ -67,14 +67,16 @@ This avoids naive set-theoretic treatment of Ω.
 ## 2. Core Axiom / Theorem-Schema
 
 ~~~text
-∀x ∈ 𝔻 :
-ProperΩ(x) ⇒ ∃d [DetCondΩ(d,x)]
+∀x ∈ D :
+ProperΩ(x)
+⇒
+∃d [DetCondΩ(d,x)]
 ~~~
 
 Expanded:
 
 ~~~text
-∀x ∈ 𝔻 :
+∀x ∈ D :
 [ManifestΩ(x) ∧ x ≠ Ω]
 ⇒
 ∃d [DetCondΩ(d,x)]
@@ -83,7 +85,7 @@ Expanded:
 Equivalent dependence form:
 
 ~~~text
-∀x ∈ 𝔻 :
+∀x ∈ D :
 [ManifestΩ(x) ∧ x ≠ Ω]
 ⇒
 DepΩ(x) ≠ ∅
@@ -94,7 +96,7 @@ DepΩ(x) ≠ ∅
 ## 3. Contrapositive
 
 ~~~text
-∀x ∈ 𝔻 :
+∀x ∈ D :
 [x ≠ Ω ∧ DepΩ(x) = ∅]
 ⇒
 ¬ManifestΩ(x)
@@ -112,31 +114,38 @@ The strongest derivation path is:
 
 ~~~text
 ManifestΩ(x) as x
-⇒ x is determinable as x
-⇒ x is distinguishable as x
-⇒ at least one condition makes x distinguishable/determinable
-⇒ ∃d [DetCondΩ(d,x)]
-⇒ DepΩ(x) ≠ ∅
+⇒
+x is determinable as x
+⇒
+x is distinguishable as x
+⇒
+at least one condition makes x distinguishable/determinable
+⇒
+∃d [DetCondΩ(d,x)]
+⇒
+DepΩ(x) ≠ ∅
 ~~~
 
 Therefore:
 
 ~~~text
 No determinability condition
-⇒ no distinguishability
-⇒ no manifestation as x
+⇒
+no distinguishability
+⇒
+no manifestation as x
 ~~~
 
 ---
 
 ## 5. Relation, Dependence, Determinability
 
-Version 0.3.0 separates three levels:
+Version 0.4.1 separates three levels:
 
 ~~~text
-RelΩ(x)       = x stands in relation
-DepΩ(x)       = x has dependence
-DetCondΩ(d,x) = d is necessary for x to be determinable as x
+RelΩ(x)          = x stands in relation
+DepΩ(x)          = x has dependence
+DetCondΩ(d,x)   = d is necessary for x to be determinable as x
 ~~~
 
 Not every relation is automatically a critical dependence.
@@ -265,19 +274,7 @@ Correctness inside F is not structural validity in use U.
 
 ---
 
-## 11. Summary
-
-~~~text
-Proper manifestation requires determinability.
-Determinability requires at least one non-zero condition.
-Local closure is legitimate inside scope.
-Structural error is scope violation plus excluded critical condition.
-~~~
-
-<!-- BEGIN V0.4_TYPE_STATUS_OF_OMEGA -->
-# v0.4.0 — Type Status of Ω
-
-## 1. Ω Is Not a Proper Manifestation
+## 11. Type Status of Ω
 
 Ω must not be treated as one more object inside the field.
 
@@ -291,42 +288,11 @@ Therefore:
 
 ~~~text
 ProperΩ(Ω) = false
-~~~
-
-The predicate `ProperΩ(x)` applies only to manifestations distinct from Ω:
-
-~~~text
-ProperΩ(x) ⇔ ManifestΩ(x) ∧ x ≠ Ω
-~~~
-
-## 2. Dependence Applies Only to Proper Manifestations
-
-The law is:
-
-~~~text
-∀x ∈ 𝔻 :
-ProperΩ(x) ⇒ ∃d [DetCondΩ(d,x)]
-~~~
-
-Expanded:
-
-~~~text
-∀x ∈ 𝔻 :
-[ManifestΩ(x) ∧ x ≠ Ω]
-⇒
-∃d [DetCondΩ(d,x)]
-~~~
-
-For Ω:
-
-~~~text
 DepΩ(Ω) = type-error / non-applicable
 DetCondΩ(d,Ω) = not required in the same sense
 OpenΩ(Ω) = undefined
 ClosedΩ(Ω) = undefined
 ~~~
-
-## 3. Why Ω Does Not Depend
 
 Dependence requires a condition, field, outside, distinction, or residual reference relative to a proper manifestation.
 
@@ -341,30 +307,31 @@ ResΩ(Ω) = not applicable
 
 Ω coincides with the infinite total field of conditions.
 
-## 4. Correct Chain
+---
+
+## 12. Final Type-Correct Form
 
 ~~~text
-Ω = totality
-Ω = infinity
-infinity = without outside
-without outside = not dependent on another field
-~~~
+Ω = ∞Tot
+Outside(Ω) = ∅
 
-For every `x ≠ Ω`:
+∀x ∈ D :
+[ManifestΩ(x) ∧ x ≠ Ω]
+⇒
+∃d [DetCondΩ(d,x)]
 
-~~~text
-x is not the infinite totality
-x has residual field
-x has determinability conditions
-x depends
-~~~
-
-## 5. Final Type-Correct Form
-
-~~~text
-Ω = ∞Tot ∧ Outside(Ω)=∅
-∀x∈𝔻 :
-[ManifestΩ(x) ∧ x≠Ω] ⇒ ∃d DetCondΩ(d,x)
 DepΩ(Ω) = non-applicable
 ~~~
-<!-- END V0.4_TYPE_STATUS_OF_OMEGA -->
+
+---
+
+## 13. Summary
+
+~~~text
+Proper manifestation requires determinability.
+Determinability requires at least one non-zero condition.
+Local closure is legitimate inside scope.
+Structural error is scope violation plus excluded critical condition.
+Ω has no outside.
+Ω is not a dependent object.
+~~~

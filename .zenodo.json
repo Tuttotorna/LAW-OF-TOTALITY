@@ -1,6 +1,7 @@
 {
   "title": "LAW-OF-TOTALITY: The Law of Totality",
-  "description": "A universal structural law describing error as the distance between a local fragment and the total structural field from which that fragment depends.",
+  "version": "0.4.1",
+  "description": "A meta-structural law formalizing structural error as local closure used beyond its valid scope while excluding a critical condition of determinability.",
   "creators": [
     {
       "name": "Brighindi, Massimiliano",
@@ -8,11 +9,14 @@
     }
   ],
   "license": "cc-by-4.0",
-  "upload_type": "software",
+  "upload_type": "publication",
+  "publication_type": "technicalnote",
   "keywords": [
     "totality",
     "structural error",
     "structural stability",
+    "determinability",
+    "non-closure",
     "OMNIA",
     "artificial intelligence",
     "hallucination",

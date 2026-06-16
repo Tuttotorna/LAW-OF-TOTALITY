@@ -1,73 +1,6 @@
-<!-- BEGIN V0.4_INFINITY_NO_OUTSIDE -->
-# v0.4.0 — Infinity / No-Outside Clarification
-
-This release clarifies the status of Ω.
-
-The law is not:
-
-~~~text
-Everything depends, including Ω.
-~~~
-
-The law is:
-
-~~~text
-Only proper manifestations depend.
-Ω does not depend because Ω is the infinite totality without outside.
-~~~
-
-Core identity:
-
-~~~text
-Ω = ∞Tot
-Ω = totality
-Ω = infinity
-Outside(Ω) = ∅
-~~~
-
-Therefore:
-
-~~~text
-DepΩ(Ω) = not applicable
-~~~
-
-This is not a denial of the law.
-
-It is the condition that makes the law type-correct.
-
-The dependence principle applies only to proper manifestations:
-
-~~~text
-∀x ∈ 𝔻 :
-[ManifestΩ(x) ∧ x ≠ Ω]
-⇒
-∃d [DetCondΩ(d,x)]
-~~~
-
-Ω is not a proper manifestation inside Ω.
-
-Ω is the total field without outside.
-
-Therefore Ω is not dependent in the same sense as x.
-
-Short form:
-
-~~~text
-Only the infinite has no outside.
-Everything that is not the infinite has outside, limit, residual field, and determinability conditions.
-~~~
-
-Core sentence:
-
-~~~text
-Ω does not depend because Ω is infinity without outside.
-Every x ≠ Ω depends because every x ≠ Ω is a proper manifestation with conditions of determinability.
-~~~
-<!-- END V0.4_INFINITY_NO_OUTSIDE -->
-
 # Law of Totality
 
-## The Law of Absolute Non-Closure
+## v0.4.1 — Notation, Citation, and Operational Case Correction
 
 This repository formalizes a meta-structural law:
 
@@ -83,39 +16,49 @@ If it does not depend, it cannot exist.
 Hardened form:
 
 ~~~text
-Every proper manifestation inside Ω depends.
-If a proper manifestation has no dependence, it cannot manifest as something inside Ω.
+Every proper manifestation inside Ω requires at least one non-zero condition of determinability.
 ~~~
 
-Version 0.3.0 hardens the law further:
+This version corrects three technical problems:
 
 ~~~text
-Every proper manifestation requires at least one non-zero condition of determinability.
+1. Broken domain notation: ∀x ∈ D :  →  ∀x ∈ D :
+2. Citation metadata was still at v0.1.0.
+3. The repository is now framed as a technical note / formal operational framework, not merely software.
 ~~~
-
-This is stronger than generic dependence.
-
-It avoids treating dependence as a vague relation and defines it through the condition that makes a manifestation determinable as itself.
 
 ---
 
 ## Core Terms
 
 ~~~text
-𝔻             = domain of the nameable, thinkable, formalizable
-Ω = ∞Tot      = total field without outside
-ManifestΩ(x)  = x manifests within Ω
-x ≠ Ω          = x is a proper manifestation, not totality itself
-DetCondΩ(d,x) = d is a non-zero condition without which x is not determinable as x
-DepΩ(x)        = set of determinability-conditions of x
+D                = domain of the nameable, thinkable, modelable, formalizable
+Ω = ∞Tot         = total field without outside
+ManifestΩ(x)    = x manifests within Ω
+x ≠ Ω            = x is a proper manifestation, not totality itself
+ProperΩ(x)      = ManifestΩ(x) ∧ x ≠ Ω
+DetCondΩ(d,x)   = d is a non-zero condition without which x is not determinable as x
+DepΩ(x)          = set of determinability-conditions of x
+~~~
+
+Ω is not an object among objects.
+
+Ω is the total field without outside.
+
+Therefore:
+
+~~~text
+ClosedΩ(Ω) = undefined
+OpenΩ(Ω)   = undefined
+DepΩ(Ω)    = not applicable / type-error
 ~~~
 
 ---
 
-## Core Formula v0.3.0
+## Core Formula
 
 ~~~text
-∀x ∈ 𝔻 :
+∀x ∈ D :
 [ManifestΩ(x) ∧ x ≠ Ω]
 ⇒
 ∃d [DetCondΩ(d,x)]
@@ -124,7 +67,7 @@ DepΩ(x)        = set of determinability-conditions of x
 Equivalent dependence form:
 
 ~~~text
-∀x ∈ 𝔻 :
+∀x ∈ D :
 [ManifestΩ(x) ∧ x ≠ Ω]
 ⇒
 DepΩ(x) ≠ ∅
@@ -133,7 +76,7 @@ DepΩ(x) ≠ ∅
 Contrapositive:
 
 ~~~text
-∀x ∈ 𝔻 :
+∀x ∈ D :
 [x ≠ Ω ∧ DepΩ(x) = ∅]
 ⇒
 ¬ManifestΩ(x)
@@ -145,7 +88,7 @@ In words:
 
 ---
 
-## Why This Is Stronger
+## Why This Is Stronger Than Generic Dependence
 
 Generic dependence can be attacked as too broad.
 
@@ -177,32 +120,57 @@ no manifestation as x
 
 The clause `x ≠ Ω` is essential.
 
-Ω is not an object among objects.
+Ω is not a proper manifestation inside Ω.
 
-Ω is the total field without outside.
+Ω is not a fragment.
+
+Ω is the infinite totality without outside:
+
+~~~text
+Ω = ∞Tot
+Outside(Ω) = ∅
+~~~
 
 Therefore:
 
 ~~~text
-ClosedΩ(Ω) = undefined
-OpenΩ(Ω)   = undefined
-DepΩ(Ω)    = not applicable in the same type as proper x
+DepΩ(Ω) = not applicable
 ~~~
 
-Ω has a different logical type than every proper manifestation.
+This is not a denial of the law.
+
+It is the condition that makes the law type-correct.
+
+The dependence principle applies only to proper manifestations:
+
+~~~text
+∀x ∈ D :
+ProperΩ(x)
+⇒
+∃d [DetCondΩ(d,x)]
+~~~
+
+Short form:
+
+~~~text
+Only the infinite has no outside.
+Everything that is not the infinite has outside, limit, residual field, and determinability conditions.
+~~~
+
+Core sentence:
+
+~~~text
+Ω does not depend because Ω is infinity without outside.
+Every x ≠ Ω depends because every x ≠ Ω is a proper manifestation with conditions of determinability.
+~~~
 
 ---
 
-## Hardened Error Formula v0.3.0
+## Hardened Error Formula
 
-Earlier hardened version:
+Local closure is not error.
 
-~~~text
-ErrΩ(x,F) =
-LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
-~~~
-
-Version 0.3.0 makes this operational by adding actual use:
+Error begins when local closure is used beyond its valid scope while excluding a critical condition of determinability.
 
 ~~~text
 ErrΩ(x,F,U) ⇔
@@ -228,7 +196,7 @@ Error = local closure used beyond valid scope while excluding a critical conditi
 
 ---
 
-## Validity Formula v0.3.0
+## Validity Formula
 
 ~~~text
 ValidΩ(a,F,U) ⇔
@@ -239,16 +207,52 @@ CorrectF(a)
 
 A locally correct answer becomes structurally invalid when it is used beyond its valid scope.
 
+~~~text
+CorrectF(a) ≠ ValidΩ(a,F,U)
+~~~
+
+---
+
+## Operational Reading
+
+The Law of Totality does not say that local models are false.
+
+It states when they become structurally false:
+
+~~~text
+when a local closure is used beyond its valid scope
+while excluding a critical condition of determinability.
+~~~
+
+---
+
+## Operational Cases
+
+This release adds three minimal cases:
+
+~~~text
+examples/CASE_001_AI_HALLUCINATION.md
+examples/CASE_002_ECONOMIC_MODEL_SCOPE.md
+examples/CASE_003_PROJECT_SAFETY.md
+~~~
+
+These examples do not validate the law scientifically.
+
+They make the audit structure testable and inspectable.
+
 ---
 
 ## Core Sentences
 
 ~~~text
 Nothing manifests as something without determinability.
-Determininability requires non-zero conditions.
+Determinability requires non-zero conditions.
 Local closure is not error.
 Error begins when local closure is used beyond valid scope.
 A valid answer preserves scope and critical dependence.
+Ω is not closed.
+Ω is not open.
+Ω is without outside.
 ~~~
 
 ---
@@ -257,7 +261,8 @@ A valid answer preserves scope and critical dependence.
 
 This is not a closed theory of everything.
 
-It is a meta-structural law that every theory, answer, model, algorithm, decision, and discipline must respect if it treats a proper manifestation.
+It is a meta-structural law that every theory, answer, model, algorithm, decision, and discipline must respect when it treats a proper manifestation.
 
-> The law does not close Ω.  
+> The law does not close Ω.
+>
 > It states why no proper manifestation inside Ω can be absolutely closed.

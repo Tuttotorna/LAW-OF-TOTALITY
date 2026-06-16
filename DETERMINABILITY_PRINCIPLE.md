@@ -150,7 +150,7 @@ The second is diagnostic/operational.
 
 ~~~text
 Existence as a proper manifestation is not first.
-Determininability is prior.
+Determinability is prior.
 Without determinability, there is no manifestation as something.
 ~~~
 
