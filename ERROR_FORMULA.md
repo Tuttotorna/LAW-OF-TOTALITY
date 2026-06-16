@@ -1,199 +1,191 @@
-# Formula of Error — Hardened Version
+# Formula of Error — v0.3.0 Operational Version
 
-## 1. Original Formula
+## 1. Previous Hardened Formula
 
-The first formula was:
-
-~~~text
-ErrΩ(x,F) = ClosedF(x) ∧ OpenΩ(x)
-~~~
-
-This captured the central intuition:
-
-> Error occurs when a model closes what, in Ω, is open.
-
-However, hostile audit showed that this version is too aggressive.
-
-Many valid systems require local closure.
-
-Examples:
-
-~~~text
-mathematical proof inside an axiom system
-engineering approximation
-medical diagnosis
-map
-algorithm
-legal decision
-scientific model
-finite answer
-~~~
-
-These are not automatically errors.
-
-They become errors only when their local closure is treated as total closure.
-
----
-
-## 2. Hardened Formula
+Version 0.2.0:
 
 ~~~text
 ErrΩ(x,F) =
 LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
 ~~~
 
-Equivalent form:
+This was stronger than the original formula because it protected legitimate local closure.
+
+---
+
+## 2. Remaining Weakness
+
+The term:
 
 ~~~text
-ErrΩ(x,F) =
-ClosedF(x) ∧ ClaimsTotalityF(x)
+ScopeViolationΩ(F,x)
+~~~
+
+was still too abstract.
+
+The term:
+
+~~~text
+ClaimsTotalityF(x)
+~~~
+
+could sound psychological or explicit.
+
+But many errors are not explicit claims.
+
+They happen in actual use.
+
+A model may not say "I am total", yet it may be used as if it were sufficient.
+
+---
+
+## 3. v0.3.0 Operational Error Formula
+
+~~~text
+ErrΩ(x,F,U) ⇔
+LocalClosureF(x)
+∧ ActualUseU(F,x) exceeds ValidScope(F,x)
+∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
 ~~~
 
 Where:
 
 ~~~text
-ScopeViolationΩ(F,x) =
-F uses its local closure of x beyond the declared or valid scope of F.
-~~~
-
-And:
-
-~~~text
-ClaimsTotalityF(x) =
-F(x) is presented, used, or interpreted as Ω(x).
+x = manifestation under treatment
+F = framework, model, theory, discipline, answer, algorithm
+U = concrete use or deployment of F
+d = critical determinability-condition or dependency
 ~~~
 
 ---
 
-## 3. Core Distinction
+## 4. Short Form
 
 ~~~text
-Local closure is not error.
-False totalization of local closure is error.
+Error = local closure used beyond valid scope while excluding a critical condition.
 ~~~
-
-A local closure can be correct.
-
-A local closure becomes structurally false when it pretends to be absolute.
 
 ---
 
-## 4. Correctness Versus Validity
+## 5. Why Local Closure Is Not Error
+
+Local closure is necessary for:
 
 ~~~text
-CorrectF(x) ≠ ValidΩ(x)
+mathematical proof
+engineering calculation
+medical diagnosis
+maps
+software
+law
+science
+decision-making
+ordinary answers
 ~~~
 
-A result may be correct inside `F` and invalid when used as if `F = Ω`.
+The problem is not closure inside a declared field.
+
+The problem is closure used beyond the field that makes it valid.
+
+---
+
+## 6. Scope Violation
+
+~~~text
+ScopeViolationΩ(F,x,U) ⇔
+ActualUseU(F,x) exceeds ValidScope(F,x)
+~~~
+
+Operational test:
+
+~~~text
+ScopeViolationΩ(F,x,U) ⇔
+∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
+~~~
+
+Meaning:
+
+> The use U requires a critical condition d, but F excludes d.
+
+---
+
+## 7. Correctness Versus Validity
+
+~~~text
+CorrectF(a) ≠ ValidΩ(a,F,U)
+~~~
+
+Correctness inside a framework does not imply validity in a concrete use.
 
 Hardened validity:
 
 ~~~text
-ValidΩ(a,F) =
-CorrectF(a) ∧ ScopeDeclared(F) ∧ DepΩ(a) preserved
+ValidΩ(a,F,U) ⇔
+CorrectF(a)
+∧ ActualUseU(F,a) ⊆ ValidScope(F,a)
+∧ CriticalDepΩ(a,U) preserved
 ~~~
 
 ---
 
-## 5. Error as Scope Violation
-
-A model fails structurally when:
-
-~~~text
-F(x) is treated as Ω(x)
-~~~
-
-but:
-
-~~~text
-F(x) ≠ Ω(x)
-~~~
-
-So:
-
-~~~text
-ErrΩ(x,F) =
-FalselyTotalizedFragment(F,x)
-~~~
-
----
-
-## 6. Diagnostic Questions
-
-For any model `F`, ask:
-
-~~~text
-What does F close locally?
-Is the closure declared as local?
-What field does F exclude?
-What dependency does F suppress?
-Where is F used beyond its scope?
-Where does F(x) pretend to be Ω(x)?
-~~~
-
----
-
-## 7. Application to Answers
-
-An answer can be locally valid.
-
-Example:
+## 8. Example: Arithmetic
 
 ~~~text
 2 + 2 = 4
 ~~~
 
-This is valid inside ordinary arithmetic.
+This is locally correct in ordinary arithmetic.
 
 It is not false because it is locally closed.
 
-It would become structurally false only if presented as a closure of Ω.
+It would become structurally false only if used as a total description of Ω or beyond its valid field.
 
-Therefore:
+---
+
+## 9. Example: Algorithm
+
+An algorithm can be correct in specification.
 
 ~~~text
-ClosedF(a) does not imply ErrΩ(a,F).
-ClosedF(a) ∧ ClaimsTotalityF(a) implies ErrΩ(a,F).
+CorrectSpec(A)
+~~~
+
+But deployment can fail.
+
+~~~text
+CorrectSpec(A) ≠ ValidDeploymentΩ(A,U)
+~~~
+
+Error:
+
+~~~text
+ErrΩ(A,F,U) ⇔
+LocalClosureF(A)
+∧ ActualUseU(F,A) exceeds ValidScope(F,A)
+∧ ∃d [CriticalDepΩ(d,A,U) ∧ ExcludedF(d)]
 ~~~
 
 ---
 
-## 8. Application to Algorithms
+## 10. Diagnostic Questions
+
+For any `F`, `x`, and `U`, ask:
 
 ~~~text
-ErrΩ(A,F) =
-LocalClosureF(A) ∧ ScopeViolationΩ(F,A)
-~~~
-
-An algorithm can be correct inside its formal specification and fail structurally when deployed beyond its model field.
-
-~~~text
-CorrectSpec(A) ≠ ValidDeploymentΩ(A)
+What does F close locally?
+What is the valid scope of F?
+How is F actually used?
+Does actual use exceed valid scope?
+Which determinability-conditions are critical for U?
+Which of them are excluded by F?
+What failure or fragility follows from the exclusion?
 ~~~
 
 ---
 
-## 9. Application to Human Dilemmas
+## 11. Core Sentence
 
 ~~~text
-DilemmaΩ(x,F) =
-LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
-~~~
-
-A dilemma persists when the field is falsely closed.
-
-But not every unsolved problem is automatically caused by false closure.
-
-Corrected sentence:
-
-> When a solution does not emerge, one of the first hypotheses to test is whether the field has been falsely closed.
-
----
-
-## 10. Hardened Core Sentence
-
-~~~text
-Where there is structural error, look for false totalization.
-Where a model becomes fragile, look for scope violation.
-Where a solution does not emerge, check whether a dependency was excluded.
+Do not ask only whether a model is correct.
+Ask whether its use preserves the conditions that make the object determinable in that use.
 ~~~

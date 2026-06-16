@@ -4,191 +4,184 @@
 
 This repository formalizes a meta-structural law:
 
-> Every proper manifestation within totality depends.  
-> If it has no dependence, relation, condition, distinction, or determinability, it cannot manifest as something.
+> Nothing can manifest as something without conditions of determinability.
 
-The claim is not a sectorial theory of physics, mathematics, philosophy, artificial intelligence, engineering, religion, or biology.
-
-It is a law about the structural condition of every possible object, model, answer, theory, algorithm, decision, system, or manifestation.
-
-No finite fragment can be absolutely closed.
-
----
-
-## Core Correction After Hostile Audit
-
-The original compressed sentence was:
+Earlier compressed form:
 
 ~~~text
 Everything that exists depends.
 If it does not depend, it cannot exist.
 ~~~
 
-The hostile audit showed that this sentence is too naked unless it excludes Ω itself.
-
-The hardened form is:
+Hardened form:
 
 ~~~text
 Every proper manifestation inside Ω depends.
 If a proper manifestation has no dependence, it cannot manifest as something inside Ω.
 ~~~
 
-The clause `x ≠ Ω` is not optional.
+Version 0.3.0 hardens the law further:
 
-It is structurally necessary.
+~~~text
+Every proper manifestation requires at least one non-zero condition of determinability.
+~~~
+
+This is stronger than generic dependence.
+
+It avoids treating dependence as a vague relation and defines it through the condition that makes a manifestation determinable as itself.
 
 ---
 
-## Core Formula
-
-Let:
+## Core Terms
 
 ~~~text
-𝔻          = domain of the nameable, thinkable, formalizable
-Ω = ∞Tot   = total field without outside
-EΩ(x)      = x effectively manifests in Ω
-ResΩ(x)    = residual field of Ω relative to x
-DepΩ(x)    = dependence of x within Ω
+𝔻             = domain of the nameable, thinkable, formalizable
+Ω = ∞Tot      = total field without outside
+ManifestΩ(x)  = x manifests within Ω
+x ≠ Ω          = x is a proper manifestation, not totality itself
+DetCondΩ(d,x) = d is a non-zero condition without which x is not determinable as x
+DepΩ(x)        = set of determinability-conditions of x
 ~~~
 
-Then:
+---
+
+## Core Formula v0.3.0
 
 ~~~text
 ∀x ∈ 𝔻 :
-[EΩ(x) ∧ x ≠ Ω] ⇒ DepΩ(x) ≠ 0
+[ManifestΩ(x) ∧ x ≠ Ω]
+⇒
+∃d [DetCondΩ(d,x)]
+~~~
+
+Equivalent dependence form:
+
+~~~text
+∀x ∈ 𝔻 :
+[ManifestΩ(x) ∧ x ≠ Ω]
+⇒
+DepΩ(x) ≠ ∅
 ~~~
 
 Contrapositive:
 
 ~~~text
 ∀x ∈ 𝔻 :
-[x ≠ Ω ∧ DepΩ(x) = 0] ⇒ ¬EΩ(x)
+[x ≠ Ω ∧ DepΩ(x) = ∅]
+⇒
+¬ManifestΩ(x)
 ~~~
 
 In words:
 
-> Every existing proper fragment depends.  
-> A non-dependent proper fragment cannot exist as a manifestation.
+> If something has no condition by which it can be determined as itself, it cannot manifest as something.
 
 ---
 
-## Hardened Non-Closure Form
+## Why This Is Stronger
 
-Let:
+Generic dependence can be attacked as too broad.
+
+Determinability is sharper.
+
+The law no longer says only:
 
 ~~~text
-RelΩ(x, ResΩ(x)) = relation of x with the residual field of Ω relative to x
+x depends.
 ~~~
 
-Then:
+It says:
 
 ~~~text
-OpenΩ(x) ⇔ RelΩ(x, ResΩ(x)) ≠ 0
-~~~
-
-For every `x ≠ Ω`:
-
-~~~text
-∀x ∈ 𝔻 :
-[EΩ(x) ∧ x ≠ Ω] ⇒ OpenΩ(x)
+x cannot be x unless at least one condition makes x determinable as x.
 ~~~
 
 Therefore:
 
 ~~~text
-∀x ∈ 𝔻 :
-[EΩ(x) ∧ x ≠ Ω] ⇒ ¬AbsolutelyClosedΩ(x)
+no determinability condition
+no distinguishability
+no manifestation as x
 ~~~
 
-Ω itself is not closed and not open.
+---
+
+## Ω Clause
+
+The clause `x ≠ Ω` is essential.
+
+Ω is not an object among objects.
+
+Ω is the total field without outside.
+
+Therefore:
 
 ~~~text
 ClosedΩ(Ω) = undefined
 OpenΩ(Ω)   = undefined
+DepΩ(Ω)    = not applicable in the same type as proper x
 ~~~
 
-Ω is totality without outside.  
-The predicate of closure toward an outside does not apply to Ω.
+Ω has a different logical type than every proper manifestation.
 
 ---
 
-## Hardened Formula of Error
+## Hardened Error Formula v0.3.0
 
-The first version was:
-
-~~~text
-ErrΩ(x,F) = ClosedF(x) ∧ OpenΩ(x)
-~~~
-
-The hostile audit showed that this is too aggressive.
-
-Local closure is often legitimate.
-
-A map, theorem, algorithm, diagnosis, model, or engineering approximation can close locally without being false.
-
-The error is not local closure.
-
-The error is local closure presented as total closure.
-
-Therefore the hardened formula is:
+Earlier hardened version:
 
 ~~~text
 ErrΩ(x,F) =
 LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
 ~~~
 
-Equivalent form:
+Version 0.3.0 makes this operational by adding actual use:
 
 ~~~text
-ErrΩ(x,F) =
-ClosedF(x) ∧ ClaimsTotalityF(x)
+ErrΩ(x,F,U) ⇔
+LocalClosureF(x)
+∧ ActualUseU(F,x) exceeds ValidScope(F,x)
+∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
 ~~~
 
 Where:
 
 ~~~text
-ScopeViolationΩ(F,x) =
-F treats its local closure of x as if it were closure of x in Ω.
+F = framework, model, theory, algorithm, answer, discipline
+U = concrete use of F
+x = object or manifestation under treatment
+d = critical determinability-condition or dependency
 ~~~
 
-Or:
+Short form:
 
 ~~~text
-ClaimsTotalityF(x) =
-F(x) is presented or used as Ω(x).
+Error = local closure used beyond valid scope while excluding a critical condition.
 ~~~
 
 ---
 
-## Validity Formula
-
-A response, theory, model, or decision can be locally valid.
-
-But it is valid only if its field of validity is preserved.
+## Validity Formula v0.3.0
 
 ~~~text
-ValidΩ(a,F) =
-CorrectF(a) ∧ ScopeDeclared(F) ∧ DepΩ(a) preserved
+ValidΩ(a,F,U) ⇔
+CorrectF(a)
+∧ ActualUseU(F,a) ⊆ ValidScope(F,a)
+∧ CriticalDepΩ(a,U) preserved
 ~~~
 
-Therefore:
-
-~~~text
-CorrectF(a) ≠ ValidΩ(a)
-~~~
-
-A locally correct answer becomes structurally false when it pretends to be total.
+A locally correct answer becomes structurally invalid when it is used beyond its valid scope.
 
 ---
 
 ## Core Sentences
 
 ~~~text
-Every proper manifestation depends.
-No proper fragment is absolutely independent.
+Nothing manifests as something without determinability.
+Determininability requires non-zero conditions.
 Local closure is not error.
-False totalization of local closure is error.
-A valid answer preserves its dependence and scope.
+Error begins when local closure is used beyond valid scope.
+A valid answer preserves scope and critical dependence.
 ~~~
 
 ---
@@ -197,7 +190,7 @@ A valid answer preserves its dependence and scope.
 
 This is not a closed theory of everything.
 
-It is a meta-structural law that prevents any fragment, theory, answer, discipline, algorithm, or system from pretending to be the whole.
+It is a meta-structural law that every theory, answer, model, algorithm, decision, and discipline must respect if it treats a proper manifestation.
 
 > The law does not close Ω.  
-> It states that nothing inside Ω can close Ω.
+> It states why no proper manifestation inside Ω can be absolutely closed.

@@ -1,4 +1,4 @@
-# Formal System — Hardened Core
+# Formal System — v0.3.0 Determinability Core
 
 ## 1. Primitives
 
@@ -14,11 +14,45 @@ Domain of the nameable, thinkable, modelable, formalizable.
 
 Total field without outside.
 
+Ω is not an ordinary object inside 𝔻.
+
+Ω has a different logical type from every proper manifestation.
+
 ~~~text
-EΩ(x)
+ManifestΩ(x)
 ~~~
 
-`x` effectively manifests in Ω.
+`x` manifests within Ω.
+
+~~~text
+ProperΩ(x)
+~~~
+
+`x` is a proper manifestation.
+
+Definition:
+
+~~~text
+ProperΩ(x) ⇔ ManifestΩ(x) ∧ x ≠ Ω
+~~~
+
+~~~text
+DetCondΩ(d,x)
+~~~
+
+`d` is a non-zero condition without which `x` is not determinable as `x`.
+
+~~~text
+DepΩ(x)
+~~~
+
+Set of determinability-conditions of `x`.
+
+Definition:
+
+~~~text
+DepΩ(x) = { d : DetCondΩ(d,x) }
+~~~
 
 ~~~text
 ResΩ(x)
@@ -26,259 +60,216 @@ ResΩ(x)
 
 Residual field of Ω relative to x.
 
-This replaces the fragile set-theoretic notation `Ω minus x`.
-
-Ω is not treated as an ordinary set.
-
-~~~text
-RelΩ(x, ResΩ(x))
-~~~
-
-Relation of `x` with the residual field of Ω relative to x.
-
-~~~text
-DepΩ(x)
-~~~
-
-Dependence of `x` within Ω.
+This avoids naive set-theoretic treatment of Ω.
 
 ---
 
-## 2. Hierarchy
-
-~~~text
-EΩ(x) ⇒ x manifests within Ω
-~~~
-
-But:
-
-~~~text
-x ∈ 𝔻 ⇏ EΩ(x)
-~~~
-
-This separates:
-
-~~~text
-nameable objects
-formal objects
-fictional objects
-impossible objects
-effective manifestations
-~~~
-
----
-
-## 3. Proper Manifestation
-
-The law applies only to proper manifestations.
-
-~~~text
-ProperΩ(x) ⇔ EΩ(x) ∧ x ≠ Ω
-~~~
-
-The clause `x ≠ Ω` is essential.
-
-Without it, Ω itself becomes a false counterexample.
-
----
-
-## 4. Opening and Absolute Closure
-
-Defined only for:
-
-~~~text
-x ≠ Ω
-~~~
-
-Opening:
-
-~~~text
-OpenΩ(x) ⇔ RelΩ(x, ResΩ(x)) ≠ 0
-~~~
-
-Absolute closure:
-
-~~~text
-AbsolutelyClosedΩ(x) ⇔ RelΩ(x, ResΩ(x)) = 0
-~~~
-
-Ω is not closed and not open.
-
-~~~text
-ClosedΩ(Ω) = undefined
-OpenΩ(Ω)   = undefined
-~~~
-
-Reason:
-
-~~~text
-Ω has no outside.
-Therefore the predicate of closure toward an outside does not apply to Ω.
-~~~
-
----
-
-## 5. Main Theorem / Main Axiom
-
-At this stage the law should be treated as a meta-structural axiom or theorem-schema, depending on the chosen primitive basis.
+## 2. Core Axiom / Theorem-Schema
 
 ~~~text
 ∀x ∈ 𝔻 :
-ProperΩ(x) ⇒ OpenΩ(x)
+ProperΩ(x) ⇒ ∃d [DetCondΩ(d,x)]
 ~~~
 
 Expanded:
 
 ~~~text
 ∀x ∈ 𝔻 :
-[EΩ(x) ∧ x ≠ Ω] ⇒ RelΩ(x, ResΩ(x)) ≠ 0
+[ManifestΩ(x) ∧ x ≠ Ω]
+⇒
+∃d [DetCondΩ(d,x)]
 ~~~
 
-Dependence form:
+Equivalent dependence form:
 
 ~~~text
 ∀x ∈ 𝔻 :
-[EΩ(x) ∧ x ≠ Ω] ⇒ DepΩ(x) ≠ 0
+[ManifestΩ(x) ∧ x ≠ Ω]
+⇒
+DepΩ(x) ≠ ∅
 ~~~
 
 ---
 
-## 6. Contrapositive
+## 3. Contrapositive
 
 ~~~text
 ∀x ∈ 𝔻 :
-[x ≠ Ω ∧ DepΩ(x) = 0] ⇒ ¬EΩ(x)
+[x ≠ Ω ∧ DepΩ(x) = ∅]
+⇒
+¬ManifestΩ(x)
 ~~~
 
 Reading:
 
-> No absolutely independent proper fragment can effectively manifest.
+> If a supposed proper manifestation has no condition of determinability, it cannot manifest as something.
 
 ---
 
-## 7. Proof Direction From Determinability
+## 4. Determinability Argument
 
-A stronger derivation can be attempted from determinability.
+The strongest derivation path is:
 
 ~~~text
-EΩ(x) as x
+ManifestΩ(x) as x
 ⇒ x is determinable as x
-⇒ x is distinguishable from non-x
-⇒ distinction requires relation/difference/condition
-⇒ DepΩ(x) ≠ 0
+⇒ x is distinguishable as x
+⇒ at least one condition makes x distinguishable/determinable
+⇒ ∃d [DetCondΩ(d,x)]
+⇒ DepΩ(x) ≠ ∅
 ~~~
 
-Thus:
+Therefore:
 
 ~~~text
-Manifestation as x requires determinability.
-Determinability requires non-zero relation.
-Therefore manifestation as x requires dependence.
+No determinability condition
+⇒ no distinguishability
+⇒ no manifestation as x
 ~~~
-
-This is the strongest current proof direction.
 
 ---
 
-## 8. Local Closure Versus Absolute Closure
+## 5. Relation, Dependence, Determinability
 
-Local closure can be legitimate.
+Version 0.3.0 separates three levels:
+
+~~~text
+RelΩ(x)       = x stands in relation
+DepΩ(x)       = x has dependence
+DetCondΩ(d,x) = d is necessary for x to be determinable as x
+~~~
+
+Not every relation is automatically a critical dependence.
+
+Not every dependence is equally relevant to every use.
+
+For existence as a proper manifestation, minimal determinability is required.
+
+For error diagnosis, critical excluded determinability-conditions are required.
+
+---
+
+## 6. Types of Determinability Conditions
+
+A determinability-condition may be:
+
+~~~text
+logical
+definitional
+structural
+semantic
+differential
+axiomatic
+causal
+temporal
+material
+informational
+observational
+dynamic
+consequential
+contextual
+~~~
+
+The law is not limited to physical causality.
+
+---
+
+## 7. Local Closure and Absolute Closure
 
 ~~~text
 LocalClosureF(x)
 ~~~
 
-means that a framework `F` closes `x` for a defined purpose, scope, axiom system, model, calculation, or decision.
+A framework `F` closes `x` locally for a defined scope.
 
-Absolute closure is different.
+This can be valid.
 
 ~~~text
 AbsolutelyClosedΩ(x)
 ~~~
 
-means that `x` has no dependence, relation, condition, distinction, or determinability beyond itself.
+`x` has no non-zero determinability-condition, dependence, relation, distinction, or field-reference.
 
-The law rejects absolute closure of proper manifestations.
+For proper manifestations, absolute closure is impossible.
 
-It does not reject useful local closure.
+~~~text
+ProperΩ(x) ⇒ ¬AbsolutelyClosedΩ(x)
+~~~
 
 ---
 
-## 9. Hardened Error Formula
+## 8. Operational Error Formula
 
-Initial version:
-
-~~~text
-ErrΩ(x,F) = ClosedF(x) ∧ OpenΩ(x)
-~~~
-
-Correction:
+Let:
 
 ~~~text
-ErrΩ(x,F) =
-LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
+F = framework/model/theory/algorithm/discipline/answer
+U = concrete use of F
+x = manifestation under treatment
+d = critical determinability-condition
 ~~~
 
-Equivalent operational version:
+Then:
 
 ~~~text
-ErrΩ(x,F) =
-ClosedF(x) ∧ ClaimsTotalityF(x)
+ErrΩ(x,F,U) ⇔
+LocalClosureF(x)
+∧ ActualUseU(F,x) exceeds ValidScope(F,x)
+∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
 ~~~
 
-Where:
+This replaces the weaker phrase:
 
 ~~~text
-ScopeViolationΩ(F,x) =
-F uses its local closure beyond its field of validity.
+ClaimsTotalityF(x)
 ~~~
 
-And:
+with actual operational use.
+
+---
+
+## 9. Scope Violation
 
 ~~~text
-ClaimsTotalityF(x) =
-F(x) is treated as Ω(x).
+ScopeViolationΩ(F,x,U) ⇔
+ActualUseU(F,x) exceeds ValidScope(F,x)
 ~~~
+
+Equivalent diagnostic form:
+
+~~~text
+ScopeViolationΩ(F,x,U) ⇔
+∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
+~~~
+
+A model fails structurally when its use requires a condition that the model excludes.
 
 ---
 
 ## 10. Validity Formula
 
 ~~~text
-ValidΩ(a,F) =
-CorrectF(a) ∧ ScopeDeclared(F) ∧ DepΩ(a) preserved
+ValidΩ(a,F,U) ⇔
+CorrectF(a)
+∧ ActualUseU(F,a) ⊆ ValidScope(F,a)
+∧ CriticalDepΩ(a,U) preserved
 ~~~
 
 Therefore:
 
 ~~~text
-CorrectF(a) ≠ ValidΩ(a)
+CorrectF(a) ≠ ValidΩ(a,F,U)
 ~~~
 
-A locally correct answer is structurally valid only when it preserves scope and dependence.
+Correctness inside F is not structural validity in use U.
 
 ---
 
-## 11. Domain of Structural Error
+## 11. Summary
 
 ~~~text
-DomErr(F) =
-{ x ∈ 𝔻 :
-  EΩ(x) ∧ x ≠ Ω ∧ LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
-}
-~~~
-
-This is the diagnostic set of a model `F`.
-
-It contains the objects that `F` does not merely close locally, but falsely totalizes.
-
----
-
-## 12. Summary
-
-~~~text
-Proper manifestation implies dependence.
-Dependence implies non-absolute-closure.
-Local closure is allowed.
-False totalization is error.
+Proper manifestation requires determinability.
+Determinability requires at least one non-zero condition.
+Local closure is legitimate inside scope.
+Structural error is scope violation plus excluded critical condition.
 ~~~

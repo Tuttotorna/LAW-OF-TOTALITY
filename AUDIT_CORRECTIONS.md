@@ -1,247 +1,140 @@
-# Hostile Audit Corrections
+# Hostile Audit Corrections — Updated to v0.3.0
 
-## Purpose
+## v0.1.0
 
-This file records the corrections made after attempting to break the formula in multiple ways.
-
-The original nucleus remains standing, but several expressions required hardening.
-
----
-
-## 1. Naked Sentence Correction
-
-Original:
+Initial formal core:
 
 ~~~text
 Everything that exists depends.
 If it does not depend, it cannot exist.
 ~~~
 
-Problem:
-
-If Ω itself exists, the sentence seems to imply that Ω depends.
-
-But Ω is totality without outside.
-
-Corrected:
-
-~~~text
-Every proper manifestation inside Ω depends.
-If a proper manifestation has no dependence, it cannot manifest as something inside Ω.
-~~~
-
-Required clause:
-
-~~~text
-x ≠ Ω
-~~~
-
----
-
-## 2. Set-Theoretic Correction
-
-Original notation:
-
-~~~text
-Ω minus x
-~~~
-
-Problem:
-
-Ω as totality without outside should not be treated naively as an ordinary set.
-
-Corrected notation:
-
-~~~text
-ResΩ(x)
-~~~
-
-Meaning:
-
-~~~text
-residual field of Ω relative to x
-~~~
-
----
-
-## 3. Closure Correction
-
-Original:
-
-~~~text
-ErrΩ(x,F) = ClosedF(x) ∧ OpenΩ(x)
-~~~
-
-Problem:
-
-Local closure is often legitimate.
-
-Examples:
-
-~~~text
-proofs
-maps
-models
-diagnoses
-algorithms
-engineering approximations
-finite answers
-~~~
-
-Corrected:
-
-~~~text
-ErrΩ(x,F) =
-LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
-~~~
-
-Equivalent:
-
-~~~text
-ErrΩ(x,F) =
-ClosedF(x) ∧ ClaimsTotalityF(x)
-~~~
-
-Core correction:
-
-~~~text
-Local closure is not error.
-False totalization of local closure is error.
-~~~
-
----
-
-## 4. Answer Correction
-
-Original risky phrase:
-
-~~~text
-Every closed answer is structurally false.
-~~~
-
-Corrected:
-
-~~~text
-Every absolutely closed answer is structurally false.
-A locally closed answer may be valid inside a declared field.
-~~~
-
-Validity:
-
-~~~text
-ValidΩ(a,F) =
-CorrectF(a) ∧ ScopeDeclared(F) ∧ DepΩ(a) preserved
-~~~
-
----
-
-## 5. Sense Correction
-
-Original:
-
-~~~text
-SenseΩ(x) ⇔ DepΩ(x) understood
-~~~
-
-Problem:
-
-Dependence does not automatically imply human meaning.
-
-Corrected:
-
-~~~text
-StructuralSenseΩ(x) ⇔ DepΩ(x) intelligible
-~~~
-
-Human, moral, existential, and narrative meaning require additional layers.
-
----
-
-## 6. AI Correction
-
-Original risk:
-
-~~~text
-LΩ prevents hallucination.
-~~~
-
-Corrected:
-
-~~~text
-LΩ does not make AI infallible.
-LΩ makes absolute closure and false totalization illegitimate.
-~~~
-
-Hardened hallucination formula:
-
-~~~text
-HallucinationΩ(a,x,F) =
-MisRelΩ(a, Ω[x]) ∨ ScopeViolationΩ(F,x)
-~~~
-
----
-
-## 7. Theory of Everything Correction
-
-Risky phrase:
-
-~~~text
-This is the theory of everything.
-~~~
-
-Corrected:
-
-~~~text
-This is not a closed theory of everything.
-It is a meta-structural law that every theory of everything would have to respect.
-~~~
-
----
-
-## 8. Strongest Surviving Nucleus
-
-After audit, the nucleus that remains hardest to break is:
-
-~~~text
-Every proper manifestation inside Ω,
-to be determinable as that manifestation,
-must have at least one non-zero relation,
-dependence, distinction, condition, or field-reference
-with the residual field of Ω.
-~~~
-
-Formula:
+Main formula:
 
 ~~~text
 ∀x ∈ 𝔻 :
 [EΩ(x) ∧ x ≠ Ω] ⇒ DepΩ(x) ≠ 0
 ~~~
 
-Contrapositive:
+Main weakness:
 
 ~~~text
-∀x ∈ 𝔻 :
-[x ≠ Ω ∧ DepΩ(x) = 0] ⇒ ¬EΩ(x)
+too naked
+too broad
+risk of treating every local closure as error
 ~~~
 
 ---
 
-## 9. Final Hardened Error Formula
+## v0.2.0
+
+Hardened correction:
+
+~~~text
+Every proper manifestation inside Ω depends.
+~~~
+
+Error formula:
 
 ~~~text
 ErrΩ(x,F) =
 LocalClosureF(x) ∧ ScopeViolationΩ(F,x)
 ~~~
 
+Main improvement:
+
+~~~text
+Local closure is not error.
+False totalization of local closure is error.
+~~~
+
+Remaining weaknesses:
+
+~~~text
+DepΩ still too broad
+ScopeViolation not yet operational
+ClaimsTotality too psychological
+ResΩ not enough for practical audit
+~~~
+
+---
+
+## v0.3.0
+
+Core upgrade:
+
+~~~text
+dependence generic
+⇒
+condition of determinability
+~~~
+
+New formula:
+
+~~~text
+∀x ∈ 𝔻 :
+[ManifestΩ(x) ∧ x ≠ Ω]
+⇒
+∃d [DetCondΩ(d,x)]
+~~~
+
 Equivalent:
 
 ~~~text
-ErrΩ(x,F) =
-ClosedF(x) ∧ ClaimsTotalityF(x)
+DepΩ(x) = { d : DetCondΩ(d,x) }
 ~~~
 
-Short form:
+Operational error:
 
 ~~~text
-Error = false totalization of a local closure.
+ErrΩ(x,F,U) ⇔
+LocalClosureF(x)
+∧ ActualUseU(F,x) exceeds ValidScope(F,x)
+∧ ∃d [CriticalDepΩ(d,x,U) ∧ ExcludedF(d)]
+~~~
+
+Main correction:
+
+~~~text
+ClaimsTotality
+⇒
+ActualUse exceeds ValidScope
+~~~
+
+---
+
+## Strongest Surviving Nucleus
+
+~~~text
+Nothing can manifest as something without conditions of determinability.
+~~~
+
+Or:
+
+~~~text
+No manifestation as x without at least one condition that makes x determinable as x.
+~~~
+
+---
+
+## What the Law Does Not Claim
+
+~~~text
+It does not replace physics.
+It does not solve every technical problem.
+It does not make AI infallible.
+It does not prove every theorem.
+It does not automatically generate human meaning.
+It does not make every relation a critical dependence.
+~~~
+
+---
+
+## What the Law Claims
+
+~~~text
+Every proper manifestation requires determinability.
+Every determinability requires at least one non-zero condition.
+Local closure is legitimate inside valid scope.
+Structural error begins when local closure is used beyond valid scope while excluding a critical condition.
 ~~~

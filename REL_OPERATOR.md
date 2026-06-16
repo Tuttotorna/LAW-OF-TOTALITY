@@ -1,137 +1,128 @@
-# The RelΩ Operator — Hardened Version
+# The RelΩ Operator — v0.3.0
 
-## 1. Current Status
+## 1. Status
 
-`RelΩ` remains a primitive.
+`RelΩ` remains useful, but v0.3.0 places determinability before generic relation.
 
-~~~text
-RelΩ(x, ResΩ(x)) = relation of x with the residual field of Ω relative to x
-~~~
-
-This version avoids treating Ω as an ordinary set.
-
-Instead of writing:
-
-~~~text
-Ω minus x
-~~~
-
-we write:
-
-~~~text
-ResΩ(x)
-~~~
-
-where `ResΩ(x)` means the residual field relative to x.
-
----
-
-## 2. Basic Use
-
-For any `x ≠ Ω`:
+Earlier form:
 
 ~~~text
 OpenΩ(x) ⇔ RelΩ(x, ResΩ(x)) ≠ 0
 ~~~
 
-Absolute closure:
+Hardened form:
 
 ~~~text
-AbsolutelyClosedΩ(x) ⇔ RelΩ(x, ResΩ(x)) = 0
+ManifestΩ(x) ∧ x ≠ Ω
+⇒
+∃d [DetCondΩ(d,x)]
 ~~~
 
-The law states that no proper manifestation is absolutely closed.
+Relation is now subordinate to determinability.
+
+---
+
+## 2. Determinability Condition
 
 ~~~text
-EΩ(x) ∧ x ≠ Ω ⇒ RelΩ(x, ResΩ(x)) ≠ 0
+DetCondΩ(d,x)
+~~~
+
+means:
+
+~~~text
+d is a non-zero condition without which x is not determinable as x.
+~~~
+
+This may include relations, but is not reduced to relation.
+
+---
+
+## 3. DepΩ
+
+~~~text
+DepΩ(x) = { d : DetCondΩ(d,x) }
+~~~
+
+So:
+
+~~~text
+DepΩ(x) ≠ ∅
+~~~
+
+means:
+
+~~~text
+x has at least one condition that makes it determinable as x.
 ~~~
 
 ---
 
-## 3. Possible Decomposition
-
-A preliminary decomposition:
+## 4. Candidate Condition Types
 
 ~~~text
-RelΩ(x, ResΩ(x)) =
-CausΩ(x)
-∨ InfoΩ(x)
-∨ StructΩ(x)
-∨ DefΩ(x)
-∨ DynΩ(x)
-∨ TempΩ(x)
-∨ ObsΩ(x)
-∨ ConseqΩ(x)
-∨ DiffΩ(x)
-~~~
-
-Where:
-
-~~~text
-CausΩ(x)    causal dependence
-InfoΩ(x)    informational relation
-StructΩ(x)  structural co-determination
-DefΩ(x)     definitional/logical dependence
-DynΩ(x)     dynamic or transformative interaction
-TempΩ(x)    temporal dependence
-ObsΩ(x)     observational / measurement dependence
-ConseqΩ(x)  consequential dependence
-DiffΩ(x)    differential/distinction dependence
+logical
+definitional
+structural
+semantic
+differential
+axiomatic
+causal
+temporal
+material
+informational
+observational
+dynamic
+consequential
+contextual
 ~~~
 
 ---
 
-## 4. Minimal Operational Rule
+## 5. Minimal and Critical Conditions
 
-To show that `x` is not absolutely closed, it is enough to identify one non-zero relation type.
+Minimal condition:
 
 ~~~text
-∃r ∈ RelTypes :
-rΩ(x) ≠ 0
+MinimalDepΩ(x)
 ~~~
 
-Then:
+A condition required for x to manifest as x.
+
+Critical condition:
 
 ~~~text
-OpenΩ(x)
+CriticalDepΩ(d,x,U)
+~~~
+
+A condition required for use U to remain valid.
+
+The operational audit uses critical conditions.
+
+---
+
+## 6. Practical Diagnostic
+
+For any `x`, ask:
+
+~~~text
+What makes x determinable as x?
+What distinguishes x from non-x?
+What condition would make x collapse, change, or lose identity?
+What condition is required by the actual use U?
+What condition is excluded by the model F?
 ~~~
 
 ---
 
-## 5. Practical Diagnostic
+## 7. Warning
 
-For any object `x`, ask:
+Do not reduce determinability to causality.
 
-~~~text
-What causes x?
-What defines x?
-What distinguishes x?
-What conditions x?
-What changes x?
-What observes x?
-What does x affect?
-What does x require?
-What does x exclude?
-What does x imply?
-What field makes x determinable as x?
-~~~
+Do not reduce dependence to any relation.
 
-If any answer is non-empty, then:
+The hard nucleus is:
 
 ~~~text
-AbsolutelyClosedΩ(x) = false
-~~~
-
----
-
-## 6. Warning
-
-`RelΩ` must not be reduced prematurely to a single relation type.
-
-If `RelΩ` is reduced only to causality, then logical, informational, structural, symbolic, mathematical, and observational dependence may be missed.
-
-The operator must remain broad enough to preserve the law:
-
-~~~text
-Every proper manifestation depends.
+No manifestation as x without a condition of determinability.
 ~~~
