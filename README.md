@@ -1,3 +1,70 @@
+<!-- BEGIN V0.4_INFINITY_NO_OUTSIDE -->
+# v0.4.0 — Infinity / No-Outside Clarification
+
+This release clarifies the status of Ω.
+
+The law is not:
+
+~~~text
+Everything depends, including Ω.
+~~~
+
+The law is:
+
+~~~text
+Only proper manifestations depend.
+Ω does not depend because Ω is the infinite totality without outside.
+~~~
+
+Core identity:
+
+~~~text
+Ω = ∞Tot
+Ω = totality
+Ω = infinity
+Outside(Ω) = ∅
+~~~
+
+Therefore:
+
+~~~text
+DepΩ(Ω) = not applicable
+~~~
+
+This is not a denial of the law.
+
+It is the condition that makes the law type-correct.
+
+The dependence principle applies only to proper manifestations:
+
+~~~text
+∀x ∈ 𝔻 :
+[ManifestΩ(x) ∧ x ≠ Ω]
+⇒
+∃d [DetCondΩ(d,x)]
+~~~
+
+Ω is not a proper manifestation inside Ω.
+
+Ω is the total field without outside.
+
+Therefore Ω is not dependent in the same sense as x.
+
+Short form:
+
+~~~text
+Only the infinite has no outside.
+Everything that is not the infinite has outside, limit, residual field, and determinability conditions.
+~~~
+
+Core sentence:
+
+~~~text
+Ω does not depend because Ω is infinity without outside.
+Every x ≠ Ω depends because every x ≠ Ω is a proper manifestation with conditions of determinability.
+~~~
+<!-- END V0.4_INFINITY_NO_OUTSIDE -->
+
 # Law of Totality
 
 ## The Law of Absolute Non-Closure

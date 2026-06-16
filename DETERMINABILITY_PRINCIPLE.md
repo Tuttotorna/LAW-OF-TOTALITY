@@ -153,3 +153,57 @@ Existence as a proper manifestation is not first.
 Determininability is prior.
 Without determinability, there is no manifestation as something.
 ~~~
+
+<!-- BEGIN V0.4_INFINITY_AND_DETERMINABILITY -->
+# v0.4.0 — Infinity and Determinability
+
+The determinability principle applies to proper manifestations.
+
+It does not apply to Ω as if Ω were a proper object.
+
+Technical form:
+
+~~~text
+∀x ∈ 𝔻 :
+[ManifestΩ(x) ∧ x ≠ Ω]
+⇒
+∃d [DetCondΩ(d,x)]
+~~~
+
+The clause `x ≠ Ω` means:
+
+~~~text
+x is not the infinite totality
+x has residual field
+x is determinable against what is not simply identical with x
+x has conditions of determinability
+~~~
+
+Ω has no outside:
+
+~~~text
+Outside(Ω) = ∅
+~~~
+
+Therefore Ω is not dependent.
+
+More precisely:
+
+~~~text
+DepΩ(Ω) = type-error / non-applicable
+~~~
+
+Ω is not independent like an isolated object.
+
+Ω is non-dependent because it is not a fragment.
+
+It is the infinite totality without outside.
+
+Core sentence:
+
+~~~text
+Only the infinite has no outside.
+Only what has no outside is not dependent.
+Every proper manifestation has outside/residual field and therefore determinability conditions.
+~~~
+<!-- END V0.4_INFINITY_AND_DETERMINABILITY -->

@@ -1,3 +1,52 @@
+<!-- BEGIN V0.4_CHANGELOG -->
+# v0.4.0 — Infinity / No-Outside Clarification
+
+This release clarifies the status of Ω.
+
+## Core clarification
+
+~~~text
+Ω = ∞Tot
+Ω = totality
+Ω = infinity
+Outside(Ω) = ∅
+~~~
+
+## Main correction
+
+The law does not say that Ω depends.
+
+The law applies only to proper manifestations:
+
+~~~text
+∀x ∈ 𝔻 :
+[ManifestΩ(x) ∧ x ≠ Ω]
+⇒
+∃d [DetCondΩ(d,x)]
+~~~
+
+For Ω:
+
+~~~text
+DepΩ(Ω) = non-applicable / type-error
+OpenΩ(Ω) = undefined
+ClosedΩ(Ω) = undefined
+~~~
+
+## Core sentence
+
+~~~text
+Ω does not depend because Ω is the infinite totality without outside.
+Every x ≠ Ω depends because every x ≠ Ω is a proper manifestation with determinability conditions.
+~~~
+
+## New file
+
+~~~text
+INFINITY_NO_OUTSIDE.md
+~~~
+<!-- END V0.4_CHANGELOG -->
+
 # Changelog
 
 ## v0.3.0 — Determinability Core and Operational Audit

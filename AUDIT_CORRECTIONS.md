@@ -1,3 +1,73 @@
+<!-- BEGIN V0.4_HOSTILE_AUDIT_OMEGA -->
+# v0.4.0 — Hostile Audit Correction on Ω
+
+## Attack
+
+If everything depends, does Ω depend?
+
+If Ω depends, then Ω has a condition outside itself.
+
+But Ω is totality without outside.
+
+Contradiction.
+
+## Correction
+
+The law never applies to Ω as a proper manifestation.
+
+The valid formula is:
+
+~~~text
+∀x ∈ 𝔻 :
+[ManifestΩ(x) ∧ x ≠ Ω]
+⇒
+∃d [DetCondΩ(d,x)]
+~~~
+
+So Ω is excluded by type and by clause.
+
+## Result
+
+The formula is not:
+
+~~~text
+Everything including Ω depends.
+~~~
+
+The formula is:
+
+~~~text
+Every proper manifestation depends.
+Ω does not depend because Ω is infinity without outside.
+~~~
+
+## Final Correction
+
+~~~text
+DepΩ(Ω) = non-applicable
+Outside(Ω) = ∅
+Ω = ∞Tot
+~~~
+
+This strengthens the system.
+
+It prevents the false counterexample:
+
+~~~text
+Ω depends
+~~~
+
+and the equally false formulation:
+
+~~~text
+Ω is an independent object.
+~~~
+
+Ω is not an independent object.
+
+Ω is the infinite total field without outside.
+<!-- END V0.4_HOSTILE_AUDIT_OMEGA -->
+
 # Hostile Audit Corrections — Updated to v0.3.0
 
 ## v0.1.0
