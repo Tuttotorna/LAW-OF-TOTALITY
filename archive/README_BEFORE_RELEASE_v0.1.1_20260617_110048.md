@@ -1,25 +1,3 @@
-<!-- LOT_STABLE_RELEASE_START -->
-## Stable release
-
-Current stable release:
-
-**v0.1.1 — Structural Error Audit Framework**
-
-This release supersedes `v0.1.0` and is intended as the first clean stable tag pointing to the complete operational framework.
-
-It includes:
-
-- core formula;
-- theory-to-reality bridge;
-- D0-D5 critical dependency taxonomy;
-- falsification and limits;
-- reusable audit template;
-- compiled example audits;
-- comparison with existing frameworks.
-
-See [`docs/RELEASE_v0.1.1.md`](docs/RELEASE_v0.1.1.md).
-<!-- LOT_STABLE_RELEASE_END -->
-
 # LAW OF TOTALITY
 
 ## Structural Error as Theory-Reality Friction
@@ -366,6 +344,3 @@ The Law of Totality gives a general form of structural error:
 
 > A framework does not fail because it is partial.  
 > It fails structurally when it is used as sufficient for an actual use that requires what the framework excludes.
-
-- [`docs/RELEASE_v0.1.1.md`](docs/RELEASE_v0.1.1.md)  
-  Release notes for v0.1.1 — Structural Error Audit Framework.
