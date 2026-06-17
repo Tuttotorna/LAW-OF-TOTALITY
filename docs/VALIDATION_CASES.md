@@ -51,6 +51,22 @@ A positive case is weak if it cannot specify:
 
 This prevents the validation cases from becoming rhetorical examples.
 
+## Template-based validation
+
+Future validation cases should be compiled using the reusable audit template:
+
+[`../templates/STRUCTURAL_ERROR_AUDIT_TEMPLATE.md`](../templates/STRUCTURAL_ERROR_AUDIT_TEMPLATE.md)
+
+This makes cases comparable and prevents rhetorical examples.
+
+A validation case is stronger when it can show:
+
+- why the dependency is D4 or D5;
+- why the actual use requires it;
+- why the framework excludes it;
+- why false sufficiency is present;
+- what would defeat the diagnosis.
+
 ## Core validation rule
 
 Structural error is present only when all three conditions occur together:

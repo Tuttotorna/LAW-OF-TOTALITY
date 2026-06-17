@@ -255,35 +255,6 @@ If one of these conditions is absent, the Law of Totality should not diagnose st
 
 See [`docs/FALSIFICATION_AND_LIMITS.md`](docs/FALSIFICATION_AND_LIMITS.md).
 
-## Reusable audit template
-
-The repository includes a reusable structural error audit template.
-
-The template makes the Law of Totality operational.
-
-It forces each audit to identify:
-
-1. object;
-2. framework;
-3. actual use;
-4. valid scope;
-5. local closure;
-6. candidate dependencies;
-7. D0-D5 dependency level;
-8. excluded D4/D5 dependencies;
-9. false sufficiency;
-10. final verdict;
-11. falsification check;
-12. correction path.
-
-The template allows three verdicts:
-
-- structural error;
-- no structural error;
-- insufficient evidence.
-
-See [`templates/STRUCTURAL_ERROR_AUDIT_TEMPLATE.md`](templates/STRUCTURAL_ERROR_AUDIT_TEMPLATE.md).
-
 ## Practical use
 
 To apply the Law of Totality, ask six questions:

@@ -256,6 +256,20 @@ Use insufficient evidence when the dependency level, actual use, valid scope or 
 
 See [`FALSIFICATION_AND_LIMITS.md`](FALSIFICATION_AND_LIMITS.md).
 
+## Reusable template
+
+For actual audits, use the reusable template:
+
+[`../templates/STRUCTURAL_ERROR_AUDIT_TEMPLATE.md`](../templates/STRUCTURAL_ERROR_AUDIT_TEMPLATE.md)
+
+The template forces the audit to produce one of three verdicts:
+
+1. structural error;
+2. no structural error;
+3. insufficient evidence.
+
+This prevents the Law of Totality from becoming a rhetorical diagnosis.
+
 ## Important limitation
 
 The audit must not become a post-hoc excuse.

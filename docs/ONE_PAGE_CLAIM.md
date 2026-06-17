@@ -151,6 +151,24 @@ or:
 
 This limit is part of the theory, not a weakness.
 
+## Operational template
+
+The Law of Totality is applied through a reusable audit template.
+
+The template must identify:
+
+- object;
+- framework;
+- actual use;
+- valid scope;
+- local closure;
+- excluded D4/D5 dependency;
+- false sufficiency;
+- falsification condition;
+- final verdict.
+
+Without this operational step, the law remains a conceptual claim rather than a repeatable audit.
+
 ## Final thesis
 
 The fundamental error is not partiality.

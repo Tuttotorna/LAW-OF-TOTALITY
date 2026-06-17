@@ -372,6 +372,26 @@ This protects the law from overclaiming.
 
 ---
 
+## Template requirement
+
+Real applications should use the audit template:
+
+[`../templates/STRUCTURAL_ERROR_AUDIT_TEMPLATE.md`](../templates/STRUCTURAL_ERROR_AUDIT_TEMPLATE.md)
+
+A diagnosis should not be considered mature until the template can be filled with:
+
+- actual use;
+- valid scope;
+- D4/D5 dependency;
+- exclusion mechanism;
+- false sufficiency condition;
+- falsification condition;
+- final verdict.
+
+If these fields cannot be completed, the correct verdict is usually:
+
+> insufficient evidence.
+
 # Final thesis
 
 The Law of Totality becomes stronger when it defines where it stops.
