@@ -82,6 +82,38 @@ Core law:
     ∀x∈𝔻:
     [ManifestΩ(x) ∧ x≠Ω] ⇒ ∃d DetCondΩ(d,x)
 
+## v0.9.0 Review-Ready Outreach Kit
+
+The repository now includes a controlled outreach kit for hostile external review.
+
+New files:
+
+- `TECHNICAL_SUMMARY.md`
+- `REVIEWER_CHECKLIST.md`
+- `REVIEW_QUESTIONS.md`
+- `docs/OUTREACH_EMAIL_GENERAL.md`
+- `docs/OUTREACH_EMAIL_AI.md`
+- `docs/OUTREACH_EMAIL_MODEL_RISK.md`
+- `docs/OUTREACH_EMAIL_SYSTEMS.md`
+- `docs/GITHUB_REVIEW_GUIDE.md`
+- `docs/OUTREACH_PLAN.md`
+- `.github/ISSUE_TEMPLATE/counterexample.md`
+- `.github/ISSUE_TEMPLATE/definition_weakness.md`
+- `.github/ISSUE_TEMPLATE/existing_framework_equivalent.md`
+- `.github/ISSUE_TEMPLATE/case_atlas_objection.md`
+- `.github/ISSUE_TEMPLATE/operational_use_case.md`
+- `tools/outreach_checker.py`
+
+Purpose:
+
+The release converts the repository from review-ready paper to review-ready process.
+
+Central outreach rule:
+
+    lead with local correctness does not imply valid use.
+
+Do not lead with the largest philosophical claim. The first external goal is attack surface discovery.
+
 ## v0.8.0 Short External Paper Layer
 
 The repository now includes the first short external paper:

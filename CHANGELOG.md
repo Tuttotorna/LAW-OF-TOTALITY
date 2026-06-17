@@ -1,5 +1,47 @@
 # Changelog
 
+## v0.9.0 — Review-Ready Outreach Kit
+
+### Added
+
+- `TECHNICAL_SUMMARY.md`
+- `REVIEWER_CHECKLIST.md`
+- `REVIEW_QUESTIONS.md`
+- `docs/OUTREACH_EMAIL_GENERAL.md`
+- `docs/OUTREACH_EMAIL_AI.md`
+- `docs/OUTREACH_EMAIL_MODEL_RISK.md`
+- `docs/OUTREACH_EMAIL_SYSTEMS.md`
+- `docs/GITHUB_REVIEW_GUIDE.md`
+- `docs/OUTREACH_PLAN.md`
+- `.github/ISSUE_TEMPLATE/counterexample.md`
+- `.github/ISSUE_TEMPLATE/definition_weakness.md`
+- `.github/ISSUE_TEMPLATE/existing_framework_equivalent.md`
+- `.github/ISSUE_TEMPLATE/case_atlas_objection.md`
+- `.github/ISSUE_TEMPLATE/operational_use_case.md`
+- `tools/outreach_checker.py`
+
+### Purpose
+
+This release creates a controlled external-review workflow.
+
+### Strategic Result
+
+The repository now has:
+
+    short paper
+    technical summary
+    outreach emails
+    reviewer checklist
+    review questions
+    GitHub issue templates
+    outreach plan
+
+### Status
+
+`v0.9.0` is review-process ready.
+
+It is not external validation.
+
 ## v0.8.0 — Short External Paper Layer
 
 ### Added
