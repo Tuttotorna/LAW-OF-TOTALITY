@@ -1,5 +1,40 @@
 # Changelog
 
+## v0.7.0 — Hard Comparative Analysis Layer
+
+### Added
+
+- `COMPARATIVE_ANALYSIS.md`
+- `DIFFERENCE_MATRIX.md`
+- `LOT_ADDED_VALUE.md`
+- `docs/EXTERNAL_REVIEW_PACKET.md`
+- `examples/comparative_frameworks.json`
+- `tools/comparative_checker.py`
+
+### Purpose
+
+This release addresses the first serious external criticism:
+
+    Is this already covered by existing frameworks?
+
+### Strategic Result
+
+The release separates overlap from redundancy.
+
+It acknowledges that many parts already exist in model risk management, NIST AI RMF, STPA/STAMP, systems thinking, map-territory, Bayesian reasoning, decision theory, falsifiability, and formal logic.
+
+It identifies the candidate contribution as:
+
+    compression
+    generalization
+    operational transfer
+
+### Status
+
+`v0.7.0` is not external validation.
+
+It is a comparative hardening release.
+
 ## v0.6.0 — Error Atlas Case Layer
 
 ### Added

@@ -1,0 +1,253 @@
+{
+  "version": "0.7.0",
+  "frameworks": [
+    {
+      "id": "nist_ai_rmf",
+      "name": "NIST AI Risk Management Framework",
+      "field": "AI risk management",
+      "captures": [
+        "AI risk governance",
+        "context and mapping of AI systems",
+        "risk measurement",
+        "risk management process",
+        "trustworthy AI characteristics"
+      ],
+      "near_overlap": [
+        "attention to context of use",
+        "risk mapping before deployment",
+        "monitoring and managing harmful use"
+      ],
+      "gap_or_difference": [
+        "does not reduce structural error to one formal relation between object, framework, actual use, valid scope, and excluded critical dependency",
+        "is a governance framework, not a general formula of finite-treatment invalidity",
+        "is AI-centered rather than applying to every finite treatment of any object"
+      ],
+      "lot_added_value": [
+        "compresses context/use failure into ErrΩ(x,F,U)",
+        "distinguishes local correctness from valid use",
+        "can be applied before, inside, or after AI governance as a structural validity test"
+      ],
+      "fair_verdict": "LOT should not claim to replace NIST AI RMF. It can act as a compact structural test inside the Map, Measure, Manage, and Govern workflow."
+    },
+    {
+      "id": "model_risk_management",
+      "name": "Model Risk Management",
+      "field": "financial and quantitative model governance",
+      "captures": [
+        "model development",
+        "model validation",
+        "model use",
+        "limitations",
+        "monitoring",
+        "governance and controls"
+      ],
+      "near_overlap": [
+        "model limitations",
+        "use outside assumptions",
+        "validation before deployment",
+        "ongoing monitoring"
+      ],
+      "gap_or_difference": [
+        "domain is primarily model-governance oriented",
+        "does not present a universal formal signature for every finite framework, including non-mathematical frameworks",
+        "often treats model risk in institutional terms rather than as a general law of false sufficiency"
+      ],
+      "lot_added_value": [
+        "extends the logic from models to any framework F",
+        "makes actual use U explicit",
+        "turns excluded critical dependency into the decisive failure condition"
+      ],
+      "fair_verdict": "LOT overlaps strongly with model risk management but generalizes the model-risk failure pattern beyond quantitative models."
+    },
+    {
+      "id": "stamp_stpa",
+      "name": "STAMP / STPA",
+      "field": "systems safety",
+      "captures": [
+        "accidents as control problems",
+        "unsafe control actions",
+        "system constraints",
+        "feedback and process models",
+        "system-level hazard analysis"
+      ],
+      "near_overlap": [
+        "unsafe use of incomplete process models",
+        "system-level dependencies",
+        "failure from inadequate control and feedback",
+        "local component correctness not enough for system safety"
+      ],
+      "gap_or_difference": [
+        "is safety-engineering centered",
+        "uses control-structure and hazard vocabulary",
+        "does not attempt a general formula for every finite treatment of every object"
+      ],
+      "lot_added_value": [
+        "generalizes the unsafe-control intuition to every object-framework-use relation",
+        "can express STPA-like failures as local closure plus invalid use plus excluded critical dependency",
+        "extends beyond safety to law, medicine, language, politics, education, AI, and epistemology"
+      ],
+      "fair_verdict": "STAMP/STPA is one of the strongest neighboring frameworks. LOT is not stronger inside STPA's home domain by default; its claim is broader abstraction and transfer across domains."
+    },
+    {
+      "id": "map_territory",
+      "name": "Map-Territory Distinction",
+      "field": "general semantics / epistemology",
+      "captures": [
+        "representation is not reality",
+        "abstraction can be mistaken for the thing itself",
+        "language and models can mislead"
+      ],
+      "near_overlap": [
+        "map is not the territory",
+        "framework is not object",
+        "representation can be mistaken for total reality"
+      ],
+      "gap_or_difference": [
+        "is usually aphoristic or philosophical",
+        "does not provide an operational audit structure",
+        "does not explicitly separate object x, framework F, actual use U, valid scope, and excluded critical dependency d"
+      ],
+      "lot_added_value": [
+        "turns map-territory into an audit relation",
+        "adds actual use as the decisive transition from harmless representation to structural error",
+        "defines when representation becomes invalid, not merely that representation differs from reality"
+      ],
+      "fair_verdict": "LOT is best understood partly as an operationalization of the map-territory insight."
+    },
+    {
+      "id": "systems_thinking",
+      "name": "Systems Thinking",
+      "field": "complex systems and organizational reasoning",
+      "captures": [
+        "interdependence",
+        "feedback",
+        "emergence",
+        "non-linearity",
+        "whole-system effects"
+      ],
+      "near_overlap": [
+        "parts cannot be fully understood in isolation",
+        "local optimization can damage global behavior",
+        "feedback and hidden dependencies matter"
+      ],
+      "gap_or_difference": [
+        "often remains broad and methodologically plural",
+        "does not normally define a minimal formal error predicate",
+        "can lack a sharp pass/fail criterion for invalid use"
+      ],
+      "lot_added_value": [
+        "defines a compact failure signature",
+        "identifies false sufficiency of a local closure",
+        "adds a direct audit question: what critical dependency required by the use is excluded"
+      ],
+      "fair_verdict": "LOT is compatible with systems thinking but provides a narrower and sharper structural-error test."
+    },
+    {
+      "id": "godel_incompleteness",
+      "name": "Gödelian Incompleteness",
+      "field": "mathematical logic",
+      "captures": [
+        "limits of sufficiently powerful formal systems",
+        "truth/provability separation under formal conditions",
+        "internal limits of axiomatic closure"
+      ],
+      "near_overlap": [
+        "formal systems have limits",
+        "closure can fail",
+        "internal completeness is not guaranteed"
+      ],
+      "gap_or_difference": [
+        "applies to formal systems meeting specific conditions",
+        "is not a general decision-audit framework",
+        "does not directly analyze actual use, valid scope, or excluded dependencies across ordinary domains"
+      ],
+      "lot_added_value": [
+        "does not compete with Gödel",
+        "uses a broader but less mathematically deep scope: finite treatment validity across domains",
+        "focuses on misuse of local frameworks rather than formal undecidability"
+      ],
+      "fair_verdict": "LOT should not be presented as another incompleteness theorem. It is a structural-use validity framework, not a proof-theoretic result."
+    },
+    {
+      "id": "popper_falsifiability",
+      "name": "Popperian Falsifiability",
+      "field": "philosophy of science",
+      "captures": [
+        "scientific claims must expose themselves to refutation",
+        "demarcation of scientific theories",
+        "testability"
+      ],
+      "near_overlap": [
+        "guards against unfalsifiable closure",
+        "resists totalizing claims without tests",
+        "requires exposure to possible correction"
+      ],
+      "gap_or_difference": [
+        "is mainly about scientific demarcation and testing",
+        "does not specify structural invalidity of a locally correct framework used outside scope",
+        "does not directly model actual use U"
+      ],
+      "lot_added_value": [
+        "adds use-validity analysis",
+        "can apply to non-scientific domains such as law, education, institutions, AI output, and relationships",
+        "turns correction into dependency preservation rather than only falsification"
+      ],
+      "fair_verdict": "LOT can coexist with falsifiability: falsifiability tests theories, while LOT audits use of frameworks."
+    },
+    {
+      "id": "bayesian_reasoning",
+      "name": "Bayesian Reasoning",
+      "field": "probabilistic inference",
+      "captures": [
+        "updating beliefs under evidence",
+        "uncertainty",
+        "priors and likelihoods",
+        "probabilistic decision support"
+      ],
+      "near_overlap": [
+        "rejects absolute certainty from limited evidence",
+        "supports belief revision",
+        "can account for uncertainty and missing evidence"
+      ],
+      "gap_or_difference": [
+        "requires probability modeling",
+        "does not by itself define valid scope of a framework",
+        "can still be misused if priors, likelihoods, population, or decision context exclude critical dependencies"
+      ],
+      "lot_added_value": [
+        "audits the Bayesian model's valid use",
+        "asks whether the probability framework itself excludes a critical dependency required by the decision",
+        "separates probabilistic correctness from structural validity for use"
+      ],
+      "fair_verdict": "LOT does not replace Bayesian reasoning. It checks when Bayesian reasoning is being used beyond its structurally valid conditions."
+    },
+    {
+      "id": "decision_theory",
+      "name": "Decision Theory",
+      "field": "decision science",
+      "captures": [
+        "choices under uncertainty",
+        "utility",
+        "preferences",
+        "risk",
+        "expected value"
+      ],
+      "near_overlap": [
+        "connects models to decisions",
+        "considers consequences",
+        "treats uncertainty as decision-relevant"
+      ],
+      "gap_or_difference": [
+        "can depend on assumed utility, probabilities, and option spaces",
+        "does not automatically identify excluded critical dependencies in the framing itself",
+        "may optimize inside a closed decision model that is structurally incomplete"
+      ],
+      "lot_added_value": [
+        "audits the framing of the decision before optimization",
+        "tests whether the decision model is valid for the actual use",
+        "identifies when a utility framework has falsely totalized the object"
+      ],
+      "fair_verdict": "LOT is pre-decisional and meta-decisional: it checks whether the decision frame is structurally valid."
+    }
+  ]
+}

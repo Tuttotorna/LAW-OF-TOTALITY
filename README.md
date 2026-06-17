@@ -82,6 +82,33 @@ Core law:
     ∀x∈𝔻:
     [ManifestΩ(x) ∧ x≠Ω] ⇒ ∃d DetCondΩ(d,x)
 
+## v0.7.0 Hard Comparative Analysis Layer
+
+The repository now includes a hard comparative analysis layer.
+
+New files:
+
+- `COMPARATIVE_ANALYSIS.md`
+- `DIFFERENCE_MATRIX.md`
+- `LOT_ADDED_VALUE.md`
+- `docs/EXTERNAL_REVIEW_PACKET.md`
+- `examples/comparative_frameworks.json`
+- `tools/comparative_checker.py`
+
+Purpose:
+
+The release answers the strongest external objection:
+
+    Is the Law of Totality only a rewording of existing frameworks?
+
+The answer is disciplined:
+
+    many neighboring fields already capture parts of the pattern;
+    the candidate contribution is compression, generalization, and operational transfer;
+    external validation is still required.
+
+This layer compares the Law of Totality against NIST AI RMF, model risk management, STPA/STAMP, systems thinking, map-territory, Bayesian reasoning, decision theory, falsifiability, and Gödelian incompleteness.
+
 ## v0.6.0 Error Atlas Layer
 
 The repository now includes `ERROR_ATLAS.md`, a cross-domain case layer showing how the structural error formula maps across AI, law, medicine, model risk, engineering, politics, education, institutions, language, memory, economics, systems, and negative controls.
