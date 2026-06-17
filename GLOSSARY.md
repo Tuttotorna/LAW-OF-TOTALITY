@@ -80,3 +80,34 @@ A local closure used beyond valid scope while excluding a critical dependency.
 ## False Sufficiency
 
 The treatment of a framework as sufficient for a use that requires conditions the framework does not preserve.
+
+## Theory-Reality Asymmetry
+
+The corollary stating that every finite theory, model, rule, metric, game, proof environment, or framework closes its object locally, while every proper real object remains open in Ω.
+
+Short form:
+
+```text
+Closed in theory. Open in reality.
+```
+
+Public form:
+
+```text
+Every theory closes locally. Reality remains open.
+Structural error begins when the closure is treated as the real.
+```
+
+## Local Closure
+
+The finite reduction by which a framework makes an object tractable.
+
+Local closure is not itself an error.
+
+It becomes structurally dangerous only when treated as sufficient for an actual use that requires excluded critical dependencies.
+
+## Open Reality
+
+The condition of every proper manifested object `x ≠ Ω` in relation to Ω.
+
+An object may be locally closed by a framework, but it is not thereby closed in the total field of dependencies.

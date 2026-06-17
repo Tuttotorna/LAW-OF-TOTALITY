@@ -117,3 +117,26 @@ The best first objection is not general disagreement.
 The best first objection is:
 
     here is a case where x, F, U, ValidScope, and d are identifiable, but the formula gives the wrong result.
+
+## Theory-Reality Asymmetry
+
+File:
+
+```text
+THEORY_REALITY_ASYMMETRY.md
+```
+
+Purpose:
+
+Introduces the corollary:
+
+```text
+Every theory closes locally. Reality remains open.
+```
+
+Review focus:
+
+- Does the corollary follow from the core formal system?
+- Does it clarify the relation between finite frameworks and real objects?
+- Does it avoid overclaiming into a total theory of all content?
+- Does it preserve the operational distinction between local closure, valid scope, actual use, and excluded critical dependencies?

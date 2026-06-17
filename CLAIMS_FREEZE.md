@@ -82,3 +82,18 @@ This is the version to attack.
 The goal of v1.0.0 is not praise.
 
 The goal is precise external criticism.
+
+## Post-v1 Clarification: Theory-Reality Asymmetry
+
+The Theory-Reality Asymmetry is added as a corollary and clarification, not as an external validation claim.
+
+Public formulation:
+
+```text
+Every theory closes locally. Reality remains open.
+Structural error begins when the closure is treated as the real.
+```
+
+This does not change the review status of the project.
+
+It clarifies why the Structural Error Formula distinguishes local closure, valid scope, actual use, and excluded critical dependencies.

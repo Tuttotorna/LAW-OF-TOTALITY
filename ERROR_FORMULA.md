@@ -147,3 +147,38 @@ Then block the use if:
     What does this answer/model/decision require that its framework does not contain?
 
 If the missing item is critical for the intended use, the structural error is present.
+
+## Theory-Reality Asymmetry and the Error Formula
+
+The Structural Error Formula can be read through the Theory-Reality Asymmetry:
+
+```text
+F closes locally.
+x remains open in Ω.
+U may require dependencies outside F.
+```
+
+Thus:
+
+```text
+Err_Ω(x,F,U) ⇔
+LocalClosure_F(x)
+∧ ActualUse_U(F,x) exceeds ValidScope(F,x)
+∧ ∃d [CriticalDep_Ω(d,x,U) ∧ Excluded_F(d)]
+```
+
+The error is not that `F` closes.
+
+A finite framework must close in order to function.
+
+The error is that `F` is used as if its closure were sufficient for `U`, while `U` requires at least one dependency that `F` excludes.
+
+Compact form:
+
+```text
+Structural error =
+closed theory
++ open reality
++ use beyond scope
++ excluded critical dependency
+```

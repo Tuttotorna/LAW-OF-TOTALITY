@@ -205,3 +205,33 @@ The formal system does not claim:
     Local correctness does not guarantee structural validity.
 
 That is the operational theorem of the repository.
+
+## Corollary: Theory-Reality Asymmetry
+
+For every proper manifested object:
+
+```text
+Manifest_Ω(x) ∧ x ≠ Ω ⇒ Open_Ω(x)
+```
+
+Any finite theory, model, map, rule, game, metric, proof environment, or framework `F` that treats `x` must perform some local closure:
+
+```text
+Theory_F(x) ⇒ LocalClosure_F(x)
+```
+
+Therefore:
+
+```text
+LocalClosure_F(x) ∧ Open_Ω(x)
+```
+
+This is the Theory-Reality Asymmetry:
+
+> Every theory closes locally. Reality remains open.
+
+The corollary does not claim that local closure is false.
+
+Local closure is necessary for finite understanding, calculation, decision, and action.
+
+The structural error appears only when the local closure is used as sufficient for an actual use `U` that requires dependencies excluded by `F`.

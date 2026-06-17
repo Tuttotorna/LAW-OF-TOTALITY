@@ -261,3 +261,21 @@ It is not yet:
     What critical dependency required by this use has been excluded by the framework?
 
 If the answer is non-empty and the framework is still used as sufficient, the structural error is present.
+
+## Theory-Reality Asymmetry
+
+A corollary of the Law of Totality is introduced in [`THEORY_REALITY_ASYMMETRY.md`](THEORY_REALITY_ASYMMETRY.md):
+
+> Every theory closes locally. Reality remains open.
+>
+> Structural error begins when the closure is treated as the real.
+
+This does not reject theories, models, rules, metrics, games, proofs, or AI answers.
+
+It states that every finite framework is valid only within the scope of the dependencies it preserves for the actual use being made of it.
+
+Compact form:
+
+```text
+Closed in theory. Open in reality.
+```
