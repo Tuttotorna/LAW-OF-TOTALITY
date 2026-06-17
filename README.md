@@ -303,6 +303,26 @@ The examples include:
 
 See [`audits/EXAMPLE_AUDITS.md`](audits/EXAMPLE_AUDITS.md).
 
+## Stable release
+
+Current stable release:
+
+**v0.1.0 — Structural Error Audit Framework**
+
+This release marks the repository as a minimal operational framework for structural error auditing.
+
+It includes:
+
+- core formula;
+- theory-to-reality bridge;
+- D0-D5 critical dependency taxonomy;
+- falsification and limits;
+- reusable audit template;
+- compiled example audits;
+- comparison with existing frameworks.
+
+See [`docs/RELEASE_v0.1.0.md`](docs/RELEASE_v0.1.0.md).
+
 ## Practical use
 
 To apply the Law of Totality, ask six questions:
