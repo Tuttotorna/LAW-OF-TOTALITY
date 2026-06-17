@@ -91,6 +91,21 @@ It says that every finite framework becomes structurally false when it is used b
 
 ---
 
+## Validation criterion
+
+The Law of Totality is not validated by showing that all models are incomplete.
+
+That would be trivial.
+
+It is validated operationally if it can distinguish between:
+
+- partial frameworks used honestly inside their valid scope;
+- partial frameworks falsely treated as sufficient for real uses that require excluded dependencies.
+
+Therefore, the decisive test is not incompleteness.
+
+The decisive test is false sufficiency.
+
 ## Final thesis
 
 The fundamental error is not partiality.

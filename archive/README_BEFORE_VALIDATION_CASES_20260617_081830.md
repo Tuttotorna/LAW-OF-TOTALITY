@@ -163,25 +163,6 @@ The fundamental error is a fragment behaving as totality.
 
 ---
 
-## Validation cases
-
-The repository includes operational validation cases.
-
-These cases test whether the Law of Totality can distinguish between:
-
-1. a partial framework used correctly inside its valid scope;
-2. a partial framework falsely treated as sufficient for a real use that requires excluded dependencies.
-
-This distinction is essential.
-
-Without it, the law would collapse into the generic claim that every model is incomplete.
-
-With it, the law becomes operational:
-
-> partiality is not the error; false sufficiency is the error.
-
-See [`docs/VALIDATION_CASES.md`](docs/VALIDATION_CASES.md).
-
 ## Practical use
 
 To apply the Law of Totality, ask six questions:

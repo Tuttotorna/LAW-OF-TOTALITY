@@ -183,6 +183,27 @@ The framework is partial, but it is not being falsely treated as total or suffic
 
 ---
 
+## Validation requirement
+
+The audit must be able to produce both positive and negative results.
+
+A valid use of the Law of Totality must sometimes say:
+
+> structural error is present.
+
+And sometimes say:
+
+> structural error is not present.
+
+If the law diagnosed every partial framework as wrong, it would be too broad.
+
+The operational distinction is:
+
+- partiality alone is not error;
+- false sufficiency is error.
+
+See [`VALIDATION_CASES.md`](VALIDATION_CASES.md).
+
 ## Important limitation
 
 The audit must not become a post-hoc excuse.
