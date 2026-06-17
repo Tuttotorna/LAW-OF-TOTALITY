@@ -1,0 +1,856 @@
+{
+  "version": "0.6.0",
+  "cases": [
+    {
+      "id": "ai_generic_legal_answer_as_binding_action",
+      "domain": "AI / Law",
+      "title": "Generic AI legal answer used as binding legal action",
+      "x": "legal situation",
+      "F": "generic LLM-generated legal explanation",
+      "U": "file, sign, or act on a binding legal decision",
+      "valid_scope": "general informational orientation only",
+      "excluded_critical_dependencies": [
+        "jurisdiction",
+        "dates",
+        "court rules",
+        "full documents",
+        "licensed legal review"
+      ],
+      "structural_error": true,
+      "correction": "reduce the answer to general information or add jurisdiction-specific professional review",
+      "trajectory_change": "prevents a plausible answer from becoming an invalid legal action"
+    },
+    {
+      "id": "medical_single_test_as_total_diagnosis",
+      "domain": "Medicine",
+      "title": "Single medical test treated as total diagnosis",
+      "x": "patient condition",
+      "F": "one laboratory value or one imaging result",
+      "U": "definitive diagnosis and treatment decision",
+      "valid_scope": "partial indicator inside clinical evaluation",
+      "excluded_critical_dependencies": [
+        "symptoms",
+        "history",
+        "differential diagnosis",
+        "comorbidities",
+        "contraindications"
+      ],
+      "structural_error": true,
+      "correction": "restore full clinical context before treatment",
+      "trajectory_change": "prevents partial evidence from becoming total medical certainty"
+    },
+    {
+      "id": "financial_model_outside_distribution",
+      "domain": "Model Risk",
+      "title": "Financial model used outside its validation distribution",
+      "x": "market or credit risk",
+      "F": "model validated on historical distribution",
+      "U": "deployment during shifted market conditions",
+      "valid_scope": "conditions similar to validation assumptions",
+      "excluded_critical_dependencies": [
+        "distribution shift",
+        "liquidity regime",
+        "new correlations",
+        "feedback effects",
+        "stress scenario"
+      ],
+      "structural_error": true,
+      "correction": "restrict use, revalidate, stress-test, and monitor drift",
+      "trajectory_change": "prevents local statistical validity from becoming systemic financial exposure"
+    },
+    {
+      "id": "engineering_formula_outside_assumptions",
+      "domain": "Engineering",
+      "title": "Simplified engineering formula used outside assumptions",
+      "x": "physical structure",
+      "F": "idealized simplified calculation",
+      "U": "real-world deployment under variable load",
+      "valid_scope": "declared ideal or bounded operating assumptions",
+      "excluded_critical_dependencies": [
+        "fatigue",
+        "temperature",
+        "material defects",
+        "dynamic loads",
+        "tolerances"
+      ],
+      "structural_error": true,
+      "correction": "declare assumptions, test edge conditions, add safety factor",
+      "trajectory_change": "prevents calculation correctness from becoming structural failure"
+    },
+    {
+      "id": "school_grade_as_total_human_value",
+      "domain": "Education",
+      "title": "School grade treated as total value of a student",
+      "x": "student",
+      "F": "grade or standardized score",
+      "U": "judge intelligence, future worth, or human potential",
+      "valid_scope": "limited measurement of performance under specific conditions",
+      "excluded_critical_dependencies": [
+        "context",
+        "health",
+        "motivation",
+        "teaching quality",
+        "creativity",
+        "late development"
+      ],
+      "structural_error": true,
+      "correction": "treat the grade as one indicator, not identity",
+      "trajectory_change": "prevents a metric from becoming a life-defining closure"
+    },
+    {
+      "id": "political_ideology_as_total_explanation",
+      "domain": "Politics",
+      "title": "Political ideology treated as total explanation",
+      "x": "society",
+      "F": "single ideological framework",
+      "U": "explain and decide all social problems",
+      "valid_scope": "partial interpretive and policy lens",
+      "excluded_critical_dependencies": [
+        "history",
+        "economics",
+        "culture",
+        "incentives",
+        "institutions",
+        "human behavior"
+      ],
+      "structural_error": true,
+      "correction": "force multi-framework dependency audit before policy closure",
+      "trajectory_change": "prevents ideological reduction from becoming governance error"
+    },
+    {
+      "id": "religious_dogma_as_total_cosmic_explanation",
+      "domain": "Religion / Anthropology",
+      "title": "Religious dogma treated as total cosmic explanation",
+      "x": "reality, suffering, origin, meaning",
+      "F": "closed dogmatic narrative",
+      "U": "explain all existence and impose conduct",
+      "valid_scope": "symbolic, communal, ritual, or existential interpretation",
+      "excluded_critical_dependencies": [
+        "empirical evidence",
+        "plural interpretations",
+        "historical formation",
+        "psychology",
+        "power structures"
+      ],
+      "structural_error": true,
+      "correction": "distinguish symbolic use from total explanatory authority",
+      "trajectory_change": "prevents narrative closure from becoming absolute domination of meaning"
+    },
+    {
+      "id": "bureaucratic_rule_as_justice",
+      "domain": "Institutions",
+      "title": "Bureaucratic rule treated as justice",
+      "x": "human case",
+      "F": "administrative rule",
+      "U": "produce just outcome",
+      "valid_scope": "standardized procedural handling",
+      "excluded_critical_dependencies": [
+        "exception",
+        "harm",
+        "context",
+        "proportionality",
+        "human consequence"
+      ],
+      "structural_error": true,
+      "correction": "add exception review and consequence audit",
+      "trajectory_change": "prevents procedural correctness from becoming structural injustice"
+    },
+    {
+      "id": "kpi_as_company_truth",
+      "domain": "Business",
+      "title": "Single KPI treated as company truth",
+      "x": "business system",
+      "F": "one metric such as revenue, growth, or engagement",
+      "U": "strategic decision about company health",
+      "valid_scope": "bounded measurement of one dimension",
+      "excluded_critical_dependencies": [
+        "customer trust",
+        "burnout",
+        "legal risk",
+        "hidden costs",
+        "long-term resilience"
+      ],
+      "structural_error": true,
+      "correction": "use KPI as local signal inside multi-dimensional audit",
+      "trajectory_change": "prevents metric optimization from damaging the actual system"
+    },
+    {
+      "id": "relationship_single_episode_as_identity",
+      "domain": "Relationships",
+      "title": "Single episode treated as total identity of a person",
+      "x": "person",
+      "F": "one episode, sentence, mistake, or reaction",
+      "U": "define the person's entire character",
+      "valid_scope": "local evidence about one moment",
+      "excluded_critical_dependencies": [
+        "history",
+        "stress",
+        "pattern frequency",
+        "intent",
+        "change over time",
+        "context"
+      ],
+      "structural_error": true,
+      "correction": "separate episode evidence from total identity judgment",
+      "trajectory_change": "prevents human relation from collapsing into fragmentary judgment"
+    },
+    {
+      "id": "historical_winner_narrative_as_total_history",
+      "domain": "History",
+      "title": "Winner narrative treated as total history",
+      "x": "historical event",
+      "F": "dominant historical narrative",
+      "U": "define collective memory and moral interpretation",
+      "valid_scope": "one perspective or archive tradition",
+      "excluded_critical_dependencies": [
+        "loser records",
+        "material causes",
+        "minority accounts",
+        "economic context",
+        "propaganda"
+      ],
+      "structural_error": true,
+      "correction": "reconstruct multi-perspective dependency field",
+      "trajectory_change": "prevents historical memory from becoming political closure"
+    },
+    {
+      "id": "map_used_outside_scale",
+      "domain": "Navigation",
+      "title": "Map used outside its valid scale",
+      "x": "territory",
+      "F": "tourist city map",
+      "U": "mountain rescue navigation in winter",
+      "valid_scope": "urban tourist navigation",
+      "excluded_critical_dependencies": [
+        "altitude",
+        "snow",
+        "terrain risk",
+        "weather exposure",
+        "route duration"
+      ],
+      "structural_error": true,
+      "correction": "use a terrain/weather/navigation framework fit for the actual route",
+      "trajectory_change": "prevents map correctness from becoming route danger"
+    },
+    {
+      "id": "dataset_as_reality",
+      "domain": "Data Science",
+      "title": "Dataset treated as reality",
+      "x": "population or phenomenon",
+      "F": "available dataset",
+      "U": "general claim about reality",
+      "valid_scope": "inference over represented population under sampling assumptions",
+      "excluded_critical_dependencies": [
+        "sampling bias",
+        "missing population",
+        "measurement process",
+        "time drift",
+        "data collection incentives"
+      ],
+      "structural_error": true,
+      "correction": "declare dataset scope and missing population before generalization",
+      "trajectory_change": "prevents data availability from masquerading as reality coverage"
+    },
+    {
+      "id": "average_as_individual_truth",
+      "domain": "Statistics",
+      "title": "Average treated as individual truth",
+      "x": "individual case",
+      "F": "population average",
+      "U": "decide what is true for a specific individual",
+      "valid_scope": "aggregate tendency",
+      "excluded_critical_dependencies": [
+        "variance",
+        "distribution tails",
+        "individual context",
+        "subgroup membership",
+        "causal mechanism"
+      ],
+      "structural_error": true,
+      "correction": "move from aggregate statistic to case-specific evaluation",
+      "trajectory_change": "prevents population signal from erasing individual reality"
+    },
+    {
+      "id": "law_text_as_total_justice",
+      "domain": "Law",
+      "title": "Legal text treated as total justice",
+      "x": "legal-human conflict",
+      "F": "literal legal text",
+      "U": "produce justice",
+      "valid_scope": "rule application within legal interpretation",
+      "excluded_critical_dependencies": [
+        "purpose",
+        "precedent",
+        "equity",
+        "specific facts",
+        "human consequences"
+      ],
+      "structural_error": true,
+      "correction": "separate legality, interpretation, proportionality, and justice impact",
+      "trajectory_change": "prevents formal legal closure from becoming unjust outcome"
+    },
+    {
+      "id": "military_intelligence_fragment_as_strategy",
+      "domain": "Military / Security",
+      "title": "Intelligence fragment treated as strategy",
+      "x": "conflict situation",
+      "F": "partial intelligence report",
+      "U": "strategic action",
+      "valid_scope": "one evidence stream under uncertainty",
+      "excluded_critical_dependencies": [
+        "enemy adaptation",
+        "logistics",
+        "civilian impact",
+        "misinformation",
+        "political consequence"
+      ],
+      "structural_error": true,
+      "correction": "treat intelligence as one input inside adversarial multi-factor analysis",
+      "trajectory_change": "prevents partial intelligence from becoming strategic disaster"
+    },
+    {
+      "id": "economic_growth_as_social_good",
+      "domain": "Economics",
+      "title": "Economic growth treated as total social good",
+      "x": "society",
+      "F": "GDP or growth indicator",
+      "U": "judge societal success",
+      "valid_scope": "economic output measurement",
+      "excluded_critical_dependencies": [
+        "inequality",
+        "health",
+        "ecology",
+        "distribution",
+        "quality of life",
+        "future debt"
+      ],
+      "structural_error": true,
+      "correction": "evaluate growth inside a wider dependency field",
+      "trajectory_change": "prevents output expansion from being mistaken for human improvement"
+    },
+    {
+      "id": "algorithmic_score_as_person",
+      "domain": "Algorithmic Governance",
+      "title": "Algorithmic score treated as person",
+      "x": "human being",
+      "F": "risk score or ranking algorithm",
+      "U": "access, punishment, employment, insurance, credit, or policing decision",
+      "valid_scope": "bounded probabilistic indicator under model assumptions",
+      "excluded_critical_dependencies": [
+        "data provenance",
+        "context",
+        "bias",
+        "appeal",
+        "causal explanation",
+        "changed circumstances"
+      ],
+      "structural_error": true,
+      "correction": "require explanation, contestability, human review, and scope limits",
+      "trajectory_change": "prevents model output from replacing human reality"
+    },
+    {
+      "id": "scientific_model_as_the_object",
+      "domain": "Science",
+      "title": "Scientific model treated as the object itself",
+      "x": "natural phenomenon",
+      "F": "scientific model",
+      "U": "claim total identity with reality",
+      "valid_scope": "predictive or explanatory domain under assumptions",
+      "excluded_critical_dependencies": [
+        "boundary conditions",
+        "unmodeled variables",
+        "scale",
+        "measurement limits",
+        "alternative mechanisms"
+      ],
+      "structural_error": true,
+      "correction": "treat model as valid representation under scope, not the object itself",
+      "trajectory_change": "prevents scientific success from hardening into false ontology"
+    },
+    {
+      "id": "social_reputation_as_truth",
+      "domain": "Social Systems",
+      "title": "Reputation treated as truth",
+      "x": "person or group",
+      "F": "social reputation",
+      "U": "judge reality, guilt, competence, or worth",
+      "valid_scope": "social signal of how others currently perceive x",
+      "excluded_critical_dependencies": [
+        "evidence",
+        "incentives",
+        "rumor dynamics",
+        "power relations",
+        "context",
+        "time"
+      ],
+      "structural_error": true,
+      "correction": "separate reputation from evidence and direct verification",
+      "trajectory_change": "prevents collective perception from becoming truth"
+    },
+    {
+      "id": "news_headline_as_complete_event",
+      "domain": "Media",
+      "title": "News headline treated as complete event",
+      "x": "public event",
+      "F": "headline or short news frame",
+      "U": "form stable judgment",
+      "valid_scope": "attention trigger and compressed summary",
+      "excluded_critical_dependencies": [
+        "full article",
+        "source incentives",
+        "timeline",
+        "missing actors",
+        "uncertainty",
+        "context"
+      ],
+      "structural_error": true,
+      "correction": "delay judgment until context and dependencies are restored",
+      "trajectory_change": "prevents compression from becoming public misconception"
+    },
+    {
+      "id": "emotion_as_total_reality",
+      "domain": "Psychology",
+      "title": "Emotion treated as total reality",
+      "x": "situation",
+      "F": "current emotional state",
+      "U": "decide what is true or irreversible",
+      "valid_scope": "signal of current internal state",
+      "excluded_critical_dependencies": [
+        "time",
+        "evidence",
+        "body state",
+        "stressors",
+        "alternative interpretations",
+        "future change"
+      ],
+      "structural_error": true,
+      "correction": "use emotion as data, not as total verdict",
+      "trajectory_change": "prevents temporary state from becoming permanent decision"
+    },
+    {
+      "id": "memory_as_recording",
+      "domain": "Memory",
+      "title": "Memory treated as recording",
+      "x": "past event",
+      "F": "personal memory",
+      "U": "establish exact historical truth",
+      "valid_scope": "subjective reconstruction and experiential evidence",
+      "excluded_critical_dependencies": [
+        "memory distortion",
+        "other witnesses",
+        "documents",
+        "time",
+        "emotional reconstruction"
+      ],
+      "structural_error": true,
+      "correction": "treat memory as evidence requiring corroboration",
+      "trajectory_change": "prevents personal certainty from becoming false historical closure"
+    },
+    {
+      "id": "tradition_as_proof",
+      "domain": "Culture",
+      "title": "Tradition treated as proof",
+      "x": "practice or belief",
+      "F": "tradition",
+      "U": "justify truth, morality, or permanence",
+      "valid_scope": "evidence of historical continuity and cultural meaning",
+      "excluded_critical_dependencies": [
+        "origin",
+        "harm",
+        "changed conditions",
+        "power structures",
+        "alternative values"
+      ],
+      "structural_error": true,
+      "correction": "separate continuity from validity",
+      "trajectory_change": "prevents inherited closure from blocking correction"
+    },
+    {
+      "id": "technology_as_progress",
+      "domain": "Technology",
+      "title": "Technology treated as progress",
+      "x": "new technical capability",
+      "F": "performance or novelty metric",
+      "U": "declare social improvement",
+      "valid_scope": "technical capability assessment",
+      "excluded_critical_dependencies": [
+        "misuse",
+        "inequality",
+        "side effects",
+        "dependency",
+        "governance",
+        "human adaptation"
+      ],
+      "structural_error": true,
+      "correction": "evaluate deployment consequences, not only capability",
+      "trajectory_change": "prevents capability increase from being mistaken for civilizational improvement"
+    },
+    {
+      "id": "free_market_as_total_order",
+      "domain": "Economics / Ideology",
+      "title": "Market mechanism treated as total order",
+      "x": "society and resource distribution",
+      "F": "market price mechanism",
+      "U": "decide all social allocation problems",
+      "valid_scope": "exchange coordination under assumptions",
+      "excluded_critical_dependencies": [
+        "externalities",
+        "power asymmetry",
+        "public goods",
+        "information asymmetry",
+        "basic rights"
+      ],
+      "structural_error": true,
+      "correction": "treat markets as one coordination framework inside institutional constraints",
+      "trajectory_change": "prevents economic mechanism from becoming total social philosophy"
+    },
+    {
+      "id": "central_plan_as_total_order",
+      "domain": "Economics / Ideology",
+      "title": "Central plan treated as total order",
+      "x": "society and production",
+      "F": "central planning framework",
+      "U": "decide all allocation, production, and social coordination",
+      "valid_scope": "bounded coordination under available information and enforceable aims",
+      "excluded_critical_dependencies": [
+        "local knowledge",
+        "incentives",
+        "adaptation",
+        "freedom",
+        "feedback delays",
+        "corruption"
+      ],
+      "structural_error": true,
+      "correction": "restore feedback, plural mechanisms, and limits of central visibility",
+      "trajectory_change": "prevents planning abstraction from replacing living complexity"
+    },
+    {
+      "id": "expert_authority_as_total_truth",
+      "domain": "Epistemology",
+      "title": "Expert authority treated as total truth",
+      "x": "claim or decision",
+      "F": "expert authority",
+      "U": "settle truth outside declared expertise or evidence",
+      "valid_scope": "specialized judgment within domain and evidence",
+      "excluded_critical_dependencies": [
+        "field boundary",
+        "uncertainty",
+        "conflicts of interest",
+        "data quality",
+        "minority technical objections"
+      ],
+      "structural_error": true,
+      "correction": "use expertise as weighted input inside scope, not absolute closure",
+      "trajectory_change": "prevents authority from replacing validity"
+    },
+    {
+      "id": "democratic_majority_as_truth",
+      "domain": "Political Theory",
+      "title": "Majority preference treated as truth or justice",
+      "x": "collective decision",
+      "F": "majority vote",
+      "U": "define truth, justice, or rights",
+      "valid_scope": "legitimate collective decision procedure under constitutional limits",
+      "excluded_critical_dependencies": [
+        "minority rights",
+        "truth conditions",
+        "long-term harm",
+        "manipulation",
+        "information quality"
+      ],
+      "structural_error": true,
+      "correction": "separate procedural legitimacy from truth and justice validity",
+      "trajectory_change": "prevents procedure from becoming moral absolution"
+    },
+    {
+      "id": "personal_success_as_human_value",
+      "domain": "Anthropology",
+      "title": "External success treated as human value",
+      "x": "person",
+      "F": "wealth, status, title, productivity, recognition",
+      "U": "define human worth",
+      "valid_scope": "limited social or economic signal",
+      "excluded_critical_dependencies": [
+        "character",
+        "suffering",
+        "care",
+        "integrity",
+        "context",
+        "unrecognized contribution"
+      ],
+      "structural_error": true,
+      "correction": "separate measurable social outcome from human value",
+      "trajectory_change": "prevents civilization from confusing visibility with worth"
+    },
+    {
+      "id": "punishment_as_solution",
+      "domain": "Justice / Social Control",
+      "title": "Punishment treated as solution",
+      "x": "harmful behavior",
+      "F": "punitive response",
+      "U": "solve the cause of harm",
+      "valid_scope": "deterrence, containment, accountability in bounded conditions",
+      "excluded_critical_dependencies": [
+        "root causes",
+        "rehabilitation",
+        "social context",
+        "recidivism",
+        "victim restoration"
+      ],
+      "structural_error": true,
+      "correction": "distinguish containment, accountability, prevention, and repair",
+      "trajectory_change": "prevents punitive closure from replacing structural prevention"
+    },
+    {
+      "id": "symptom_suppression_as_cure",
+      "domain": "Medicine / Systems",
+      "title": "Symptom suppression treated as cure",
+      "x": "illness or system dysfunction",
+      "F": "symptom-reducing intervention",
+      "U": "declare underlying problem solved",
+      "valid_scope": "local relief or stabilization",
+      "excluded_critical_dependencies": [
+        "root cause",
+        "recurrence",
+        "systemic drivers",
+        "side effects",
+        "long-term trajectory"
+      ],
+      "structural_error": true,
+      "correction": "separate relief from cure and track underlying dependencies",
+      "trajectory_change": "prevents temporary stabilization from being mistaken for resolution"
+    },
+    {
+      "id": "formal_correctness_as_system_safety",
+      "domain": "Software / Safety",
+      "title": "Formal correctness treated as system safety",
+      "x": "software-controlled system",
+      "F": "formal software verification",
+      "U": "declare complete operational safety",
+      "valid_scope": "properties proven inside specified formal model",
+      "excluded_critical_dependencies": [
+        "requirements correctness",
+        "human interaction",
+        "hardware faults",
+        "environment",
+        "unexpected use"
+      ],
+      "structural_error": true,
+      "correction": "connect formal proof to system-level hazard analysis",
+      "trajectory_change": "prevents proof inside model from becoming false safety of the whole"
+    },
+    {
+      "id": "language_label_as_essence",
+      "domain": "Language",
+      "title": "Label treated as essence",
+      "x": "person, group, object, or phenomenon",
+      "F": "linguistic label",
+      "U": "define essence or total meaning",
+      "valid_scope": "communication shorthand",
+      "excluded_critical_dependencies": [
+        "variation",
+        "history",
+        "context",
+        "individual reality",
+        "semantic ambiguity"
+      ],
+      "structural_error": true,
+      "correction": "treat label as pointer, not essence",
+      "trajectory_change": "prevents naming from becoming ontological imprisonment"
+    },
+    {
+      "id": "prediction_as_future",
+      "domain": "Forecasting",
+      "title": "Prediction treated as future",
+      "x": "future event",
+      "F": "forecast model",
+      "U": "act as if forecast is certain",
+      "valid_scope": "probabilistic scenario under assumptions",
+      "excluded_critical_dependencies": [
+        "uncertainty",
+        "feedback effects",
+        "model error",
+        "unknown unknowns",
+        "intervention changes"
+      ],
+      "structural_error": true,
+      "correction": "convert prediction into scenario planning with confidence and contingencies",
+      "trajectory_change": "prevents probability from becoming fatalism"
+    },
+    {
+      "id": "identity_category_as_person",
+      "domain": "Social Identity",
+      "title": "Identity category treated as person",
+      "x": "individual",
+      "F": "group category",
+      "U": "judge the individual",
+      "valid_scope": "broad sociological or demographic descriptor",
+      "excluded_critical_dependencies": [
+        "individual variation",
+        "life history",
+        "agency",
+        "context",
+        "personal evidence"
+      ],
+      "structural_error": true,
+      "correction": "restore individual field beyond category membership",
+      "trajectory_change": "prevents category cognition from becoming prejudice"
+    },
+    {
+      "id": "short_term_optimization_as_long_term_good",
+      "domain": "Decision Theory",
+      "title": "Short-term optimization treated as long-term good",
+      "x": "decision trajectory",
+      "F": "short-term objective function",
+      "U": "maximize long-term system outcome",
+      "valid_scope": "local immediate objective",
+      "excluded_critical_dependencies": [
+        "future fragility",
+        "maintenance",
+        "adaptation",
+        "externalities",
+        "second-order effects"
+      ],
+      "structural_error": true,
+      "correction": "add temporal dependency and long-term stability audit",
+      "trajectory_change": "prevents local gain from producing global deterioration"
+    },
+    {
+      "id": "object_seen_from_one_base_as_object_itself",
+      "domain": "Mathematics / Representation",
+      "title": "Representation in one base treated as the number itself",
+      "x": "mathematical object",
+      "F": "one representation, base, notation, or projection",
+      "U": "claim total property of the object",
+      "valid_scope": "representation-specific observation",
+      "excluded_critical_dependencies": [
+        "invariance",
+        "other representations",
+        "base-dependence",
+        "transformation behavior"
+      ],
+      "structural_error": true,
+      "correction": "compare across representations before claiming object-level property",
+      "trajectory_change": "prevents representational artifact from becoming false ontology"
+    },
+    {
+      "id": "llm_confidence_tone_as_truth",
+      "domain": "AI",
+      "title": "LLM confident tone treated as truth",
+      "x": "answer",
+      "F": "linguistically fluent model output",
+      "U": "accept as verified fact",
+      "valid_scope": "generated answer under model/source constraints",
+      "excluded_critical_dependencies": [
+        "source verification",
+        "recency",
+        "domain accuracy",
+        "ambiguity",
+        "high-stakes use"
+      ],
+      "structural_error": true,
+      "correction": "separate fluency from verification and scope",
+      "trajectory_change": "prevents plausible language from becoming false knowledge"
+    },
+    {
+      "id": "local_correctness_as_global_stability",
+      "domain": "Systems",
+      "title": "Local correctness treated as global stability",
+      "x": "system",
+      "F": "component-level correctness",
+      "U": "declare whole-system stability",
+      "valid_scope": "behavior of component inside tested conditions",
+      "excluded_critical_dependencies": [
+        "interactions",
+        "feedback",
+        "load",
+        "environment",
+        "failure propagation"
+      ],
+      "structural_error": true,
+      "correction": "perform system-level interaction and stability audit",
+      "trajectory_change": "prevents correct parts from hiding fragile wholes"
+    },
+    {
+      "id": "negative_control_city_map_for_city_walk",
+      "domain": "Negative Control",
+      "title": "City map used for city walk",
+      "x": "city center",
+      "F": "city tourist map",
+      "U": "find a museum inside the mapped area",
+      "valid_scope": "urban tourist navigation",
+      "excluded_critical_dependencies": [],
+      "structural_error": false,
+      "correction": "no correction needed beyond normal map-reading limits",
+      "trajectory_change": "shows that local closure is valid when use stays inside scope"
+    },
+    {
+      "id": "negative_control_rough_estimate_for_brainstorming",
+      "domain": "Negative Control",
+      "title": "Rough estimate used only for brainstorming",
+      "x": "early project cost",
+      "F": "rough estimate",
+      "U": "informal preliminary discussion",
+      "valid_scope": "non-binding approximate orientation",
+      "excluded_critical_dependencies": [
+        "precise supplier quotes",
+        "legal commitments",
+        "cash-flow timing"
+      ],
+      "structural_error": false,
+      "correction": "no structural error if not used for commitment",
+      "trajectory_change": "shows that excluded dependencies are not errors unless critical for the actual use"
+    },
+    {
+      "id": "negative_control_formula_inside_assumptions",
+      "domain": "Negative Control",
+      "title": "Formula used inside its assumptions",
+      "x": "idealized physics problem",
+      "F": "declared ideal formula",
+      "U": "solve classroom ideal case",
+      "valid_scope": "ideal conditions explicitly stated",
+      "excluded_critical_dependencies": [
+        "real friction",
+        "material defects",
+        "measurement noise"
+      ],
+      "structural_error": false,
+      "correction": "no correction needed while the use remains ideal and declared",
+      "trajectory_change": "shows that abstraction is legitimate inside declared scope"
+    },
+    {
+      "id": "negative_control_medical_test_as_partial_indicator",
+      "domain": "Negative Control",
+      "title": "Medical test used as partial indicator",
+      "x": "patient condition",
+      "F": "single test result",
+      "U": "decide what further tests or questions are needed",
+      "valid_scope": "partial clinical indicator",
+      "excluded_critical_dependencies": [
+        "full history",
+        "differential diagnosis",
+        "contraindications"
+      ],
+      "structural_error": false,
+      "correction": "no structural error if explicitly used only to guide further inquiry",
+      "trajectory_change": "shows that partial evidence is safe when kept partial"
+    },
+    {
+      "id": "negative_control_llm_answer_as_draft",
+      "domain": "Negative Control",
+      "title": "LLM answer used as draft only",
+      "x": "draft explanation",
+      "F": "LLM-generated text",
+      "U": "generate a first draft for later verification",
+      "valid_scope": "drafting, brainstorming, provisional formulation",
+      "excluded_critical_dependencies": [
+        "source verification",
+        "domain expert review",
+        "recency check"
+      ],
+      "structural_error": false,
+      "correction": "no structural error if not treated as verified output",
+      "trajectory_change": "shows that AI output is not invalid by nature; misuse creates the error"
+    }
+  ]
+}

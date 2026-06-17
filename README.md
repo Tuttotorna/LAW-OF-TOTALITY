@@ -82,6 +82,22 @@ Core law:
     ∀x∈𝔻:
     [ManifestΩ(x) ∧ x≠Ω] ⇒ ∃d DetCondΩ(d,x)
 
+## v0.6.0 Error Atlas Layer
+
+The repository now includes `ERROR_ATLAS.md`, a cross-domain case layer showing how the structural error formula maps across AI, law, medicine, model risk, engineering, politics, education, institutions, language, memory, economics, systems, and negative controls.
+
+The atlas does not claim that the Law of Totality explains every thing as total content.
+
+It shows that every finite treatment submitted to the law can be explained in its structural validity or invalidity:
+
+    object
+    framework
+    actual use
+    valid scope
+    excluded critical dependencies
+
+This is the bridge from formal statement to real-world visibility.
+
 ## Repository Map
 
 | File | Function |

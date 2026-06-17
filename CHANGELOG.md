@@ -1,5 +1,38 @@
 # Changelog
 
+## v0.6.0 — Error Atlas Case Layer
+
+### Added
+
+- `ERROR_ATLAS.md`
+- `examples/error_atlas_cases.json`
+- `tools/error_atlas_checker.py`
+- `docs/ONE_PAGE_THRESHOLD.md`
+- `docs/WORLD_INTRODUCTION_STRATEGY.md`
+- `docs/COMPARATIVE_ANALYSIS_SEED.md`
+
+### Purpose
+
+This release adds the empirical visibility layer of the Law of Totality.
+
+It shows how the structural error formula maps across many domains:
+
+    local closure
+    + use beyond valid scope
+    + excluded critical dependency
+    = structural error
+
+### Strategic Correction
+
+The release avoids the weak claim that the law explains every thing as total content.
+
+It uses the stronger claim:
+
+    every finite treatment submitted to the law can be explained in its structural validity or invalidity.
+
+### Status
+
+`v0.6.0` is a case-atlas release, not an external validation claim.
 
 ## v0.5.0 — Ω-Validity Calculus
 
