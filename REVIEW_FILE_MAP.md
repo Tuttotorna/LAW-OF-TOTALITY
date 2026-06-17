@@ -140,3 +140,29 @@ Review focus:
 - Does it clarify the relation between finite frameworks and real objects?
 - Does it avoid overclaiming into a total theory of all content?
 - Does it preserve the operational distinction between local closure, valid scope, actual use, and excluded critical dependencies?
+
+## Formal Theorems and Counterexamples
+
+File:
+
+    FORMAL_THEOREMS_AND_COUNTEREXAMPLES.md
+
+Purpose:
+
+Defines the formal review core of the project:
+
+    primitive terms
+    predicates
+    axioms
+    theorem schemas
+    proof sketches
+    negative controls
+    counterexample classes
+
+Review focus:
+
+- Are the primitive terms clear enough?
+- Do the theorem schemas follow from the stated axioms?
+- Are the counterexample classes strong enough to make the framework falsifiable?
+- Does the document avoid confusing incompleteness with structural error?
+- Does the Nash/game-theory distinction hold under hostile review?

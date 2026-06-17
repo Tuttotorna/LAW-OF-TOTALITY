@@ -97,3 +97,21 @@ Structural error begins when the closure is treated as the real.
 This does not change the review status of the project.
 
 It clarifies why the Structural Error Formula distinguishes local closure, valid scope, actual use, and excluded critical dependencies.
+
+## Post-v1 Clarification: Formal Theorem Core
+
+The formal theorem and counterexample document is added as a clarification layer.
+
+It does not change the validation status of the project.
+
+It makes the existing claims more reviewable by specifying:
+
+    definitions
+    theorem schemas
+    application conditions
+    negative controls
+    counterexample classes
+
+The central claim remains limited:
+
+A finite framework becomes structurally invalid for an actual use when that use exceeds the framework's valid scope while requiring at least one dependency that the framework excludes.

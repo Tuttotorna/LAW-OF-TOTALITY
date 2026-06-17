@@ -182,3 +182,22 @@ closed theory
 + use beyond scope
 + excluded critical dependency
 ```
+
+## Formal Error Core
+
+The formal theorem companion clarifies the error formula as a definition with counterexample conditions:
+
+[`FORMAL_THEOREMS_AND_COUNTEREXAMPLES.md`](FORMAL_THEOREMS_AND_COUNTEREXAMPLES.md)
+
+Structural error requires the joint presence of:
+
+    LocalClosure_F(x)
+    ActualUse_U(F,x)
+    UseExceedsScope(F,x,U)
+    exists d such that CriticalDep_Ω(d,x,U) and Excluded_F(d)
+
+This preserves a necessary distinction:
+
+    incompleteness alone is not error
+
+A framework may exclude many dependencies and remain valid when those dependencies are not critical for the actual use.

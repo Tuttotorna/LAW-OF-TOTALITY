@@ -200,3 +200,23 @@ To challenge this corollary, show one of the following:
 4. an existing framework that captures the same theory-reality asymmetry with equal or greater operational clarity.
 
 Until then, the corollary remains a compact expression of the relation between finite theory and open reality.
+
+## Relation to the Formal Theorem Core
+
+The Theory-Reality Asymmetry is formalized further in:
+
+[`FORMAL_THEOREMS_AND_COUNTEREXAMPLES.md`](FORMAL_THEOREMS_AND_COUNTEREXAMPLES.md)
+
+The compact theorem schema is:
+
+    Finite(F) and Treats(F,x) implies LocalClosure_F(x)
+
+    Manifest_Ω(x) and Proper_Ω(x) implies Open_Ω(x)
+
+Therefore:
+
+    LocalClosure_F(x) and Open_Ω(x)
+
+This is the formal basis of:
+
+    Closed in theory. Open in reality.

@@ -235,3 +235,33 @@ The corollary does not claim that local closure is false.
 Local closure is necessary for finite understanding, calculation, decision, and action.
 
 The structural error appears only when the local closure is used as sufficient for an actual use `U` that requires dependencies excluded by `F`.
+
+## Formal Theorem Companion
+
+The formal theorem and counterexample layer is specified in:
+
+[`FORMAL_THEOREMS_AND_COUNTEREXAMPLES.md`](FORMAL_THEOREMS_AND_COUNTEREXAMPLES.md)
+
+It introduces a compact review structure:
+
+    primitive terms
+    predicates
+    axioms
+    theorem schemas
+    conditions of application
+    negative controls
+    counterexample classes
+
+Central theorem schema:
+
+    Finite(F) and Treats(F,x) implies LocalClosure_F(x)
+
+    Manifest_Ω(x) and Proper_Ω(x) implies Open_Ω(x)
+
+Therefore:
+
+    LocalClosure_F(x) and Open_Ω(x)
+
+This is the formal form of:
+
+    Closed in theory. Open in reality.

@@ -279,3 +279,28 @@ Compact form:
 ```text
 Closed in theory. Open in reality.
 ```
+
+## Formal Theorem and Counterexample Core
+
+A formal companion document is available:
+
+[`FORMAL_THEOREMS_AND_COUNTEREXAMPLES.md`](FORMAL_THEOREMS_AND_COUNTEREXAMPLES.md)
+
+It provides:
+
+- primitive terms;
+- predicates;
+- axioms;
+- theorem schemas;
+- proof sketches;
+- conditions of application;
+- negative controls;
+- counterexample classes.
+
+Core public line:
+
+> Closed in theory. Open in reality.
+>
+> local correctness does not imply valid use.
+
+The purpose is to make the framework easier to review and easier to break if the structure is wrong.
