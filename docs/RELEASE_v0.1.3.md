@@ -1,136 +1,83 @@
 # v0.1.3 — Structural Error Audit Framework
 
-## Status
+Structural Error = Local Closure + Use Beyond Valid Scope + Excluded D4/D5 Dependency + False Sufficiency.
 
-This is the first clean stable release selected automatically after detecting that previous v0.1.x tags already existed.
+This release defines a structural audit framework for detecting when incompleteness is falsely treated as real-world sufficiency.
 
-The selected clean tag is:
+## Core claim
 
-> v0.1.3
+A theory, model, AI answer, protocol, plan, or decision is not structurally wrong because it is incomplete.
 
-This release is intended to point to the complete current operational framework state.
-
-The repository is not presented as a validated scientific theory, finished technology, or proof of strong originality.
-
-It is released as a minimal operational framework for structural error auditing.
-
----
-
-## Core operational formula
-
-Structural error occurs when all four conditions are present:
-
-1. local closure;
-2. use beyond valid scope;
-3. excluded D4/D5 dependency;
-4. false sufficiency.
-
-Compact form:
-
-> local closure + use beyond valid scope + excluded D4/D5 dependency + false sufficiency = structural error
-
----
-
-## Central thesis
-
-A theory, model, framework, answer, protocol or project is not structurally wrong because it is incomplete.
-
-It becomes structurally wrong when its incompleteness is treated as sufficient completeness for an actual use that requires excluded dependencies.
+It becomes structurally wrong when its incompleteness is treated as real-world sufficiency for an actual use that requires excluded dependencies.
 
 Partiality is not the error.
 
 False sufficiency is the error.
 
----
+## Operational formula
 
-## Included in this release
+Structural Error =
+Local Closure
++ Use Beyond Valid Scope
++ Excluded D4/D5 Dependency
++ False Sufficiency
 
-### Core documents
+Compact form:
 
-- `README.md`
-- `docs/ONE_PAGE_CLAIM.md`
-- `docs/THRESHOLD_VERSION.md`
-- `docs/THEORY_TO_REALITY_BRIDGE.md`
-- `docs/STRUCTURAL_ERROR_AUDIT.md`
+SE(x) iff LC(x) and UBVS(x) and ED_D4/D5(x) and FS(x)
 
-### Operational discipline
+Where:
 
-- `docs/CRITICAL_DEPENDENCY_TAXONOMY.md`
-- `docs/FALSIFICATION_AND_LIMITS.md`
-- `docs/VALIDATION_CASES.md`
-- `docs/COMPARISON_WITH_EXISTING_FRAMEWORKS.md`
+- LC = Local Closure
+- UBVS = Use Beyond Valid Scope
+- ED_D4/D5 = Excluded D4/D5 Dependency
+- FS = False Sufficiency
 
-### Reusable tools
+## What this release provides
 
-- `templates/STRUCTURAL_ERROR_AUDIT_TEMPLATE.md`
-- `templates/README.md`
+This release contains the first clean operational version of LAW-OF-TOTALITY as a Structural Error Audit Framework.
 
-### Demonstrations
+It includes:
 
-- `audits/EXAMPLE_AUDITS.md`
-- `audits/README.md`
+- the threshold operational version;
+- the theory-to-reality bridge;
+- validation cases;
+- comparison with existing frameworks;
+- critical dependency taxonomy;
+- falsification and limits;
+- reusable audit template;
+- compiled example audits.
 
----
+## Use
 
-## What this release makes possible
+Use this framework to test whether a local model, theory, AI output, protocol, or plan is being treated as sufficient outside its valid scope.
 
-This release allows the Law of Totality to be applied as a repeatable audit process.
+The framework does not claim that incomplete models are wrong.
 
-The framework can produce three verdicts:
+It detects when incomplete models are falsely used as sufficient.
 
-1. structural error;
-2. no structural error;
-3. insufficient evidence.
+## Status
 
-This matters because the framework must not diagnose every incomplete model as wrong.
+This is the first clean stable release after earlier tag/release iterations.
 
-It must distinguish legitimate partiality from false sufficiency.
+Use this release as the public reference version:
 
----
+https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.3
 
-## Defensible position
+Repository:
 
-The defensible position of this release is:
+https://github.com/Tuttotorna/LAW-OF-TOTALITY
 
-> The Law of Totality is a proposed cross-domain structural error criterion and audit framework.
+## Challenge
 
-Its possible contribution is the compressed structural formula:
+Do not agree with it.
 
-> local closure + use beyond valid scope + excluded D4/D5 dependency + false sufficiency.
+Break it.
 
-Its practical role is a bridge audit:
+Show one of these:
 
-> what must a theory, model, answer or plan include, preserve or declare before it can be used as real-world sufficient?
-
----
-
-## Main limitations
-
-This release does not yet provide:
-
-- independent external validation;
-- quantitative benchmark testing;
-- software implementation;
-- peer review;
-- proof of strong originality over all existing frameworks;
-- certified domain case studies;
-- automatic dependency classification.
-
----
-
-## Required next development
-
-The next serious development is external application:
-
-1. apply the template to real cases;
-2. collect negative cases;
-3. compare results with existing methods;
-4. refine D0-D5 dependency classification;
-5. test whether the framework detects structural error earlier or more clearly than ordinary review;
-6. build a software prototype only after the audit logic is stable.
-
----
-
-## Release date
-
-2026-06-17
+1. a false positive;
+2. a false negative;
+3. a wrongly classified D4/D5 dependency;
+4. a case where the framework adds nothing to existing frameworks;
+5. a case where the audit cannot produce a disciplined verdict.

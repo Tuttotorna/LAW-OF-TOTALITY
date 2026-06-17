@@ -1,3 +1,11 @@
+<!-- LOT_PUBLIC_PREVIEW_START -->
+> **Structural Error = Local Closure + Use Beyond Valid Scope + Excluded D4/D5 Dependency + False Sufficiency.**
+>
+> A structural audit framework for detecting when incompleteness is falsely treated as real-world sufficiency.
+>
+> Stable release: [v0.1.3 — Structural Error Audit Framework](https://github.com/Tuttotorna/LAW-OF-TOTALITY/releases/tag/v0.1.3)
+<!-- LOT_PUBLIC_PREVIEW_END -->
+
 <!-- LOT_STABLE_RELEASE_START -->
 ## Stable release
 
