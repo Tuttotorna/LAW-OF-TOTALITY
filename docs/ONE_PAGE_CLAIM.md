@@ -106,6 +106,20 @@ Therefore, the decisive test is not incompleteness.
 
 The decisive test is false sufficiency.
 
+## Relation to existing frameworks
+
+The Law of Totality does not currently replace model risk management, AI risk management, systems engineering, domain-of-validity analysis, bounded rationality, falsifiability or safety cases.
+
+Its defensible position is narrower:
+
+it proposes a cross-domain structural error criterion.
+
+Its possible originality lies in the compressed formula:
+
+> local closure + use beyond valid scope + excluded critical dependency = structural error.
+
+To become stronger, it must show that this formula identifies structural errors earlier, more clearly or more generally than existing methods.
+
 ## Final thesis
 
 The fundamental error is not partiality.

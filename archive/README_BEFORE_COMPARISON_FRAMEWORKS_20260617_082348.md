@@ -182,31 +182,6 @@ With it, the law becomes operational:
 
 See [`docs/VALIDATION_CASES.md`](docs/VALIDATION_CASES.md).
 
-## Comparison with existing frameworks
-
-The repository includes a comparison with existing frameworks and concepts.
-
-This comparison is necessary because the Law of Totality must not be protected from prior work.
-
-It must be tested against it.
-
-The comparison distinguishes:
-
-1. what the law shares with model risk management, AI risk management, systems engineering, domain of validity, bounded rationality, falsifiability and safety cases;
-2. what the law does not add;
-3. where it may provide a compressed cross-domain structural formula;
-4. what remains unproven.
-
-The defensible position is not:
-
-> this replaces existing frameworks.
-
-The defensible position is:
-
-> this proposes a cross-domain structural error criterion based on false sufficiency of local closure.
-
-See [`docs/COMPARISON_WITH_EXISTING_FRAMEWORKS.md`](docs/COMPARISON_WITH_EXISTING_FRAMEWORKS.md).
-
 ## Practical use
 
 To apply the Law of Totality, ask six questions:

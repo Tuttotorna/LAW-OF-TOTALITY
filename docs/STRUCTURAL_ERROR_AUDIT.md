@@ -204,6 +204,23 @@ The operational distinction is:
 
 See [`VALIDATION_CASES.md`](VALIDATION_CASES.md).
 
+## External comparison requirement
+
+A structural error audit should not ignore existing methods.
+
+When possible, compare the result with:
+
+- model risk management;
+- AI risk management;
+- systems engineering;
+- domain-of-validity analysis;
+- safety-case reasoning;
+- standard domain-specific validation.
+
+The Law of Totality adds value only if it makes the dependency-scope failure clearer, earlier or more transferable across domains.
+
+See [`COMPARISON_WITH_EXISTING_FRAMEWORKS.md`](COMPARISON_WITH_EXISTING_FRAMEWORKS.md).
+
 ## Important limitation
 
 The audit must not become a post-hoc excuse.
