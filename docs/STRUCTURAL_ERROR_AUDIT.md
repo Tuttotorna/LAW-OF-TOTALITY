@@ -142,6 +142,25 @@ The theory is locally valid, but not yet structurally sufficient for the intende
 
 To become operationally real, it must include, preserve or explicitly declare the missing dependencies required by that use.
 
+## Dependency severity check
+
+Before diagnosing structural error, classify the excluded dependency.
+
+Use the following levels:
+
+| Level | Name | Meaning |
+|---|---|---|
+| D0 | Irrelevant | no effect on actual use |
+| D1 | Background | present in the wider field but not decisive |
+| D2 | Relevant | may influence the result |
+| D3 | Material | can significantly affect the output |
+| D4 | Critical | exclusion can invalidate the actual use |
+| D5 | Blocking | use must not proceed without it |
+
+The Law of Totality diagnoses structural error only when a D4 or D5 dependency is excluded while the framework is treated as sufficient.
+
+See [`CRITICAL_DEPENDENCY_TAXONOMY.md`](CRITICAL_DEPENDENCY_TAXONOMY.md).
+
 ## Verdict rule
 
 Structural error is present when all three conditions hold:

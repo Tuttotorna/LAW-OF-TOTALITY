@@ -207,29 +207,6 @@ The defensible position is:
 
 See [`docs/COMPARISON_WITH_EXISTING_FRAMEWORKS.md`](docs/COMPARISON_WITH_EXISTING_FRAMEWORKS.md).
 
-## Critical dependency taxonomy
-
-The repository includes a taxonomy for critical dependencies.
-
-This is necessary because the formula cannot remain operational if every missing factor can be called critical after failure.
-
-A dependency is not critical because it is missing.
-
-A dependency is critical because the actual use cannot remain valid without it.
-
-The taxonomy distinguishes:
-
-- irrelevant dependencies;
-- background dependencies;
-- relevant dependencies;
-- material dependencies;
-- critical dependencies;
-- blocking dependencies.
-
-This prevents the Law of Totality from becoming a post-hoc explanation for every failure.
-
-See [`docs/CRITICAL_DEPENDENCY_TAXONOMY.md`](docs/CRITICAL_DEPENDENCY_TAXONOMY.md).
-
 ## Practical use
 
 To apply the Law of Totality, ask six questions:

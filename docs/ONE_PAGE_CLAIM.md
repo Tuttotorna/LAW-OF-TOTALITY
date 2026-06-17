@@ -120,6 +120,16 @@ Its possible originality lies in the compressed formula:
 
 To become stronger, it must show that this formula identifies structural errors earlier, more clearly or more generally than existing methods.
 
+## Critical dependency criterion
+
+A dependency is not critical because it is missing.
+
+A dependency is critical because the actual use cannot remain valid without it.
+
+The Law of Totality is triggered only by excluded critical or blocking dependencies under false sufficiency.
+
+This prevents the law from becoming a generic claim that every model is incomplete.
+
 ## Final thesis
 
 The fundamental error is not partiality.

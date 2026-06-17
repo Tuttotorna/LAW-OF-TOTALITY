@@ -410,6 +410,25 @@ It does not yet provide software validation.
 
 ---
 
+## Dependency taxonomy requirement
+
+The main technical weakness of the Law of Totality is the possible elasticity of the term critical dependency.
+
+To reduce this weakness, the repository defines dependency severity levels from D0 to D5.
+
+This does not prove the law.
+
+It makes the law more testable by forcing each diagnosis to state whether the excluded dependency is:
+
+- irrelevant;
+- background;
+- relevant;
+- material;
+- critical;
+- blocking.
+
+The law should diagnose structural error only for critical or blocking dependencies under false sufficiency.
+
 # Required next step
 
 To become more than a conceptual synthesis, the Law of Totality needs:

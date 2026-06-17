@@ -24,6 +24,20 @@ The goal is to identify when a locally valid framework becomes structurally insu
 
 ---
 
+## Dependency severity requirement
+
+Each validation case should classify the excluded dependency.
+
+Structural error requires a D4 critical dependency or a D5 blocking dependency.
+
+If the missing factor is D0, D1, D2 or sometimes D3, the Law of Totality should not automatically diagnose structural error.
+
+This requirement prevents overreach.
+
+A missing dependency is not enough.
+
+The missing dependency must be required by the actual use.
+
 ## Core validation rule
 
 Structural error is present only when all three conditions occur together:
