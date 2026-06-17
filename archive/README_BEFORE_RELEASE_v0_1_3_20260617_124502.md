@@ -3,11 +3,9 @@
 
 Current stable release:
 
-**v0.1.3 — Structural Error Audit Framework**
+**v0.1.1 — Structural Error Audit Framework**
 
-This is the first clean stable tag selected automatically after detecting that previous v0.1.x tags already existed.
-
-It points to the complete current operational framework state created by this release process.
+This release supersedes `v0.1.0` and is intended as the first clean stable tag pointing to the complete operational framework.
 
 It includes:
 
@@ -19,7 +17,7 @@ It includes:
 - compiled example audits;
 - comparison with existing frameworks.
 
-See [`docs/RELEASE_v0.1.3.md`](docs/RELEASE_v0.1.3.md).
+See [`docs/RELEASE_v0.1.1.md`](docs/RELEASE_v0.1.1.md).
 <!-- LOT_STABLE_RELEASE_END -->
 
 # LAW OF TOTALITY
@@ -371,6 +369,3 @@ The Law of Totality gives a general form of structural error:
 
 - [`docs/RELEASE_v0.1.1.md`](docs/RELEASE_v0.1.1.md)  
   Release notes for v0.1.1 — Structural Error Audit Framework.
-
-- [`docs/RELEASE_v0.1.3.md`](docs/RELEASE_v0.1.3.md)  
-  Release notes for v0.1.3 — Structural Error Audit Framework.
