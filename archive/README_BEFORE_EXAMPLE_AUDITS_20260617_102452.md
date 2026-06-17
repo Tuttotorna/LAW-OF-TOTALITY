@@ -284,25 +284,6 @@ The template allows three verdicts:
 
 See [`templates/STRUCTURAL_ERROR_AUDIT_TEMPLATE.md`](templates/STRUCTURAL_ERROR_AUDIT_TEMPLATE.md).
 
-## Example audits
-
-The repository includes compiled example audits.
-
-These examples show how the template produces three possible verdicts:
-
-- structural error;
-- no structural error;
-- insufficient evidence.
-
-The examples include:
-
-1. an AI answer used as final authority;
-2. a complex project plan treated as execution-ready;
-3. a formal theory presented as real-world sufficient;
-4. negative audits where the Law of Totality should not diagnose structural error.
-
-See [`audits/EXAMPLE_AUDITS.md`](audits/EXAMPLE_AUDITS.md).
-
 ## Practical use
 
 To apply the Law of Totality, ask six questions:

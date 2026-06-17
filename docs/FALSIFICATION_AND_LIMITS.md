@@ -405,3 +405,15 @@ It should diagnose one specific error form:
 Everything outside that structure is not automatically a Law of Totality error.
 
 A theory becomes serious not when it claims universal reach, but when it defines its limits without destroying its core.
+
+## Example verdicts
+
+The example audits show all three possible verdicts:
+
+1. structural error;
+2. no structural error;
+3. insufficient evidence.
+
+See:
+
+[`../audits/EXAMPLE_AUDITS.md`](../audits/EXAMPLE_AUDITS.md)

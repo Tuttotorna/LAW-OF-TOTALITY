@@ -393,3 +393,11 @@ The law does not condemn partiality.
 It diagnoses false sufficiency.
 
 A theory becomes real when its closure is connected to the dependencies required by its intended use.
+
+## Compiled audit examples
+
+The validation cases are supported by compiled example audits:
+
+[`../audits/EXAMPLE_AUDITS.md`](../audits/EXAMPLE_AUDITS.md)
+
+These examples demonstrate how the template works when filled out.

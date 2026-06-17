@@ -287,3 +287,15 @@ The audit must identify:
 5. how this exclusion changed the validity of the decision.
 
 Without this, the diagnosis is not yet operational.
+
+## Example audits
+
+Compiled example audits are available at:
+
+[`../audits/EXAMPLE_AUDITS.md`](../audits/EXAMPLE_AUDITS.md)
+
+These examples show the audit producing:
+
+1. structural error;
+2. no structural error;
+3. insufficient evidence.

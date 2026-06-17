@@ -169,6 +169,14 @@ The template must identify:
 
 Without this operational step, the law remains a conceptual claim rather than a repeatable audit.
 
+## Example audits
+
+The Law of Totality becomes operational only when applied to cases.
+
+Compiled examples are available in:
+
+[`../audits/EXAMPLE_AUDITS.md`](../audits/EXAMPLE_AUDITS.md)
+
 ## Final thesis
 
 The fundamental error is not partiality.
