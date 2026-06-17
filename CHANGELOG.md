@@ -1,5 +1,38 @@
 # Changelog
 
+## v1.0.0 — External Review Release
+
+### Added
+
+- `CLAIMS_FREEZE.md`
+- `EXTERNAL_REVIEW_RELEASE.md`
+- `RELEASE_NOTES_v1.0.0.md`
+- `REVIEW_FILE_MAP.md`
+- `docs/FIRST_REVIEWER_SUBMISSIONS.md`
+- `docs/V1_PUBLIC_STATEMENT.md`
+- `docs/V1_REVIEW_PROTOCOL.md`
+- `tools/release_checker.py`
+
+### Purpose
+
+This release freezes the public claims and prepares the repository for hostile external review.
+
+### Central Claim
+
+    local correctness does not imply valid use
+
+### Status
+
+`v1.0.0` is an external review release.
+
+It is not external validation.
+
+### Rule After This Release
+
+No expansion before review response.
+
+The next meaningful version should be built from external objections.
+
 ## v0.9.0 — Review-Ready Outreach Kit
 
 ### Added

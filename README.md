@@ -82,6 +82,40 @@ Core law:
     ∀x∈𝔻:
     [ManifestΩ(x) ∧ x≠Ω] ⇒ ∃d DetCondΩ(d,x)
 
+## v1.0.0 External Review Release
+
+This is the first external review release of the Law of Totality repository.
+
+Purpose:
+
+    claim freeze
+    external review release
+    hostile review readiness
+    controlled submission to reviewers
+
+Central public claim:
+
+    local correctness does not imply valid use.
+
+Validation status:
+
+    not externally validated.
+
+New files:
+
+- `CLAIMS_FREEZE.md`
+- `EXTERNAL_REVIEW_RELEASE.md`
+- `RELEASE_NOTES_v1.0.0.md`
+- `REVIEW_FILE_MAP.md`
+- `docs/FIRST_REVIEWER_SUBMISSIONS.md`
+- `docs/V1_PUBLIC_STATEMENT.md`
+- `docs/V1_REVIEW_PROTOCOL.md`
+- `tools/release_checker.py`
+
+This is the version to attack.
+
+After v1.0.0, the project should not expand outward until it has absorbed external criticism.
+
 ## v0.9.0 Review-Ready Outreach Kit
 
 The repository now includes a controlled outreach kit for hostile external review.
