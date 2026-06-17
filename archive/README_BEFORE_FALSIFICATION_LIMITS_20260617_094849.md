@@ -230,31 +230,6 @@ This prevents the Law of Totality from becoming a post-hoc explanation for every
 
 See [`docs/CRITICAL_DEPENDENCY_TAXONOMY.md`](docs/CRITICAL_DEPENDENCY_TAXONOMY.md).
 
-## Falsification and limits
-
-The repository includes a falsification and limits document.
-
-This is necessary because the Law of Totality must not become a universal explanation that can absorb every possible failure.
-
-The law must be able to say:
-
-> structural error is present.
-
-and also:
-
-> structural error is not present.
-
-A valid diagnosis requires all four conditions:
-
-1. local closure;
-2. use beyond valid scope;
-3. excluded D4/D5 dependency;
-4. false sufficiency.
-
-If one of these conditions is absent, the Law of Totality should not diagnose structural error.
-
-See [`docs/FALSIFICATION_AND_LIMITS.md`](docs/FALSIFICATION_AND_LIMITS.md).
-
 ## Practical use
 
 To apply the Law of Totality, ask six questions:

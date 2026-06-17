@@ -38,6 +38,19 @@ A missing dependency is not enough.
 
 The missing dependency must be required by the actual use.
 
+## Falsification requirement
+
+Each validation case should state what would defeat the diagnosis.
+
+A positive case is weak if it cannot specify:
+
+- which condition would have to be absent;
+- which dependency would have to be non-critical;
+- which valid scope would make the use legitimate;
+- which declaration would remove false sufficiency.
+
+This prevents the validation cases from becoming rhetorical examples.
+
 ## Core validation rule
 
 Structural error is present only when all three conditions occur together:

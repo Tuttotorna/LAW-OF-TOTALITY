@@ -130,6 +130,27 @@ The Law of Totality is triggered only by excluded critical or blocking dependenc
 
 This prevents the law from becoming a generic claim that every model is incomplete.
 
+## Falsification and limits
+
+The Law of Totality should not diagnose every incomplete framework as wrong.
+
+It applies only when all four conditions occur:
+
+1. local closure;
+2. use beyond valid scope;
+3. excluded D4/D5 dependency;
+4. false sufficiency.
+
+If one condition is absent, the correct verdict is:
+
+> no structural error.
+
+or:
+
+> insufficient evidence.
+
+This limit is part of the theory, not a weakness.
+
 ## Final thesis
 
 The fundamental error is not partiality.

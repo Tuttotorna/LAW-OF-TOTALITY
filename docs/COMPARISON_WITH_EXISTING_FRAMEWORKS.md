@@ -443,6 +443,18 @@ To become more than a conceptual synthesis, the Law of Totality needs:
 
 ---
 
+## Falsification and limits requirement
+
+The Law of Totality should not be treated as stronger because it is broader.
+
+A broader framework is often weaker unless it defines its limits.
+
+The falsification constraint is therefore essential:
+
+> if the law cannot say no, it says too much.
+
+The law adds value only if it can distinguish false sufficiency from legitimate partiality.
+
 # Final comparison verdict
 
 The Law of Totality is not currently justified as a replacement for model risk management, AI risk management, systems engineering, domain-of-validity analysis, bounded rationality, falsifiability or safety cases.

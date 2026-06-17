@@ -240,6 +240,22 @@ The Law of Totality adds value only if it makes the dependency-scope failure cle
 
 See [`COMPARISON_WITH_EXISTING_FRAMEWORKS.md`](COMPARISON_WITH_EXISTING_FRAMEWORKS.md).
 
+## Falsification check
+
+Before giving a structural error verdict, ask what would defeat the diagnosis.
+
+A diagnosis is weak if it cannot say what would prove it wrong.
+
+The audit must allow three verdicts:
+
+1. structural error;
+2. no structural error;
+3. insufficient evidence.
+
+Use insufficient evidence when the dependency level, actual use, valid scope or exclusion mechanism cannot be established.
+
+See [`FALSIFICATION_AND_LIMITS.md`](FALSIFICATION_AND_LIMITS.md).
+
 ## Important limitation
 
 The audit must not become a post-hoc excuse.

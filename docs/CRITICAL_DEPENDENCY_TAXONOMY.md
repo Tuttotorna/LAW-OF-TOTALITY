@@ -517,6 +517,21 @@ The complete operational form is:
 
 ---
 
+## Falsification connection
+
+A dependency classification must be falsifiable.
+
+For every D4 or D5 classification, the audit should state what would lower the classification.
+
+Examples:
+
+- evidence that the actual use does not require the dependency;
+- evidence that the dependency is already included;
+- evidence that the dependency does not affect validity;
+- evidence that the framework was not treated as sufficient.
+
+If no such condition can be stated, the classification is too vague.
+
 # Final thesis
 
 A dependency is not critical because it is missing.
