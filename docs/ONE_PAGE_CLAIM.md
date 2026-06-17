@@ -53,6 +53,22 @@ The problem is that the partial model is treated as total for the use at hand.
 
 ---
 
+## Bridge claim
+
+The Law of Totality does not reject theory.
+
+It teaches a theory how to become real by forcing it to declare:
+
+- what it closes;
+- where it is valid;
+- what use it serves;
+- which dependencies that use requires;
+- which required dependencies are excluded.
+
+A theory is not structurally wrong because it is incomplete.
+
+It becomes structurally wrong when its incompleteness is treated as sufficient completeness.
+
 ## Theory-reality friction
 
 Theory closes.

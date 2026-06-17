@@ -107,6 +107,41 @@ A missing dependency matters only if it is critical for the actual use.
 
 ---
 
+## Bridge mode: from theory to reality
+
+This audit can be used not only to diagnose error, but to mature a theory into operational validity.
+
+In bridge mode, the goal is not to declare:
+
+> this theory is wrong.
+
+The goal is to identify:
+
+> what must be included, preserved, limited or declared before this theory can be valid for the intended real use.
+
+A theory becomes operationally real when its internal closure is connected to the dependencies required by the actual use.
+
+### Bridge table
+
+| Field | Answer |
+|---|---|
+| Theory or framework | |
+| Internal claim | |
+| Local valid scope | |
+| Intended real use | |
+| Dependencies required by the intended use | |
+| Dependencies already included | |
+| Dependencies missing or excluded | |
+| Required correction before real use | |
+| Can the theory be used as sufficient now? | yes / no |
+| If no, why? | |
+
+### Bridge verdict language
+
+The theory is locally valid, but not yet structurally sufficient for the intended use.
+
+To become operationally real, it must include, preserve or explicitly declare the missing dependencies required by that use.
+
 ## Verdict rule
 
 Structural error is present when all three conditions hold:

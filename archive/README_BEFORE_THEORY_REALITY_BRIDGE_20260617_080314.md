@@ -28,36 +28,6 @@ A model may be locally correct and structurally invalid at the same time.
 
 ---
 
-## Theory-to-reality bridge
-
-The Law of Totality is not a rejection of theory.
-
-It is a bridge protocol between theoretical closure and real-world validity.
-
-A theory is not structurally wrong because it is incomplete.
-
-It becomes structurally wrong when its incompleteness is treated as sufficient completeness for an actual use.
-
-In this sense, the law can teach a theory how to become operationally real:
-
-1. declare its object;
-2. declare its framework;
-3. declare its valid scope;
-4. declare the actual use;
-5. identify the critical dependencies required by that use;
-6. include, preserve or explicitly exclude those dependencies;
-7. stop before claiming sufficiency where a critical dependency is missing.
-
-The point is not:
-
-> theory is false.
-
-The point is:
-
-> theory is locally valid until it is used beyond the dependencies it preserves.
-
-A theory becomes real when internal coherence, declared scope, actual use and critical dependencies are aligned.
-
 ## The theory-reality friction
 
 The Law of Totality identifies the point where theory and reality begin to grind against each other.
@@ -142,9 +112,6 @@ The fundamental error is a fragment behaving as totality.
 
 - [`docs/THRESHOLD_VERSION.md`](docs/THRESHOLD_VERSION.md)  
   One-page threshold formulation of the Law of Totality.
-
-- [`docs/THEORY_TO_REALITY_BRIDGE.md`](docs/THEORY_TO_REALITY_BRIDGE.md)  
-  Bridge protocol from theoretical closure to real-world validity.
 
 - [`docs/STRUCTURAL_ERROR_AUDIT.md`](docs/STRUCTURAL_ERROR_AUDIT.md)  
   Operational audit protocol.

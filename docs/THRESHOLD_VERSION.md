@@ -28,6 +28,24 @@ A model may be locally correct and structurally invalid at the same time.
 
 ---
 
+## Theory-to-reality bridge
+
+The Law of Totality does not say that theory is wrong because it is incomplete.
+
+It says that a theory becomes structurally wrong when its incompleteness is used as sufficient completeness for an actual use.
+
+A theory becomes operationally real when:
+
+- its object is declared;
+- its framework is declared;
+- its valid scope is declared;
+- its actual use is declared;
+- the critical dependencies required by that use are included, preserved or explicitly marked as missing.
+
+The bridge is therefore not between truth and falsity.
+
+It is between local theoretical validity and real-world structural validity.
+
 ## Theory-reality friction
 
 The Law of Totality identifies the point where theory and reality begin to grind against each other.
