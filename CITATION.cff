@@ -4,7 +4,7 @@ title: "Law of Totality: The Law of Absolute Non-Closure"
 authors:
   - family-names: "Brighindi"
     given-names: "Massimiliano"
-version: "0.5.0"
+version: "0.8.0"
 date-released: "2026-06-17"
 repository-code: "https://github.com/Tuttotorna/LAW-OF-TOTALITY"
 abstract: "A meta-structural framework for diagnosing structural error as local closure used beyond valid scope while excluding dependencies critical to the concrete use."

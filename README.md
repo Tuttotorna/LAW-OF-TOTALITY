@@ -82,6 +82,28 @@ Core law:
     ∀x∈𝔻:
     [ManifestΩ(x) ∧ x≠Ω] ⇒ ∃d DetCondΩ(d,x)
 
+## v0.8.0 Short External Paper Layer
+
+The repository now includes the first short external paper:
+
+- `PAPER_SHORT.md`
+- `docs/ABSTRACT.md`
+- `docs/SUBMISSION_LETTER.md`
+- `docs/REVIEW_TARGETS.md`
+- `tools/paper_checker.py`
+
+Purpose:
+
+The release converts the formal framework, Error Atlas, and comparative analysis into a concise external review object.
+
+Central public claim:
+
+    local correctness does not imply valid use.
+
+The paper is designed for hostile review, not endorsement.
+
+It is not external validation. It is a review-ready threshold object.
+
 ## v0.7.0 Hard Comparative Analysis Layer
 
 The repository now includes a hard comparative analysis layer.

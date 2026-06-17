@@ -1,5 +1,42 @@
 # Changelog
 
+## v0.8.0 — Short External Paper Layer
+
+### Added
+
+- `PAPER_SHORT.md`
+- `docs/ABSTRACT.md`
+- `docs/SUBMISSION_LETTER.md`
+- `docs/REVIEW_TARGETS.md`
+- `tools/paper_checker.py`
+
+### Purpose
+
+This release creates the first concise external review object.
+
+### Strategic Result
+
+The framework can now be introduced through a short paper rather than through the whole repository.
+
+The paper centers on:
+
+    local correctness does not imply valid use
+
+and presents:
+
+    problem
+    formula
+    definitions
+    three minimal cases
+    negative controls
+    relation to existing frameworks
+    limits
+    hostile review request
+
+### Status
+
+`v0.8.0` is review-ready, not externally validated.
+
 ## v0.7.0 — Hard Comparative Analysis Layer
 
 ### Added
